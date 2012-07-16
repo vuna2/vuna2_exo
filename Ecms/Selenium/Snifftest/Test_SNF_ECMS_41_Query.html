@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="" />
+<title>Test_SNF_ECMS_16_FormGenerator_ecmdemo</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Test_SNF_ECMS_16_FormGenerator_ecmdemo</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/portal/acme/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>windowMaximize</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>* Log in</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>username</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>username</td>
+	<td>root</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>password</td>
+	<td>gtn</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Sign in</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Sign in</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Go to Site Explorer</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Sites Explorer</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Sites Explorer</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Click Show Drives</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//a[@title= 'Show Drives']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[@title= 'Show Drives']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Choose link=Sites Management</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Sites Management</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Sites Management</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Click Saved Search</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@title='Saved Searches']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@title='Saved Searches']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Click Advanced Search</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@title='Advanced Search']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@title='Advanced Search']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Choose New Query tab</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[text ()='New Query']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[text ()='New Query']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Fill name</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=name</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=name</td>
+	<td>Test_SNF_ECMS_41</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Fill Query</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=query</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=query</td>
+	<td>select * from nt:base where jcr:path like '/sites content/live/%' order by exo:dateCreated ASC</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Click Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//form[@id='UIJCRAdvancedSearch']//a[contains(@onclick, 'Save')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//form[@id='UIJCRAdvancedSearch']//a[contains(@onclick, 'Save')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify query is existed</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[text ()='Test_SNF_ECMS_41']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[text ()='Test_SNF_ECMS_41']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Click Execute Test_SNF_ECMS_41</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//td/div[text()='Test_SNF_ECMS_41']/ancestor::tr //img[@title='Execute']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//td/div[text()='Test_SNF_ECMS_41']/ancestor::tr //img[@title='Execute']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Go to Saved query</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[text ()='Saved Query']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[text ()='Saved Query']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Click Edit Test_SNF_ECMS_41</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//td/div[text()='Test_SNF_ECMS_41']/ancestor::tr//img[@title='Edit']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//td/div[text()='Test_SNF_ECMS_41']/ancestor::tr//img[@title='Edit']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Edit Query</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//form[@id='EditQueryForm']/div[2]/div/table/tbody/tr[3]/td[2]/textarea</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//form[@id='EditQueryForm']/div[2]/div/table/tbody/tr[3]/td[2]/textarea</td>
+	<td>select * from nt:base where jcr:path like '/sites content/live/%' order by exo:dateCreated DESC</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Click Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//form[@id='EditQueryForm']//a[contains(@onclick, 'Save')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//form[@id='EditQueryForm']//a[contains(@onclick, 'Save')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Delete</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//td/div[text()='Test_SNF_ECMS_41']/ancestor::tr//img[@title='Delete']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//td/div[text()='Test_SNF_ECMS_41']/ancestor::tr//img[@title='Delete']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertConfirmation</td>
+	<td>Are you sure to delete this query?</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Close Form</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=a.CloseButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=a.CloseButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Find Test_SNF_ECMS_41 query</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=div.AdvancedSearch</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.AdvancedSearch</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=keyword</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=keyword</td>
+	<td>Test_SNF_ECMS_41</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Search</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Search</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>No results found.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>No results found.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Close Forum</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=a.CloseButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=a.CloseButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>* Log out</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

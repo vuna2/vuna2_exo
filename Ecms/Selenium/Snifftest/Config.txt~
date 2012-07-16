@@ -1,0 +1,66 @@
+
+All infomation below is in TESTVN-4764:
+
+
+1. Config email to run case #10: Before starting server
+
+    * go to: $tomcat_binary_folder/gatein/conf
+    * open file configration.property, edit as below:
+
+			gatein.email.smtp.username=exomailtest@gmail.com
+
+			gatein.email.smtp.password=exoadmin
+
+			gatein.email.smtp.host=smtp.gmail.com
+
+			gatein.email.smtp.port=465
+
+			gatein.email.smtp.starttls.enable=true
+
+			gatein.email.smtp.auth=true
+
+			gatein.email.smtp.socketFactory.port=465
+
+			gatein.email.smtp.socketFactory.class=javax.net.ssl.SSLSocketFactory
+
+			gatein.email.smtp.debug=false
+
+			gatein.email.smtp.socketFactory.fallback=false
+
+2. Import application after server starts
+
+    * Mouse over wheel icon on the top right of portal/ecms screen, click Applications
+    * Click Import Applications, then OK
+
+3. Edit wcm-view: with action:
+
+    * Add Symlink in Publication tab
+    * Multi language in Collaboration tab
+    * Add Comment On Document in Collaboration tab to run case # 31
+    * Manage Relations in Collaboration tab to run case # 34.
+
+    * How to do:
+
+    * Mouse over wheel icon on the top right of portal/ecms screen
+    * Choose Content/ Content Administration/ Content Presentation/ Manage View/ wcm-view then edit.
+
+4. To run case #18,38: upload file
+
+    * copy all data in folder Upload to home folder, Eg: /home/hakt/Upload
+5. To run case # 36 Export, Import node
+
+    * Config Firefox to automatically save exported file to home folder, eg: /home/hakt
+      then use this exported file to import node.
+6. Config to run workflow:
+
+    * Copy file https://jira.exoplatform.org/secure/attachment/52098/ecmworkflow-extension.xml to folder tomcat-bundle/conf/Catalina/localhost
+    * Stand at tomcat-bundle folder and run ./start_eXo.sh all.
+
+    * To run case #60: upload a process, eg upload holiday process, copy file "exo-ecms-ext-workflow-bp-jbpm-holiday-2.3.5.jar" from ~/tomcat-bundle/lib to home folder, eg: /home/hakt
+
+
+
+
+
+
+

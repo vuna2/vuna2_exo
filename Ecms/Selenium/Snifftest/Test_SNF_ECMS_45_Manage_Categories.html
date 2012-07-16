@@ -1,0 +1,716 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="" />
+<title>Test_SNF_ECMS_33_CopyPasteNode_ecmdemo</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Test_SNF_ECMS_33_CopyPasteNode_ecmdemo</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/portal/acme/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>windowMaximize</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>username</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>username</td>
+	<td>root</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>password</td>
+	<td>gtn</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Sign in</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Sign in</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Go to Content administration</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Content administration</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Content administration</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Click Manage Categories</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Manage Categories</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Manage Categories</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Click Add Category Tree</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Add Category Tree</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Add Category Tree</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Fill Name</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=TaxoTreeName</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=TaxoTreeName</td>
+	<td>Test_SNF_ECMS_45</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Click Next</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Next</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Next</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Set permission</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Select membership</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//img[@title='Select Membership']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//img[@title='Select Membership']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Any permission</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//img[@title='Set any Permission']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//img[@title='Set any Permission']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Tick Read</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>name=read</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=read</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Click Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Click Next</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//form[@id='UIPermissionTreeForm']/div[2]/div/div/a[4]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//form[@id='UIPermissionTreeForm']/div[2]/div/div/a[4]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Add an action to the category tree</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Fill Name</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=actionName</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=actionName</td>
+	<td>Add Content</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Choose action</td>
+	<td></td>
+</tr>
+<tr>
+	<td>addSelection</td>
+	<td>name=lifecycle</td>
+	<td>label=Content Addition</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Choose Target Path</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//form[@id='UIActionForm']/div[2]/table/tbody/tr[8]/td[2]/table/tbody/tr/td[2]/a/img</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//form[@id='UIActionForm']/div[2]/table/tbody/tr[8]/td[2]/table/tbody/tr/td[2]/a/img</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Choose Root path</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//img[@title='AddRootNode']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//img[@title='AddRootNode']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Click Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//form[@id='UIActionForm']/div[2]/div/a[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//form[@id='UIActionForm']/div[2]/div/a[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Click Add category 1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//img[@title='Add']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//img[@title='Add']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Type name</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=taxonomyName</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=taxonomyName</td>
+	<td>Cat1</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Click Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//form[@id='UITaxonomyTreeCreateChildForm']/div[2]/div/div/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//form[@id='UITaxonomyTreeCreateChildForm']/div[2]/div/div/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Click Add category 2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//img[@title='Add']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//img[@title='Add']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Type name</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=taxonomyName</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=taxonomyName</td>
+	<td>Cat2</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Click Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//form[@id='UITaxonomyTreeCreateChildForm']/div[2]/div/div/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//form[@id='UITaxonomyTreeCreateChildForm']/div[2]/div/div/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Click to open category tree</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Test_SNF_ECMS_45</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Test_SNF_ECMS_45</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Copy Cat1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//img[@title='Copy']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//img[@title='Copy']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Paste to Cat2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UITaxonomyTreeWorkingArea']/table/tbody/tr[2]/td[2]/div/img[4]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='UITaxonomyTreeWorkingArea']/table/tbody/tr[2]/td[2]/div/img[4]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- View Cat2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Cat2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Cat2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify Cat1 in CaT2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//td/div[@title='Cat1' and text()='Cat1']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//td/div[@title='Cat1' and text()='Cat1']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Come back root tree</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=div.InnerExplorerTree &gt; div.UITrees.ScrollArea &gt; div.TreeContainer.JSContainer &gt; div &gt; div.HomeNode &gt; a.LevelUpArrowIcon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.InnerExplorerTree &gt; div.UITrees.ScrollArea &gt; div.TreeContainer.JSContainer &gt; div &gt; div.HomeNode &gt; a.LevelUpArrowIcon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Cut CaT2 to Cat1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UITaxonomyTreeWorkingArea']/table/tbody/tr[2]/td[2]/div/img[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='UITaxonomyTreeWorkingArea']/table/tbody/tr[2]/td[2]/div/img[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//img[@title='Paste']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//img[@title='Paste']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify Cat2 in CaT1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Cat1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Cat1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//td/div[@title='Cat2' and text()='Cat2']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//td/div[@title='Cat2' and text()='Cat2']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Delete Cat2 in CaT1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=img.Icon16x16.Remove16x16Icon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=img.Icon16x16.Remove16x16Icon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertConfirmation</td>
+	<td>Are you sure to delete this category?</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify No child in Cat1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//td/div[text()='Child not found!']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//td/div[text()='Child not found!']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Click Close</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Close</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Close</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Edit Category tree</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//td/div[@title='Test_SNF_ECMS_45']/ancestor::tr/td//img[@title='Edit Category Tree']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//td/div[@title='Test_SNF_ECMS_45']/ancestor::tr/td//img[@title='Edit Category Tree']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Add more category</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//img[@title='Add']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//img[@title='Add']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Type name</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=taxonomyName</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=taxonomyName</td>
+	<td>Cat3</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Click Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//form[@id='UITaxonomyTreeCreateChildForm']/div[2]/div/div/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//form[@id='UITaxonomyTreeCreateChildForm']/div[2]/div/div/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Click to open category tree</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Test_SNF_ECMS_45</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Test_SNF_ECMS_45</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify Cat 3 existed</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//td/div[@title='Cat3' and text()='Cat3']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//td/div[@title='Cat3' and text()='Cat3']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Close tree</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Close</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Close</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Delete Category tree</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//td/div[@title='Test_SNF_ECMS_45']/ancestor::tr/td//img[@title='Delete Category Tree']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//td/div[@title='Test_SNF_ECMS_45']/ancestor::tr/td//img[@title='Delete Category Tree']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertConfirmation</td>
+	<td>Are you sure to delete the category tree?</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

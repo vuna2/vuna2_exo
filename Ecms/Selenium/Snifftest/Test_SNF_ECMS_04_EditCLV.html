@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="" />
+<title>Test_SNF_ECMS_05_EditCLV_ecmdemo</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Test_SNF_ECMS_05_EditCLV_ecmdemo</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/ecmdemo/acme/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>windowMaximize</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Log in</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>username</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>username</td>
+	<td>john</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>password</td>
+	<td>gtn</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Sign in</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Sign in</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Check old documents of resources: conditions.doc, metro.pdf, offices.jpg</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=conditions.doc</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=conditions.doc</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=metro.pdf</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=metro.pdf</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=offices.jpg</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=offices.jpg</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Edit CLV</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>EditingOptions</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>EditingOptions</td>
+	<td>label=Edit</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- select Resources, click Preferences</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=#p_ece69637-006e-459c-94d1-a76c11eac9ff-QuickEditingBlock &gt; a.PreferencesIcon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#p_ece69637-006e-459c-94d1-a76c11eac9ff-QuickEditingBlock &gt; a.PreferencesIcon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Select Folder Path</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//img[@alt='Select Folder Path']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//img[@alt='Select Folder Path']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Choose General drives</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>GeneralDrives_</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>GeneralDrives_</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>GeneralDrives_ManagedSites_</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>GeneralDrives_ManagedSites_</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Choose acme drive</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>GeneralDrives_ManagedSites__acme</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>GeneralDrives_ManagedSites__acme</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=GeneralDrives_ManagedSites__acme_webcontents</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=GeneralDrives_ManagedSites__acme_webcontents</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=GeneralDrives_ManagedSites__acme_webcontents_News</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=GeneralDrives_ManagedSites__acme_webcontents_News</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>xpath=(//a[contains(text(),'News2')])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//a[contains(text(),'News2')])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Change to Publish mode again</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=EditingOptions</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=EditingOptions</td>
+	<td>label=Published</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Check content changes</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>default.html</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>default.html</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Restore data default</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>EditingOptions</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>EditingOptions</td>
+	<td>label=Edit</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=#p_ece69637-006e-459c-94d1-a76c11eac9ff-QuickEditingBlock &gt; a.PreferencesIcon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#p_ece69637-006e-459c-94d1-a76c11eac9ff-QuickEditingBlock &gt; a.PreferencesIcon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//img[@alt='Select Folder Path']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//img[@alt='Select Folder Path']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>GeneralDrives_</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>GeneralDrives_</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>GeneralDrives_ManagedSites_</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>GeneralDrives_ManagedSites_</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>GeneralDrives_ManagedSites__acme</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>GeneralDrives_ManagedSites__acme</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- choose Document</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>xpath=(//a[contains(text(),'documents')])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//a[contains(text(),'documents')])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//a[contains(text(),'Save')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[contains(text(),'Save')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>logout and verify information that is stored</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>Check resource again</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=conditions.doc</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=conditions.doc</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=metro.pdf</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=metro.pdf</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=offices.jpg</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=offices.jpg</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

@@ -1,0 +1,1686 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://localhost:8080/portal" />
+<title>Test_POR_25_02_003_004_005_006_007_008_009_010_011_012</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Test_POR_25_02_003_004_005_006_007_008_009_010_011_012</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/portal/intranet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>windowMaximize</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//b[contains(text(),'Sign in')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>username</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>username</td>
+	<td>john</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>password</td>
+	<td>gtn</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//a[@id='UIPortalLoginFormAction']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Go to Group navigation --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Group Sites</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>--Add new node with blank Name--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//td/div[text()='Administration']/ancestor::tr/td/a[text()='Edit Navigation']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//td/div[text()='Administration']/ancestor::tr/td/a[text()='Edit Navigation']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UINavigationNodeSelector']//a[@title='Up Level']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='UINavigationNodeSelector']//a[@title='Up Level']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Add Node</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Add Node</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>--Page Node Setting--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>name</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>i18nizedLabel</td>
+	<td>Test_POR_25_02_003</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Choose Page Selector tab --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[text()='Page Selector']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[text()='Page Selector']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Select a page for ndoe--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Search and Select Page</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Search and Select Page</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//form[@id='UIPageSearchForm']/div[2]/input</td>
+	<td>New Staff</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=searchOption</td>
+	<td>label=group</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//a[@title='Quick Search']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[@title='Quick Search']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//img[@title='Select Page']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//img[@title='Select Page']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>The field &quot;Name&quot; is required.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>The field &quot;Name&quot; is required.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Add new node with Name starts by a number --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Choose Page Selector tab --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[text()='Page Node Settings']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[text()='Page Node Settings']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>name</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name</td>
+	<td>25_02_003</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>i18nizedLabel</td>
+	<td>Test_POR_25_02_003</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Choose Page Selector tab --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[text()='Page Selector']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[text()='Page Selector']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Select a page for ndoe--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Search and Select Page</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Search and Select Page</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//form[@id='UIPageSearchForm']/div[2]/input</td>
+	<td>New Staff</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=searchOption</td>
+	<td>label=group</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//a[@title='Quick Search']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[@title='Quick Search']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//img[@title='Select Page']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//img[@title='Select Page']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>The field &quot;Name&quot; must start with a character and must not contain special characters.&quot; </td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>The field &quot;Name&quot; must start with a character and must not contain special characters.&quot; </td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Add new node with Name starts by dash characters --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[text()='Page Node Settings']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[text()='Page Node Settings']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>name</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name</td>
+	<td>--25_02_003</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>i18nizedLabel</td>
+	<td>Test_POR_25_02_003</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Choose Page Selector tab --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[text()='Page Selector']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[text()='Page Selector']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Select a page for ndoe--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Search and Select Page</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Search and Select Page</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//form[@id='UIPageSearchForm']/div[2]/input</td>
+	<td>New Staff</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=searchOption</td>
+	<td>label=group</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//a[@title='Quick Search']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[@title='Quick Search']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//img[@title='Select Page']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//img[@title='Select Page']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>The field &quot;Name&quot; must start with a character and must not contain special characters.&quot; </td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>The field &quot;Name&quot; must start with a character and must not contain special characters.&quot; </td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Add new node with Name starts by dot,comma and characters&nbsp;&nbsp;--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[text()='Page Node Settings']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[text()='Page Node Settings']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>name</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name</td>
+	<td>,,,...25_02_003</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>i18nizedLabel</td>
+	<td>Test_POR_25_02_003</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Choose Page Selector tab --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[text()='Page Selector']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[text()='Page Selector']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Select a page for ndoe--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Search and Select Page</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Search and Select Page</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//form[@id='UIPageSearchForm']/div[2]/input</td>
+	<td>New Staff</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=searchOption</td>
+	<td>label=group</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//a[@title='Quick Search']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[@title='Quick Search']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//img[@title='Select Page']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//img[@title='Select Page']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>Only alpha, digit, dash and underscore characters allowed for the field &quot;Name&quot;. </td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Only alpha, digit, dash and underscore characters allowed for the field &quot;Name&quot;. </td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Add new node with Node name contains alpha, digit, underscore, dash in the middle --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[text()='Page Node Settings']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[text()='Page Node Settings']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>name</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name</td>
+	<td>Test_POR_25_02_007</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>i18nizedLabel</td>
+	<td>Test_POR_25_02_007</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Choose Page Selector tab --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[text()='Page Selector']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[text()='Page Selector']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Select a page for ndoe--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Search and Select Page</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Search and Select Page</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//form[@id='UIPageSearchForm']/div[2]/input</td>
+	<td>New Staff</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=searchOption</td>
+	<td>label=group</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//a[@title='Quick Search']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[@title='Quick Search']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//img[@title='Select Page']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//img[@title='Select Page']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Add new node with Name contains special characters --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Add Node</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Add Node</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>--Page Node Setting--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>name</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name</td>
+	<td>#%#%^#%^</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>i18nizedLabel</td>
+	<td>Test_POR_25_02_008</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Choose Page Selector tab --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[text()='Page Selector']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[text()='Page Selector']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Select a page for ndoe--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Search and Select Page</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Search and Select Page</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//form[@id='UIPageSearchForm']/div[2]/input</td>
+	<td>New Staff</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=searchOption</td>
+	<td>label=group</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//a[@title='Quick Search']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[@title='Quick Search']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//img[@title='Select Page']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//img[@title='Select Page']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>Only alpha, digit, dash and underscore characters allowed for the field &quot;Name&quot;.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Only alpha, digit, dash and underscore characters allowed for the field &quot;Name&quot;.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Add new node with Name less than 3 --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>--Page Node Setting--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[text()='Page Node Settings']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[text()='Page Node Settings']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>name</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name</td>
+	<td>PO</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>i18nizedLabel</td>
+	<td>Test_POR_25_02_009</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Choose Page Selector tab --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[text()='Page Selector']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[text()='Page Selector']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Select a page for ndoe--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Search and Select Page</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Search and Select Page</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//form[@id='UIPageSearchForm']/div[2]/input</td>
+	<td>New Staff</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=searchOption</td>
+	<td>label=group</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//a[@title='Quick Search']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[@title='Quick Search']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//img[@title='Select Page']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//img[@title='Select Page']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>The length of the text in field &quot;Name&quot; must be between &quot;3&quot; and &quot;30&quot; characters. </td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>The length of the text in field &quot;Name&quot; must be between &quot;3&quot; and &quot;30&quot; characters. </td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Add new node with Name&nbsp;&nbsp;over 30 characters --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[text()='Page Node Settings']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[text()='Page Node Settings']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>name</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name</td>
+	<td>Test_POR_25_02_010Test_POR_25_02_010Test_POR_25_02_010Test_POR_25_02_010Test_POR_25_02_010Test_POR_25_02_010Test_POR_25_02_010Test_POR_25_02_010Test_POR_25_02_010Test_POR_25_02_010Test_POR_25_02_010Test_POR_25_02_010Test_POR_25_02_010Test_POR_25_02_010Test_POR_25_02_010Test_POR_25_02_010Test_POR_25_02_010Test_POR_25_02_010Test_POR_25_02_010Test_POR_25_02_010Test_POR_25_02_010Test_POR_25_02_010Test_POR_25_02_010Test_POR_25_02_010Test_POR_25_02_010Test_POR_25_02_010Test_POR_25_02_010Test_POR_25_02_010Test_POR_25_02_010Test_POR_25_02_010Test_POR_25_02_010Test_POR_25_02_010Test_POR_25_02_010Test_POR_25_02_010Test_POR_25_02_010Test_POR_25_02_010</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>i18nizedLabel</td>
+	<td>Test_POR_25_02_010</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Choose Page Selector tab --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[text()='Page Selector']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[text()='Page Selector']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Select a page for ndoe--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Search and Select Page</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Search and Select Page</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//form[@id='UIPageSearchForm']/div[2]/input</td>
+	<td>New Staff</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=searchOption</td>
+	<td>label=group</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//a[@title='Quick Search']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[@title='Quick Search']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//img[@title='Select Page']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//img[@title='Select Page']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>The length of the text in field &quot;Name&quot; must be between &quot;3&quot; and &quot;30&quot; characters. </td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>The length of the text in field &quot;Name&quot; must be between &quot;3&quot; and &quot;30&quot; characters. </td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Add new node with Name is the same with existing one in the same level in 1 navigation --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[text()='Page Node Settings']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[text()='Page Node Settings']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>name</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name</td>
+	<td>node1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>i18nizedLabel</td>
+	<td>node1</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Choose Page Selector tab --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[text()='Page Selector']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[text()='Page Selector']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Select a page for ndoe--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Search and Select Page</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Search and Select Page</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//form[@id='UIPageSearchForm']/div[2]/input</td>
+	<td>New Staff</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=searchOption</td>
+	<td>label=group</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//a[@title='Quick Search']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[@title='Quick Search']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//img[@title='Select Page']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//img[@title='Select Page']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Add new node is the same with node above ( same level) --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Add Node</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Add Node</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>--Page Node Setting--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[text()='Page Node Settings']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[text()='Page Node Settings']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>name</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name</td>
+	<td>node1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>i18nizedLabel</td>
+	<td>node1</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Choose Page Selector tab --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[text()='Page Selector']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[text()='Page Selector']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Select a page for ndoe--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Search and Select Page</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Search and Select Page</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//form[@id='UIPageSearchForm']/div[2]/input</td>
+	<td>New Staff</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=searchOption</td>
+	<td>label=group</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//a[@title='Quick Search']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[@title='Quick Search']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//img[@title='Select Page']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//img[@title='Select Page']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>This node name already exists.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>This node name already exists.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Add new node with Name is the same with existing one but in the different level in 1 navigation --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>--Page Node Setting--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[text()='Page Node Settings']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[text()='Page Node Settings']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>name</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name</td>
+	<td>node2</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>i18nizedLabel</td>
+	<td>node2</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Choose Page Selector tab --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[text()='Page Selector']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[text()='Page Selector']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Select a page for ndoe--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Search and Select Page</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Search and Select Page</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//form[@id='UIPageSearchForm']/div[2]/input</td>
+	<td>New Staff</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=searchOption</td>
+	<td>label=group</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//a[@title='Quick Search']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[@title='Quick Search']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//img[@title='Select Page']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//img[@title='Select Page']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Add new node with same name but different level --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UINavigationNodeSelector']//a[@title='Management']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='UINavigationNodeSelector']//a[@title='Management']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Add Node</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Add Node</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>--Page Node Setting--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[text()='Page Node Settings']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[text()='Page Node Settings']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>name</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name</td>
+	<td>node2</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>i18nizedLabel</td>
+	<td>node2</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Choose Page Selector tab --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[text()='Page Selector']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[text()='Page Selector']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Select a page for ndoe--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Search and Select Page</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Search and Select Page</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//form[@id='UIPageSearchForm']/div[2]/input</td>
+	<td>New Staff</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=searchOption</td>
+	<td>label=group</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//a[@title='Quick Search']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[@title='Quick Search']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//img[@title='Select Page']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//img[@title='Select Page']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>--Delete node with name contains&nbsp;&nbsp;alpha, digit, underscore, dash in the middle--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//td/div[text()='Administration']/ancestor::tr/td/a[text()='Edit Navigation']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//td/div[text()='Administration']/ancestor::tr/td/a[text()='Edit Navigation']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseDownRight</td>
+	<td>xpath=//a[@title='Test_POR_25_02_007']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>xpath=//div[@id='UINavigationNodeSelector']//div[@id='NavigationNodePopupMenu']//a[@class='ItemIcon DeleteNode16x16Icon']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=//div[@id='UINavigationNodeSelector']//div[@id='NavigationNodePopupMenu']//a[@class='ItemIcon DeleteNode16x16Icon']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForConfirmation</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertConfirmation</td>
+	<td>Are you sure to delete this node?</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Delete node with name with existing one in the same level in 1 navigation --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseDownRight</td>
+	<td>xpath=//a[@title='node1']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>xpath=//div[@id='UINavigationNodeSelector']//div[@id='NavigationNodePopupMenu']//a[@class='ItemIcon DeleteNode16x16Icon']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=//div[@id='UINavigationNodeSelector']//div[@id='NavigationNodePopupMenu']//a[@class='ItemIcon DeleteNode16x16Icon']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForConfirmation</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertConfirmation</td>
+	<td>Are you sure to delete this node?</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Delete node node with Name is the same with existing one but in the different level in 1 navigation --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseDownRight</td>
+	<td>xpath=//a[@title='node2']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>xpath=//div[@id='UINavigationNodeSelector']//div[@id='NavigationNodePopupMenu']//a[@class='ItemIcon DeleteNode16x16Icon']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=//div[@id='UINavigationNodeSelector']//div[@id='NavigationNodePopupMenu']//a[@class='ItemIcon DeleteNode16x16Icon']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForConfirmation</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertConfirmation</td>
+	<td>Are you sure to delete this node?</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UINavigationNodeSelector']//a[@title='Management']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='UINavigationNodeSelector']//a[@title='Management']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseDownRight</td>
+	<td>xpath=//a[@title='node2']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>xpath=//div[@id='UINavigationNodeSelector']//div[@id='NavigationNodePopupMenu']//a[@class='ItemIcon DeleteNode16x16Icon']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=//div[@id='UINavigationNodeSelector']//div[@id='NavigationNodePopupMenu']//a[@class='ItemIcon DeleteNode16x16Icon']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForConfirmation</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertConfirmation</td>
+	<td>Are you sure to delete this node?</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>--Sign out--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

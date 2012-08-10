@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="" />
+<title>Test_SNF_PRL_64_ChangeLanguageInPrivateMode</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Test_SNF_PRL_64_ChangeLanguageInPrivateMode</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/portal/intranet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Change language in private mode--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>windowMaximize</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//b[contains(text(),'Sign in')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>username</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>username</td>
+	<td>john</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>password</td>
+	<td>gtn</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//a[@id='UIPortalLoginFormAction']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Change Language</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Change Language</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Change language to French--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//a[@class='NodeLabel']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=French</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=French</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Apply</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Apply</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Mes Sites</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Mes Espaces</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Tableau de bord</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Editer</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>- Retun to English --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Changer de Langue</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Changer de Langue</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//a[@class='NodeLabel']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Anglais</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Anglais</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Appliquer</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Appliquer</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>My Sites</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>My Spaces</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Dashboard</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Edit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

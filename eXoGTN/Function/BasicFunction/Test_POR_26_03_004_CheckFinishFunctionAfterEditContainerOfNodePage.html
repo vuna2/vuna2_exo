@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="" />
+<title>Test_POR_26_03_004_CheckFinishFunctionAfterEditContainerOfNodePage</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Test_POR_26_03_004_CheckFinishFunctionAfterEditContainerOfNodePage</td></tr>
+</thead><tbody>
+<tr>
+	<td>setSpeed</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/portal/intranet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>windowMaximize</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//b[contains(text(),'Sign in')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>username</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>username</td>
+	<td>john</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>password</td>
+	<td>gtn</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//a[@id='UIPortalLoginFormAction']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>10000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Add new page--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Applications</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Add Page</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Add Page</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>pageName</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>pageName</td>
+	<td>Test_POR_26_03_004</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>i18nizedLabel</td>
+	<td>Test_POR_26_03_004</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Click Next to move step 2 --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//a[contains(text(),'Next')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[contains(text(),'Next')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Choose page configs--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Row Page Configs</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Row Page Configs</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Click next to move step 3 --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//a[contains(text(),'Next')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[contains(text(),'Next')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Administration</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Administration</td>
+	<td></td>
+</tr>
+<tr>
+	<td>dragAndDropToObject</td>
+	<td>//div[text()='Application Registry']</td>
+	<td>//div[@class='UIRowContainer EmptyContainer']</td>
+</tr>
+<tr>
+	<td>dragAndDropToObject</td>
+	<td>//div[text()='Pages']</td>
+	<td>//div[@class='UIRowContainer EmptyContainer']</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UIPageEditor']//a[@title='Finish']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//div[@id='UIPageEditor']//a[@title='Finish']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Go to Group navigation --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Group Sites</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//td/div[text()='Administration']/ancestor::tr/td/a[text()='Edit Navigation']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//td/div[text()='Administration']/ancestor::tr/td/a[text()='Edit Navigation']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UINavigationNodeSelector']//a[@title='Application Manager']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='UINavigationNodeSelector']//a[@title='Application Manager']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UINavigationNodeSelector']//a[@title='Test_POR_26_03_004']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='UINavigationNodeSelector']//a[@title='Test_POR_26_03_004']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>xpath=//a[@title='Test_POR_26_03_004']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseDownRight</td>
+	<td>xpath=//a[@title='Test_POR_26_03_004']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Edit Node's Page</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Edit Node's Page</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[contains(text(),&quot;Containers&quot;)]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[contains(text(),&quot;Containers&quot;)]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>//div[contains(@title,&quot;Hold&quot;)]</td>
+	<td>Container</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//a[@title='Edit Container']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[@title='Edit Container']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>title</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>title</td>
+	<td>TEST_POR_26_03_004</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//a[text()='Save']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[text()='Save']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Switch View Mode</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Switch View Mode</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UIPageEditor']//a[@title='Finish']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='UIPageEditor']//a[@title='Finish']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Delete this node--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//td/div[text()='Administration']/ancestor::tr/td/a[text()='Edit Navigation']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//td/div[text()='Administration']/ancestor::tr/td/a[text()='Edit Navigation']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UINavigationNodeSelector']//a[@title='Application Manager']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='UINavigationNodeSelector']//a[@title='Application Manager']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UINavigationNodeSelector']//a[@title='Test_POR_26_03_004']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='UINavigationNodeSelector']//a[@title='Test_POR_26_03_004']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>xpath=//a[@title='Test_POR_26_03_004']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseDownRight</td>
+	<td>xpath=//a[@title='Test_POR_26_03_004']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Delete Node</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Delete Node</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertConfirmation</td>
+	<td>Are you sure to delete this node?</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextNotPresent</td>
+	<td>Test_POR_26_03_004</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

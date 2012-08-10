@@ -1,0 +1,741 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="" />
+<title>Test_SNF_PRL_11_MembershipManagement</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Test_SNF_PRL_11_MembershipManagement</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/portal/intranet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Memberships Management--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>windowMaximize</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//b[contains(text(),'Sign in')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>username</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>username</td>
+	<td>root</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>password</td>
+	<td>gtn</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//a[@id='UIPortalLoginFormAction']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Go to Users and group management --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Group and Roles</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Choose Membership Management --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Membership Management</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Membership Management</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>name</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name</td>
+	<td>Test_SNF_PRL_11</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>description</td>
+	<td>Test_SNF_PRL_11</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>Test_SNF_PRL_11</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Test_SNF_PRL_11</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Add user into group with new membership --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Group Management</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Group Management</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Organization</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Organization</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UIOrganizationPortlet']//a[@title='Management']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='UIOrganizationPortlet']//a[@title='Management']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Executive Board</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Executive Board</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=username</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>john</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>name=membership</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=membership</td>
+	<td>label=Test_SNF_PRL_11</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[text()='john']/following::div[text()='Test_SNF_PRL_11']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[text()='john']/following::div[text()='Test_SNF_PRL_11']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Check permission when user is added with new permission --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Sites</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Add New Portal</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Add New Portal</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>name</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name</td>
+	<td>newportal</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Choose Properties tab--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[text()='Properties']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[text()='Properties']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Choose Portal Template --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[text()='Portal Templates']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[text()='Portal Templates']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[text()='Intranet Portal']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[text()='Intranet Portal']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Choose Permission setting tab--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[text()='Permission Settings']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[text()='Permission Settings']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Access Permission Setting tab--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Add Permission</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Add Permission</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Platform</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Platform</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='ListPermissionSelector']//a[@title='Administration']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='ListPermissionSelector']//a[@title='Administration']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Test_SNF_PRL_11</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Test_SNF_PRL_11</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Edit Permission Setting tab--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Edit Permission Settings</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Edit Permission Settings</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Select Permission</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Select Permission</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='PermissionSelector']//a[@title=&quot;Organization&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='PermissionSelector']//a[@title=&quot;Organization&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='PermissionSelector']//a[@title=&quot;Management&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='PermissionSelector']//a[@title=&quot;Management&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='PermissionSelector']//a[@title=&quot;Executive Board&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='PermissionSelector']//a[@title=&quot;Test_SNF_PRL_11&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='PermissionSelector']//a[@title=&quot;Test_SNF_PRL_11&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//a[contains(text(),'Save')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>//a[contains(text(),'Save')]</td>
+	<td>2,2</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>20000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>refreshAndWait</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Check permisison with new membership --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/portal/intranet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//b[contains(text(),'Sign in')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>username</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>username</td>
+	<td>john</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>password</td>
+	<td>gtn</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//a[@id='UIPortalLoginFormAction']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>refreshAndWait</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=newportal</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/portal/intranet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Edit membership --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//b[contains(text(),'Sign in')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>username</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>username</td>
+	<td>john</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>password</td>
+	<td>gtn</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//a[@id='UIPortalLoginFormAction']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Group and Roles</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Choose Membership Management --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Membership Management</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Membership Management</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='UIGrid']/table/tbody/tr[3]/td[5]/div/img</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='UIGrid']/table/tbody/tr[3]/td[5]/div/img</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>description</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>description</td>
+	<td>Test_SNF_PRL_11_edit</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>Test_SNF_PRL_11_edit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Test_SNF_PRL_11_edit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Delete membership --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@title='Test_SNF_PRL_11']/following::img[@title='Delete Membership']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertConfirmation</td>
+	<td>Are you sure to delete this membership?</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextNotPresent</td>
+	<td>Test_SNF_PRL_11</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextNotPresent</td>
+	<td>Test_SNF_PRL_11</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Check after delete new membership --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//b[contains(text(),'Sign in')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>username</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>username</td>
+	<td>john</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>password</td>
+	<td>gtn</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//a[@id='UIPortalLoginFormAction']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Sites</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementNotPresent</td>
+	<td>newportal</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Login by admin to delete portal --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/portal/intranet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//b[contains(text(),'Sign in')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>username</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>username</td>
+	<td>root</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>password</td>
+	<td>gtn</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//a[@id='UIPortalLoginFormAction']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Sites</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Delete portal --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//td/div[text()='newportal']/following::td/a[text()='Delete']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>//td/div[text()='newportal']/following::td/a[text()='Delete']</td>
+	<td>2,2</td>
+</tr>
+<tr>
+	<td>waitForConfirmationPresent</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertConfirmation</td>
+	<td>Are you sure to delete this portal?</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>60000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextNotPresent</td>
+	<td>newportal</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextNotPresent</td>
+	<td>newportal</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

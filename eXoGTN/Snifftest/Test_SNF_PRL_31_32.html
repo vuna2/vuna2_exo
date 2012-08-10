@@ -1,0 +1,796 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="" />
+<title>Test_SNF_PRL_31_ManageNodePortal</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Test_SNF_PRL_31_ManageNodePortal</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/portal/intranet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Manage node for portal --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>windowMaximize</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//b[contains(text(),'Sign in')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>username</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>username</td>
+	<td>root</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>password</td>
+	<td>gtn</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//a[@id='UIPortalLoginFormAction']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Sites</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Edit Navigation --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//a[contains(@href,'intranet')]/preceding-sibling::a[text()='Edit Navigation']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[contains(@href,'intranet')]/preceding-sibling::a[text()='Edit Navigation']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Add new node--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Add Node</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Add Node</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>name</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name</td>
+	<td>Test_SNF_PRL_31</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=i18nizedLabel</td>
+	<td>Test_SNF_PRL_31</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Choose Page Selector tab --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[text()='Page Selector']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[text()='Page Selector']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Select a page for ndoe--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Search and Select Page</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Search and Select Page</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//form[@id='UIPageSearchForm']/div[2]/input</td>
+	<td>Welcome Page</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>name=searchOption</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>name=searchOption</td>
+	<td>portal</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//a[@title='Quick Search']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[@title='Quick Search']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//img[@title='Select Page']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//img[@title='Select Page']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Click Save to close Navigation Management form--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- View new node--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Test_SNF_PRL_31</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Test_SNF_PRL_31</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Edit this node--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Sites</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//a[contains(@href,'intranet')]/preceding-sibling::a[text()='Edit Navigation']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[contains(@href,'intranet')]/preceding-sibling::a[text()='Edit Navigation']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//a[@class='NodeIcon DefaultPageIcon' and @title='Test_SNF_PRL_31']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseDownRight</td>
+	<td>//a[@class='NodeIcon DefaultPageIcon' and @title='Test_SNF_PRL_31']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Edit this Node</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Edit this Node</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=i18nizedLabel</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=i18nizedLabel</td>
+	<td>Test_SNF_PRL_31_edit</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Choose Page Selector tab --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[text()='Page Selector']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[text()='Page Selector']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Choose new page for this node--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Search and Select Page</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Search and Select Page</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>pageTitle</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//form[@id='UIPageSearchForm']/div[2]/input</td>
+	<td>Activities</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>name=searchOption</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>name=searchOption</td>
+	<td>portal</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//a[@title='Quick Search']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[@title='Quick Search']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//img[@title='Select Page']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//img[@title='Select Page']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Close navigation Management form --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- View node node after change page --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Test_SNF_PRL_31_edit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Test_SNF_PRL_31_edit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Copy node--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Sites</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//a[contains(@href,'intranet')]/preceding-sibling::a[text()='Edit Navigation']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[contains(@href,'intranet')]/preceding-sibling::a[text()='Edit Navigation']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UINavigationNodeSelector']//a[@title='Test_SNF_PRL_31_edit']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='UINavigationNodeSelector']//a[@title='Test_SNF_PRL_31_edit']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//a[@class='NodeIcon DefaultPageIcon NodeSelected' and @title='Test_SNF_PRL_31_edit']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseDownRight</td>
+	<td>//a[@class='NodeIcon DefaultPageIcon NodeSelected' and @title='Test_SNF_PRL_31_edit']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Copy Node</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Copy Node</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- paste node to new place--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UINavigationNodeSelector']//a[@title=&quot;Up Level&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='UINavigationNodeSelector']//a[@title=&quot;Up Level&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UINavigationNodeSelector']//a[@title=&quot;Home&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='UINavigationNodeSelector']//a[@title=&quot;Home&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UINavigationNodeSelector']/div/div/div/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseDownRight</td>
+	<td>//div[@id='UINavigationNodeSelector']/div/div/div/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Paste Node</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- https://jira.exoplatform.org/browse/EXOGTN-1012 --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Cut node--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseDownRight</td>
+	<td>//div[@id='UINavigationNodeSelector']//a[@title='Test_SNF_PRL_31_edit']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Cut Node</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Cut Node</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- paste node to new place--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UINavigationNodeSelector']//a[@title='Welcome']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='UINavigationNodeSelector']//a[@title='Welcome']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UINavigationNodeSelector']//a[@title='Welcome']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseDownRight</td>
+	<td>//div[@id='UINavigationNodeSelector']//a[@title='Welcome']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//a[contains(text(),'Paste Node')])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Clone node</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UINavigationNodeSelector']//a[@title='Test_SNF_PRL_31_edit']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseDownRight</td>
+	<td>//div[@id='UINavigationNodeSelector']//a[@title='Test_SNF_PRL_31_edit']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Clone Node</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Clone Node</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UINavigationNodeSelector']/div/div/div/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseDownRight</td>
+	<td>//div[@id='UINavigationNodeSelector']/div/div/div/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Paste Node</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>--Move node up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UINavigationNodeSelector']//a[@title='Test_SNF_PRL_31_edit']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='UINavigationNodeSelector']//a[@title='Test_SNF_PRL_31_edit']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify position of first node not change --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[2]/div/a</td>
+	<td>Test_SNF_PRL_31_edit</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Test_SNF_PRL_31_edit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseDownRight</td>
+	<td>xpath=//a[@title='Test_SNF_PRL_31_edit']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>xpath=//div[@id='UINavigationNodeSelector']//div[@id='NavigationNodePopupMenu']//a[@class='ItemIcon MoveUp16x16Icon']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=//div[@id='UINavigationNodeSelector']//div[@id='NavigationNodePopupMenu']//a[@class='ItemIcon MoveUp16x16Icon']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>--Move node down</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseDownRight</td>
+	<td>xpath=(//a[contains(text(),'Test_SNF_PRL_31_edit')])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify position of first node not change --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[3]/div/a</td>
+	<td>Test_SNF_PRL_31_edit</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>xpath=//div[@id='UINavigationNodeSelector']//div[@id='NavigationNodePopupMenu']//a[@class='ItemIcon MoveDown16x16Icon']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=//div[@id='UINavigationNodeSelector']//div[@id='NavigationNodePopupMenu']//a[@class='ItemIcon MoveDown16x16Icon']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Delete node--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>xpath=(//a[contains(text(),'Test_SNF_PRL_31_edit')])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseDownRight</td>
+	<td>xpath=(//a[contains(text(),'Test_SNF_PRL_31_edit')])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Delete Node</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Delete Node</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForConfirmationPresent</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertConfirmation</td>
+	<td>Are you sure to delete this node?</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Delete node which cutted --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Welcome</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Welcome</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>xpath=(//a[contains(text(),'Test_SNF_PRL_31_edit')])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//a[contains(text(),'Test_SNF_PRL_31_edit')])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseDownRight</td>
+	<td>xpath=(//a[contains(text(),'Test_SNF_PRL_31_edit')])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Delete Node</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Delete Node</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForConfirmationPresent</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertConfirmation</td>
+	<td>Are you sure to delete this node?</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Delete node which copied --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=a.NodeIcon.DefaultPageIcon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=a.NodeIcon.DefaultPageIcon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>xpath=(//a[contains(text(),'Test_SNF_PRL_31_edit')])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//a[contains(text(),'Test_SNF_PRL_31_edit')])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseDownRight</td>
+	<td>xpath=(//a[contains(text(),'Test_SNF_PRL_31_edit')])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Delete Node</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Delete Node</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForConfirmationPresent</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertConfirmation</td>
+	<td>Are you sure to delete this node?</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextNotPresent</td>
+	<td>Test_SNF_PRL_31_edit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextNotPresent</td>
+	<td>Test_SNF_PRL_31_edit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

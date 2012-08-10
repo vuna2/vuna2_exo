@@ -1,0 +1,921 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://localhost:8080/portal" />
+<title>Test_POR_25_02_032</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Test_POR_25_02_032</td></tr>
+</thead><tbody>
+<tr>
+	<td>setSpeed</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/portal/intranet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Check show Group Editor menu --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>windowMaximize</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//b[contains(text(),'Sign in')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>username</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>username</td>
+	<td>john</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>password</td>
+	<td>gtn</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//a[@id='UIPortalLoginFormAction']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>10000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Add new user --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Add Users</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Add Users</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>username</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>username</td>
+	<td>julia</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>password</td>
+	<td>Test_POR_25_02_032</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>Confirmpassword</td>
+	<td>Test_POR_25_02_032</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>firstName</td>
+	<td>nguyen</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>lastName</td>
+	<td>tran</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>email</td>
+	<td>julia@gmail.com</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Choose user Profile --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UIAccountPortlet']//div[text()='User Profile']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='UIAccountPortlet']//div[text()='User Profile']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>user.language</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>user.language</td>
+	<td>label=English</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>You have registered a new account.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>You have registered a new account.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Go to Users and group management --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Group and Roles</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Group and Roles</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Choose Group management --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Group Management</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Group Management</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Add this user into a group with membership is&nbsp;&nbsp;“Member” --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Organization</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Organization</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UIOrganizationPortlet']//a[@title='Management']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='UIOrganizationPortlet']//a[@title='Management']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UIOrganizationPortlet']//a[@title='Executive Board']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='UIOrganizationPortlet']//a[@title='Executive Board']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>username</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>username</td>
+	<td>julia</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=membership</td>
+	<td>label=manager</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UIOrganizationPortlet']//a[@title='Up Level']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='UIOrganizationPortlet']//a[@title='Up Level']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UIOrganizationPortlet']//a[@title='Up Level']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='UIOrganizationPortlet']//a[@title='Up Level']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Platform</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Platform</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UIOrganizationPortlet']//a[@title='Administration']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='UIOrganizationPortlet']//a[@title='Administration']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>username</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>username</td>
+	<td>julia</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Create new page for group --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Pages</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Pages</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>xpath=//div[@id='UIPageBrowser']//a[text()='Add New Page']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=//div[@id='UIPageBrowser']//a[text()='Add New Page']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>ownerType</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>ownerType</td>
+	<td>label=group</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>ownerId</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>ownerId</td>
+	<td>label=/organization/management/executive-board</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//option[@value='/organization/management/executive-board']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//option[@value='/organization/management/executive-board']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>name</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name</td>
+	<td>Test_POR_25_02_032</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>title</td>
+	<td>Test_POR_25_02_032</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Choose Page Layout --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UIMaskWorkspace']//div[text()=&quot;Page Layout&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='UIMaskWorkspace']//div[text()=&quot;Page Layout&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Choose Permission Setting --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UIMaskWorkspace']//div[text()=&quot;Permission Settings&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='UIMaskWorkspace']//div[text()=&quot;Permission Settings&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Access Permission Setting --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Access Permission Setting --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@title='/organization/management/executive-board']/following::div[@title='*']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Edit Permission Setting --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Edit Permission Settings</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Edit Permission Settings</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[text()='Group Id :']/following::div[text()='/organization/management/executive-board']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[text()='Membership :']/following::div[text()='manager']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Go to Group navigation --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Group Sites</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//td/div[text()='Executive Board']/ancestor::tr/td/a[text()='Edit Navigation']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//td/div[text()='Executive Board']/ancestor::tr/td/a[text()='Edit Navigation']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Add Node</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Add Node</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>name</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name</td>
+	<td>Test_POR_25_02_032</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>i18nizedLabel</td>
+	<td>Test_POR_25_02_032</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Choose Page Selector tab --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[text()='Page Selector']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[text()='Page Selector']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Select a page for ndoe--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Search and Select Page</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Search and Select Page</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//form[@id='UIPageSearchForm']/div[2]/input</td>
+	<td>Test_POR_25_02_032</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=searchOption</td>
+	<td>label=group</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//a[@title='Quick Search']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[@title='Quick Search']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//img[@title='Select Page']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//img[@title='Select Page']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Login by new user --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//b[contains(text(),'Sign in')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>username</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>username</td>
+	<td>julia</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>password</td>
+	<td>Test_POR_25_02_032</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//a[@id='UIPortalLoginFormAction']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- View page ( node ) created</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Test_POR_25_02_032</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Test_POR_25_02_032</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>Edit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Edit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Login by Admin --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//b[contains(text(),'Sign in')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>username</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>username</td>
+	<td>john</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>password</td>
+	<td>gtn</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//a[@id='UIPortalLoginFormAction']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Go to users and group management --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Group and Roles</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Group and Roles</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Search new user created --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>searchTerm</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>searchTerm</td>
+	<td>julia</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//form[@id='UISearchForm']//a[@title='Quick Search']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//form[@id='UISearchForm']//a[@title='Quick Search']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Delete user created --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//img[@alt='DeleteUser']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//img[@alt='DeleteUser']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertConfirmation</td>
+	<td>Are you sure to delete user julia?</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Go to Group navigation --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Group Sites</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//td/div[text()='Executive Board']/ancestor::tr/td/a[text()='Edit Navigation']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//td/div[text()='Executive Board']/ancestor::tr/td/a[text()='Edit Navigation']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//a[@class='NodeIcon DefaultPageIcon NodeSelected' and @title='Test_POR_25_02_032']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseDownRight</td>
+	<td>//a[@class='NodeIcon DefaultPageIcon NodeSelected' and @title='Test_POR_25_02_032']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Delete Node</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Delete Node</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertConfirmation</td>
+	<td>Are you sure to delete this node?</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- delete page --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Go to Page Management --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Pages</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Pages</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Delete page created --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>pageTitle</td>
+	<td>Test_POR_25_02_032</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>searchOption</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=searchOption</td>
+	<td>label=group</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//a[@title='Quick Search']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[@title='Quick Search']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//img[@title='Delete Page']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//img[@title='Delete Page']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertConfirmation</td>
+	<td>Are you sure to delete this page?</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>No result found.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>No result found.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

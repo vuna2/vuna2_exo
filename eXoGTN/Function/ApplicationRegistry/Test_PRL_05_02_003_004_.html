@@ -1,0 +1,1306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="" />
+<title>Test_PRL_05_02_004_ChangeAccessRightOnCategoryFromLimitedGroupToBePublic</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Test_PRL_05_02_004_ChangeAccessRightOnCategoryFromLimitedGroupToBePublic</td></tr>
+</thead><tbody>
+<tr>
+	<td>setSpeed</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/portal/intranet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Change access right on category from public to be limited by group(s) --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>windowMaximize</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//b[contains(text(),'Sign in')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>username</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>username</td>
+	<td>john</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>password</td>
+	<td>gtn</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//a[@id='UIPortalLoginFormAction']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Go to Application Registry --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Applications</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Applications</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Add public category&nbsp;&nbsp;in Application registry --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[text()='Add Category']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[text()='Add Category']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>name</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name</td>
+	<td>Test_PRL_05_02_004</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>displayName</td>
+	<td>Test_PRL_05_02_004</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>description</td>
+	<td>Test_PRL_05_02_004</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Choose Permission Setting tab--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UIApplicationOrganizer']//div[text()='Permission Settings']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='UIApplicationOrganizer']//div[text()='Permission Settings']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>publicMode</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>publicMode</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Add application into category--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UIApplicationOrganizer']//a[@title='Add an Application to this Category']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='UIApplicationOrganizer']//a[@title='Add an Application to this Category']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//input[@name='application' and @value='5']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//input[@name='application' and @value='5']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Edit category--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UIApplicationOrganizer']/div[2]//a[@title='Test_PRL_05_02_004']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='UIApplicationOrganizer']/div[2]//a[@title='Test_PRL_05_02_004']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//a[@title='Test_PRL_05_02_004']/following-sibling::a[@title='Edit Category']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[@title='Test_PRL_05_02_004']/following-sibling::a[@title='Edit Category']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Choose Permission Setting tab--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UIApplicationOrganizer']//div[text()='Permission Settings']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='UIApplicationOrganizer']//div[text()='Permission Settings']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Uncheck public --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>name=publicMode</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=publicMode</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Add Permission</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Add Permission</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='ListPermissionSelector']//a[@title='Organization']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='ListPermissionSelector']//a[@title='Organization']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='ListPermissionSelector']//a[@title='Management']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='ListPermissionSelector']//a[@title='Management']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='ListPermissionSelector']//a[@title='Executive Board']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='ListPermissionSelector']//a[@title='Executive Board']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=exact:*</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=exact:*</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>Check after change permisison to private mode --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Add new page --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Add Page</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Add Page</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//a[@title='Up Level']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[@title='Up Level']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>pageName</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>pageName</td>
+	<td>Test_PRL_05_02_004</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>i18nizedLabel</td>
+	<td>Test_PRL_05_02_004</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Click Next to move step 2--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//a[contains(text(),'Next')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[contains(text(),'Next')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Keep empty layout and click Next move step 3--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//a[contains(text(),'Next')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[contains(text(),'Next')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Test_PRL_05_02_004</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Test_PRL_05_02_004</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UIApplicationList']//div[text()='Answers Portlet']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>dragAndDropToObject</td>
+	<td>//div[@id='UIApplicationList']//div[text()='Answers Portlet']</td>
+	<td>UIPage</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Click Finish --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//a[@title='Finish']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//a[@title='Finish']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Go to Application Registry--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Applications</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Applications</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Delete category--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//a[@title='Test_PRL_05_02_004']/following-sibling::a[@title='Delete Category']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[@title='Test_PRL_05_02_004']/following-sibling::a[@title='Delete Category']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForConfirmationPresent</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertConfirmation</td>
+	<td>Are you sure to delete this category and all its applications?</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextNotPresent</td>
+	<td>Test_PRL_05_02_004</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextNotPresent</td>
+	<td>Test_PRL_05_02_004</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Check after deleted category --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Layout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Layout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextNotPresent</td>
+	<td>Test_PRL_05_02_004</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextNotPresent</td>
+	<td>Test_PRL_05_02_004</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Click Finish --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//a[@title='Finish']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[@title='Finish']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Go to Page Management --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Pages</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Pages</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>pageTitle</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>pageTitle</td>
+	<td>Test_PRL_05_02_004</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>name=searchOption</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=searchOption</td>
+	<td>label=group</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//a[@title='Quick Search']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[@title='Quick Search']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Delete page --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//img[@title='Delete Page']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//img[@title='Delete Page']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForConfirmationPresent</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertConfirmation</td>
+	<td>Are you sure to delete this page?</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>No result found.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>No result found.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//a[contains(@onclick,&quot;action=Close&quot;)]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[contains(@onclick,&quot;action=Close&quot;)]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextNotPresent</td>
+	<td>Test_PRL_05_02_004</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextNotPresent</td>
+	<td>Test_PRL_05_02_004</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Delete node --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Group Sites</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Group Sites</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//td/div[text()='Administration']/ancestor::tr/td/a[text()='Edit Navigation']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//td/div[text()='Administration']/ancestor::tr/td/a[text()='Edit Navigation']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//a[@class='NodeIcon DefaultPageIcon' and @title='Test_PRL_05_02_004']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[@class='NodeIcon DefaultPageIcon' and @title='Test_PRL_05_02_004']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//a[@class='NodeIcon DefaultPageIcon NodeSelected' and @title='Test_PRL_05_02_004']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseDownRight</td>
+	<td>//a[@class='NodeIcon DefaultPageIcon NodeSelected' and @title='Test_PRL_05_02_004']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Delete Node</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Delete Node</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForConfirmationPresent</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertConfirmation</td>
+	<td>Are you sure to delete this node?</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementNotPresent</td>
+	<td>xpath=//a[@title='Test_PRL_05_02_004']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>10000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Change access right on category from limited by group(s) to be public --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Go to Application Registry --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Applications</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Applications</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Add public category&nbsp;&nbsp;in Application registry --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[text()='Add Category']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[text()='Add Category']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>name</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name</td>
+	<td>Test_PRL_05_02_003</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>displayName</td>
+	<td>Test_PRL_05_02_003</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>description</td>
+	<td>Test_PRL_05_02_003</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Choose Permission Setting tab--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UIApplicationOrganizer']//div[text()='Permission Settings']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='UIApplicationOrganizer']//div[text()='Permission Settings']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Add Permission</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Add Permission</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='ListPermissionSelector']//a[@title='Organization']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='ListPermissionSelector']//a[@title='Organization']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='ListPermissionSelector']//a[@title='Management']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='ListPermissionSelector']//a[@title='Management']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='ListPermissionSelector']//a[@title='Executive Board']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='ListPermissionSelector']//a[@title='Executive Board']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=exact:*</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=exact:*</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Add application into category--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UIApplicationOrganizer']//a[@title='Add an Application to this Category']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='UIApplicationOrganizer']//a[@title='Add an Application to this Category']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//input[@name='application' and @value='5']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//input[@name='application' and @value='5']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Edit category--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UIApplicationOrganizer']/div[2]//a[@title='Test_PRL_05_02_003']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='UIApplicationOrganizer']/div[2]//a[@title='Test_PRL_05_02_003']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//a[@title='Test_PRL_05_02_003']/following-sibling::a[@title='Edit Category']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[@title='Test_PRL_05_02_003']/following-sibling::a[@title='Edit Category']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Choose Permission Setting tab--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UIApplicationOrganizer']//div[text()='Permission Settings']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='UIApplicationOrganizer']//div[text()='Permission Settings']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Change to public --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>publicMode</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>publicMode</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Add new page --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Add Page</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Add Page</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//a[@title='Up Level']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[@title='Up Level']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>pageName</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>pageName</td>
+	<td>Test_PRL_05_02_003</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>i18nizedLabel</td>
+	<td>Test_PRL_05_02_003</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Click Next to move step 2--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//a[contains(text(),'Next')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[contains(text(),'Next')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Keep empty layout and click Next move step 3--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//a[contains(text(),'Next')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[contains(text(),'Next')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Test_PRL_05_02_003</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Test_PRL_05_02_003</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UIApplicationList']//div[text()='Answers Portlet']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>dragAndDropToObject</td>
+	<td>//div[@id='UIApplicationList']//div[text()='Answers Portlet']</td>
+	<td>UIPage</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Click Finish --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//a[@title='Finish']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//a[@title='Finish']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Go to Application Registry--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Applications</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Applications</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Delete category--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//a[@title='Test_PRL_05_02_003']/following-sibling::a[@title='Delete Category']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[@title='Test_PRL_05_02_003']/following-sibling::a[@title='Delete Category']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForConfirmationPresent</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertConfirmation</td>
+	<td>Are you sure to delete this category and all its applications?</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextNotPresent</td>
+	<td>Test_PRL_05_02_003</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextNotPresent</td>
+	<td>Test_PRL_05_02_003</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Check after deleted category --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Layout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Layout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextNotPresent</td>
+	<td>Test_PRL_05_02_003</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextNotPresent</td>
+	<td>Test_PRL_05_02_003</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Click Finish --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//a[@title='Finish']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[@title='Finish']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Go to Page Management --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>10000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Pages</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Pages</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>pageTitle</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>pageTitle</td>
+	<td>Test_PRL_05_02_003</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>name=searchOption</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=searchOption</td>
+	<td>label=group</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//a[@title='Quick Search']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[@title='Quick Search']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Delete page --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//img[@title='Delete Page']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//img[@title='Delete Page']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForConfirmationPresent</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertConfirmation</td>
+	<td>Are you sure to delete this page?</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>No result found.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>No result found.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//a[contains(@onclick,&quot;action=Close&quot;)]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[contains(@onclick,&quot;action=Close&quot;)]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextNotPresent</td>
+	<td>Test_PRL_05_02_003</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextNotPresent</td>
+	<td>Test_PRL_05_02_003</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Delete node --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Group Sites</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Group Sites</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//td/div[text()='Administration']/ancestor::tr/td/a[text()='Edit Navigation']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//td/div[text()='Administration']/ancestor::tr/td/a[text()='Edit Navigation']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//a[@class='NodeIcon DefaultPageIcon' and @title='Test_PRL_05_02_003']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[@class='NodeIcon DefaultPageIcon' and @title='Test_PRL_05_02_003']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//a[@class='NodeIcon DefaultPageIcon NodeSelected' and @title='Test_PRL_05_02_003']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseDownRight</td>
+	<td>//a[@class='NodeIcon DefaultPageIcon NodeSelected' and @title='Test_PRL_05_02_003']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Delete Node</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Delete Node</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForConfirmationPresent</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertConfirmation</td>
+	<td>Are you sure to delete this node?</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementNotPresent</td>
+	<td>xpath=//a[@title='Test_PRL_05_02_003']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>10000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

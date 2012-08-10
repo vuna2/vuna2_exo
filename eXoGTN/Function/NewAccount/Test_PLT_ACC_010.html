@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://localhost:8080/" />
+<title>Test_PLT_ACC_010</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Test_PLT_ACC_010</td></tr>
+</thead><tbody>
+<tr>
+	<td>setSpeed</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/portal/intranet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>windowMaximize</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//b[contains(text(),'Sign in')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>username</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>username</td>
+	<td>john</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>password</td>
+	<td>gtn</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//a[@id='UIPortalLoginFormAction']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Create new account --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Add Users</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Add Users</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=username</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>test_001_10_2012</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>password</td>
+	<td>GTN PLT ACC</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>Confirmpassword</td>
+	<td>GTN PLT ACC</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>firstName</td>
+	<td>GTN PLT ACC</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>lastName</td>
+	<td>GTN PLT ACC</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>email</td>
+	<td>exo_test10@gmail.com</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>You have registered a new account.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>You have registered a new account.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Check Availability function when new account's user name is existing --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=username</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>test_001_10_2012</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//img[@title='Check Availability']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//img[@title='Check Availability']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>This username already exists, please enter another one.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>This username already exists, please enter another one.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Check Availability function when new account's user name does not exist --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=username</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>test_001_11112012</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//img[@title='Check Availability']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//img[@title='Check Availability']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>This username is available.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>This username is available.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Check Availability function when new account's user name is the same with deleted account's user name --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Group and Roles</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Group and Roles</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Search user --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=searchTerm</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=searchTerm</td>
+	<td>test_001_10_2012</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//form[@id='UISearchForm']//a[@title='Quick Search']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//form[@id='UISearchForm']//a[@title='Quick Search']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=img.DeleteUserIcon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=img.DeleteUserIcon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertConfirmation</td>
+	<td>Are you sure to delete user test_001_10_2012?</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>10000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>No result found.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>No result found.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Add Users</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Add Users</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=username</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>test_001_10_2012</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=img.SearchIcon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=img.SearchIcon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>This username is available.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>This username is available.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Check Availability function when new account's user name is blank --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=username</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=img.SearchIcon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=img.SearchIcon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>The field &quot;User Name:&quot; is required.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>The field &quot;User Name:&quot; is required.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

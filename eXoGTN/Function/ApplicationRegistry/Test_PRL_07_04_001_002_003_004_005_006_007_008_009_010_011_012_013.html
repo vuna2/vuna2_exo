@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://localhost:8080/" />
+<title>Test_PRL_07_04_001_002_003_004_005_006_007_008_009_010_011_012_013</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Test_PRL_07_04_001_002_003_004_005_006_007_008_009_010_011_012_013</td></tr>
+</thead><tbody>
+<tr>
+	<td>setSpeed</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/portal/intranet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Manage local gadget--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>windowMaximize</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//b[contains(text(),'Sign in')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>username</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>username</td>
+	<td>john</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>password</td>
+	<td>gtn</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//a[@id='UIPortalLoginFormAction']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Go to Application Regsitry--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Applications</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Choose Gadget tab--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Gadgets</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Gadgets</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Create new gadget with blank name--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[text()='Create a New Gadget']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=name</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>The field &quot;Name:&quot; is required.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Create new gadget with name start by special chars --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=name</td>
+	<td>@$%@%</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Only alpha, digit, underscore, dash and dot characters allowed for the field &quot;Name:&quot;.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Create new gadget with name start by number --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=name</td>
+	<td>12334</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>The field &quot;Name:&quot; must start with a character.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Create new gadget with name contains space --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=name</td>
+	<td>test test</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Only alpha, digit, underscore, dash and dot characters allowed for the field &quot;Name:&quot;.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Create new gadget with name less than 2 or over 50 characters --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=name</td>
+	<td>a</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>The length of the text in field &quot;Name:&quot; must be between &quot;2&quot; and &quot;50&quot; characters.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Name over 50 chars --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=name</td>
+	<td>FNC_GTN_PLT_APPR_07_04_012FNC_GTN_PLT_APPR_07_04_012FNC_GTN_PLT_APPR_07_04_012FNC_GTN_PLT_APPR_07_04_012FNC_GTN_PLT_APPR_07_04_012FNC_GTN_PLT_APPR_07_04_012FNC_GTN_PLT_APPR_07_04_012FNC_GTN_PLT_APPR_07_04_012FNC_GTN_PLT_APPR_07_04_012FNC_GTN_PLT_APPR_07_04_012FNC_GTN_PLT_APPR_07_04_012FNC_GTN_PLT_APPR_07_04_012FNC_GTN_PLT_APPR_07_04_012FNC_GTN_PLT_APPR_07_04_012FNC_GTN_PLT_APPR_07_04_012FNC_GTN_PLT_APPR_07_04_012FNC_GTN_PLT_APPR_07_04_012FNC_GTN_PLT_APPR_07_04_012FNC_GTN_PLT_APPR_07_04_012FNC_GTN_PLT_APPR_07_04_012FNC_GTN_PLT_APPR_07_04_012FNC_GTN_PLT_APPR_07_04_012FNC_GTN_PLT_APPR_07_04_012FNC_GTN_PLT_APPR_07_04_012FNC_GTN_PLT_APPR_07_04_012FNC_GTN_PLT_APPR_07_04_012FNC_GTN_PLT_APPR_07_04_012FNC_GTN_PLT_APPR_07_04_012FNC_GTN_PLT_APPR_07_04_012FNC_GTN_PLT_APPR_07_04_012FNC_GTN_PLT_APPR_07_04_012FNC_GTN_PLT_APPR_07_04_012FNC_GTN_PLT_APPR_07_04_012FNC_GTN_PLT_APPR_07_04_012FNC_GTN_PLT_APPR_07_04_012FNC_GTN_PLT_APPR_07_04_012FNC_GTN_PLT_APPR_07_04_012FNC_GTN_PLT_APPR_07_04_012FNC_GTN_PLT_APPR_07_04_012FNC_GTN_PLT_APPR_07_04_012FNC_GTN_PLT_APPR_07_04_012FNC_GTN_PLT_APPR_07_04_012FNC_GTN_PLT_APPR_07_04_012FNC_GTN_PLT_APPR_07_04_012FNC_GTN_PLT_APPR_07_04_012FNC_GTN_PLT_APPR_07_04_012FNC_GTN_PLT_APPR_07_04_012FNC_GTN_PLT_APPR_07_04_012FNC_GTN_PLT_APPR_07_04_012FNC_GTN_PLT_APPR_07_04_012FNC_GTN_PLT_APPR_07_04_012FNC_GTN_PLT_APPR_07_04_012FNC_GTN_PLT_APPR_07_04_012FNC_GTN_PLT_APPR_07_04_012</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>The length of the text in field &quot;Name:&quot; must be between &quot;2&quot; and &quot;50&quot; characters.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Create new gadget without confirmation --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=name</td>
+	<td>test</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Cancel</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Create new gadget --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[text()='Create a New Gadget']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=name</td>
+	<td>FNC_GTN_PLT_APPR_07_04_012</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Create new gadget with name is the same with existing --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[text()='Create a New Gadget']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=name</td>
+	<td>FNC_GTN_PLT_APPR_07_04_012</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>This name already exists. Enter a different name.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Cancel</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Create new gadget with invalid source --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Gadgets</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[text()='Create a New Gadget']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=name</td>
+	<td>test1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=source</td>
+	<td>aaa</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>The sources do not respect the gadget specification.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Create new gadget with blank source --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=name</td>
+	<td>test1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=source</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>The field &quot;Source:&quot; is required.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Cancel</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Add gadget into category when gadget not belong to categories without confirmation --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=hello world example</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Click here to add this gadget to a category.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=category_Content</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Cancel</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Add gadget into category when gadget not belong to categories with confirmation --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=hello world example</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Click here to add this gadget to a category.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=category_Content</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Check after add application into category --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Manage Applications</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[@title='Content']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>hello world example</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Delete gadget --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Gadgets</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='UIGadgetManagement']//a[@title='hello world example']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[@title='hello world example']/following::a[@title='Delete Gadget']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertConfirmation</td>
+	<td>Are you sure to delete this gadget?</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextNotPresent</td>
+	<td>hello world example</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

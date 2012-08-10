@@ -1,0 +1,1636 @@
+<html>
+<head><style type='text/css'>
+body, table {
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 12;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+}
+
+a {
+    text-decoration: none;
+}
+
+.title {
+    font-style: italic;
+}
+
+.selected {
+    background-color: #ffffcc;
+}
+
+.status_done {
+    background-color: #eeffee;
+}
+
+.status_passed {
+    background-color: #ccffcc;
+}
+
+.status_failed {
+    background-color: #ffcccc;
+}
+
+.breakpoint {
+    background-color: #cccccc;
+    border: 1px solid black;
+}
+</style><title>Test suite results</title></head>
+<body>
+<h1>Test suite results </h1>
+
+<table>
+<tr>
+<td>result:</td>
+<td>passed</td>
+</tr>
+<tr>
+<td>totalTime:</td>
+<td>328</td>
+</tr>
+<tr>
+<td>numTestTotal:</td>
+<td>4</td>
+</tr>
+<tr>
+<td>numTestPasses:</td>
+<td>4</td>
+</tr>
+<tr>
+<td>numTestFailures:</td>
+<td>0</td>
+</tr>
+<tr>
+<td>numCommandPasses:</td>
+<td>28</td>
+</tr>
+<tr>
+<td>numCommandFailures:</td>
+<td>0</td>
+</tr>
+<tr>
+<td>numCommandErrors:</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Selenium Version:</td>
+<td>2.21</td>
+</tr>
+<tr>
+<td>Selenium Revision:</td>
+<td>.0</td>
+</tr>
+<tr>
+<td>
+<table id="suiteTable" class="selenium" border="1" cellpadding="1" cellspacing="1"><tbody>
+<tr class="title status_passed"><td><b>Test Suite</b></td></tr>
+<tr class="  status_passed"><td><a href="#testresult0">Test_PRL_10_001_11_001_002_003_004</a></td></tr>
+<tr class="  status_passed"><td><a href="#testresult1">Test_PRL_12_001_002</a></td></tr>
+<tr class="  status_passed"><td><a href="#testresult2">Test_PRL_13_001_15_003</a></td></tr>
+<tr class="  status_passed"><td><a href="#testresult3">Test_PRL_17_001_002</a></td></tr>
+</tbody></table>
+
+
+</td>
+<td>&nbsp;</td>
+</tr>
+</table><table><tr>
+<td><a name="testresult0">Test_PRL_10_001_11_001_002_003_004.html</a><br/><div>
+<table border="1" cellpadding="1" cellspacing="1">
+<thead>
+<tr class="title status_passed"><td rowspan="1" colspan="3">Test_PRL_10_001_11_001_002_003_004</td></tr>
+</thead><tbody>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>setSpeed</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>open</td>
+	<td>/portal/intranet</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Manage Tab--</td>
+	<td>-- Manage Tab--</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>windowMaximize</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//b[contains(text(),'Sign in')]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>username</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>username</td>
+	<td>john</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>password</td>
+	<td>gtn</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>//a[@id='UIPortalLoginFormAction']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Show Dashboard page --</td>
+	<td>-- Show Dashboard page --</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=Dashboard</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=Dashboard</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyTextPresent</td>
+	<td>Add Gadgets</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Add new gadget into dashboard with blank URL --</td>
+	<td>-- Add new gadget into dashboard with blank URL --</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=Add Gadgets</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//img[@alt='Add Gadget']</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyTextPresent</td>
+	<td>The text field is required.</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Add new gadget into dashboard with invalid value --</td>
+	<td>-- Add new gadget into dashboard with invalid value --</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=url</td>
+	<td>aaaa</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//img[@alt='Add Gadget']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyTextPresent</td>
+	<td>The URL is invalid. Please enter a correct URL of a gadget XML or of an RSS feed.</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Add new gadget into dashboard with URL is not correct URL of gadget's xml or RSS feed --</td>
+	<td>-- Add new gadget into dashboard with URL is not correct URL of gadget's xml or RSS feed --</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>id=url</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=url</td>
+	<td>http://google.com</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//img[@alt='Add Gadget']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//img[@alt='Add Gadget']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//iframe[contains(@id,'remote_iframe_')]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>selectFrame</td>
+	<td>//iframe[contains(@id,'remote_iframe_')]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForTextPresent</td>
+	<td>the url: http://google.com is down or invalid</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyTextPresent</td>
+	<td>the url: http://google.com is down or invalid</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>selectWindow</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//span[@class='MaximizeGadget IconControl' and @title='Maximize']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//span[@class='MaximizeGadget IconControl' and @title='Maximize']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>10000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>css=span.CloseGadget.IconControl</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=span.CloseGadget.IconControl</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertConfirmation</td>
+	<td>Are you sure to delete this gadget?</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Add new gadget --</td>
+	<td>-- Add new gadget --</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>id=url</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=url</td>
+	<td>http://orawiz.googlepages.com/hangman.xml</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Click Add Gadget</td>
+	<td>-- Click Add Gadget</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>css=img.AddNewNodeIcon</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=img.AddNewNodeIcon</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Delete gadget --</td>
+	<td>-- Delete gadget --</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>css=span.MaximizeGadget.IconControl</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=span.MaximizeGadget.IconControl</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>css=span.CloseGadget.IconControl</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=span.CloseGadget.IconControl</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertConfirmation</td>
+	<td>Are you sure to delete this gadget?</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Close Add Gadget form --</td>
+	<td>-- Close Add Gadget form --</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>css=a.CloseButton</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=a.CloseButton</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr><tr>
+<td><a name="testresult1">Test_PRL_12_001_002.html</a><br/><div>
+<table border="1" cellpadding="1" cellspacing="1">
+<thead>
+<tr class="title status_passed"><td rowspan="1" colspan="3">Test_PRL_12_001_002</td></tr>
+</thead><tbody>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>setSpeed</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>open</td>
+	<td>/portal/intranet</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Manage Tab--</td>
+	<td>-- Manage Tab--</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>windowMaximize</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//b[contains(text(),'Sign in')]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>username</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>username</td>
+	<td>john</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>password</td>
+	<td>gtn</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>//a[@id='UIPortalLoginFormAction']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Show Dashboard page --</td>
+	<td>-- Show Dashboard page --</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=Dashboard</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=Dashboard</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyTextPresent</td>
+	<td>Add Gadgets</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Add new gadget --</td>
+	<td>-- Add new gadget --</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=Add Gadgets</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=Add Gadgets</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>id=url</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=url</td>
+	<td>http://www.labpixies.com/campaigns/calories/calories.xml</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//img[@alt='Add Gadget']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//img[@alt='Add Gadget']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- -- Drag and drop Calorie Calculator gadget into dashboard --</td>
+	<td>-- -- Drag and drop Calorie Calculator gadget into dashboard --</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//span[text()='Calorie Calculator']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>dragAndDropToObject</td>
+	<td>//span[text()='Calorie Calculator']</td>
+	<td>xpath=//div[@class='UIDashboardContainer']</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Close Dashboard workspace</td>
+	<td>-- Close Dashboard workspace</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>css=a.CloseButton</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=a.CloseButton</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Verify Calorie Calculator gadget is added --</td>
+	<td>-- Verify Calorie Calculator gadget is added --</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Change position of gadget --</td>
+	<td>-- Change position of gadget --</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>xpath=//div[@class='UIDashboardContainer']/div/div/div[3]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//span[text()='Calorie Calculator']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>dragAndDropToObject</td>
+	<td>//span[text()='Calorie Calculator']</td>
+	<td>//div[text()='Drag your gadgets here.']</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Close Dashboard Workspace--</td>
+	<td>-- Close Dashboard Workspace--</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>css=a.CloseButton</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=a.CloseButton</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>10000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>--Delete gadget--</td>
+	<td>--Delete gadget--</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=span.MaximizeGadget.IconControl</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>css=span.CloseGadget.IconControl</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=span.CloseGadget.IconControl</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForConfirmationPresent</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertConfirmation</td>
+	<td>Are you sure to delete this gadget?</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr><tr>
+<td><a name="testresult2">Test_PRL_13_001_15_003.html</a><br/><div>
+<table border="1" cellpadding="1" cellspacing="1">
+<thead>
+<tr class="title status_passed"><td rowspan="1" colspan="3">Test_PRL_13_001_15_003</td></tr>
+</thead><tbody>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>setSpeed</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>open</td>
+	<td>/portal/intranet</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Manage Tab--</td>
+	<td>-- Manage Tab--</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>windowMaximize</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//b[contains(text(),'Sign in')]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>username</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>username</td>
+	<td>john</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>password</td>
+	<td>gtn</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>//a[@id='UIPortalLoginFormAction']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Show Dashboard page --</td>
+	<td>-- Show Dashboard page --</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=Dashboard</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=Dashboard</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>css=a.AddDashboard</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=a.AddDashboard</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Add new tab with valid value --</td>
+	<td>-- Add new tab with valid value --</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>//div[@id='UITabPaneDashboard']/div[2]/input</td>
+	<td>Test_PRL_13_001</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>keyPress</td>
+	<td>//div[@id='UITabPaneDashboard']/div[2]/input</td>
+	<td>\13</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForTextPresent</td>
+	<td>Test_PRL_13_001</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyTextPresent</td>
+	<td>Test_PRL_13_001</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Add new tab start is number --</td>
+	<td>-- Add new tab start is number --</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>css=a.AddDashboard</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=a.AddDashboard</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UITabPaneDashboard']/div[3]/input</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>//div[@id='UITabPaneDashboard']/div[3]/input</td>
+	<td>13_001</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>keyPress</td>
+	<td>//div[@id='UITabPaneDashboard']/div[3]/input</td>
+	<td>\13</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForTextPresent</td>
+	<td>Name cannot be empty and must start with a character</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyTextPresent</td>
+	<td>Name cannot be empty and must start with a character</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Add new tab for Dashboard starts with underscore, dash and dot --</td>
+	<td>-- Add new tab for Dashboard starts with underscore, dash and dot --</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>css=a.AddDashboard</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=a.AddDashboard</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>//div[@id='UITabPaneDashboard']/div[3]/input</td>
+	<td>_13_001</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>keyPress</td>
+	<td>//div[@id='UITabPaneDashboard']/div[3]/input</td>
+	<td>\13</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForTextPresent</td>
+	<td>_13_001</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyTextPresent</td>
+	<td>_13_001</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Add new tab for Dashboard starts with dot --</td>
+	<td>-- Add new tab for Dashboard starts with dot --</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>css=a.AddDashboard</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=a.AddDashboard</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>//div[@id='UITabPaneDashboard']/div[4]/input</td>
+	<td>-13_001</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>keyPress</td>
+	<td>//div[@id='UITabPaneDashboard']/div[4]/input</td>
+	<td>\13</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForTextPresent</td>
+	<td>Name cannot be empty and must start with a character</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyTextPresent</td>
+	<td>Name cannot be empty and must start with a character</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Add new tab for Dashboard contains special characters --</td>
+	<td>-- Add new tab for Dashboard contains special characters --</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>css=a.AddDashboard</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=a.AddDashboard</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>//div[@id='UITabPaneDashboard']/div[4]/input</td>
+	<td>@$@$@</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>keyPress</td>
+	<td>//div[@id='UITabPaneDashboard']/div[4]/input</td>
+	<td>\13</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForTextPresent</td>
+	<td>@$@$@</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyTextPresent</td>
+	<td>@$@$@</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Add new tab for Dashboard when name over 50 characters --</td>
+	<td>-- Add new tab for Dashboard when name over 50 characters --</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>css=a.AddDashboard</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=a.AddDashboard</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>//div[@id='UITabPaneDashboard']/div[5]/input</td>
+	<td>Test_PRL_13_001Test_PRL_13_001Test_PRL_13_001Test_PRL_13_001Test_PRL_13_001Test_PRL_13_001Test_PRL_13_001Test_PRL_13_001Test_PRL_13_001Test_PRL_13_001Test_PRL_13_001Test_PRL_13_001Test_PRL_13_001Test_PRL_13_001Test_PRL_13_001Test_PRL_13_001Test_PRL_13_001Test_PRL_13_001Test_PRL_13_001Test_PRL_13_001Test_PRL_13_001Test_PRL_13_001Test_PRL_13_001Test_PRL_13_001Test_PRL_13_001Test_PRL_13_001Test_PRL_13_001Test_PRL_13_001</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>keyPress</td>
+	<td>//div[@id='UITabPaneDashboard']/div[5]/input</td>
+	<td>\13</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForTextPresent</td>
+	<td>Test_PRL_13_001Test_PRL_13_001Test_PRL_13_001Test_</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyTextPresent</td>
+	<td>Test_PRL_13_001Test_PRL_13_001Test_PRL_13_001Test_</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Add new tab for Dashboard includes some spaces --</td>
+	<td>-- Add new tab for Dashboard includes some spaces --</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>css=a.AddDashboard</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=a.AddDashboard</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>//div[@id='UITabPaneDashboard']/div[6]/input</td>
+	<td>Test PRL 13 001</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>keyPress</td>
+	<td>//div[@id='UITabPaneDashboard']/div[6]/input</td>
+	<td>\13</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForTextPresent</td>
+	<td>Test PRL 13 001</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyTextPresent</td>
+	<td>Test PRL 13 001</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Edit tab with valid value --</td>
+	<td>-- Edit tab with valid value --</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UITabPaneDashboard']/div/span</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>doubleClick</td>
+	<td>//div[@id='UITabPaneDashboard']/div/span</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UITabPaneDashboard']/div[6]/input</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>//div[@id='UITabPaneDashboard']/div[6]/input</td>
+	<td>test</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>keyPress</td>
+	<td>//div[@id='UITabPaneDashboard']/div[6]/input</td>
+	<td>\13</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForText</td>
+	<td>css=div.UITab.SelectedTab &gt; span</td>
+	<td>test</td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyText</td>
+	<td>css=div.UITab.SelectedTab &gt; span</td>
+	<td>test</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Edit tab with invalid value --</td>
+	<td>-- Edit tab with invalid value --</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UITabPaneDashboard']/div/span</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>doubleClick</td>
+	<td>//div[@id='UITabPaneDashboard']/div/span</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>id=test</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=test</td>
+	<td>1234</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>keyPress</td>
+	<td>id=test</td>
+	<td>\13</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForTextPresent</td>
+	<td>Name cannot be empty and must start with a character</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyTextPresent</td>
+	<td>Name cannot be empty and must start with a character</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Delete tab without confirm --</td>
+	<td>-- Delete tab without confirm --</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>xpath=(//a[contains(text(),'Test_PRL_13_001')])[2]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>chooseCancelOnNextConfirmation</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=div.UITab.SelectedTab &gt; a.CloseIcon</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertConfirmation</td>
+	<td>Are you sure to remove this dashboard?</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Delete tab with name have space--</td>
+	<td>-- Delete tab with name have space--</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=div.UITab.SelectedTab &gt; a.CloseIcon</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertConfirmation</td>
+	<td>Are you sure to remove this dashboard?</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Delete tab with name over 50 chars --</td>
+	<td>-- Delete tab with name over 50 chars --</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=div.UITab.SelectedTab &gt; a.CloseIcon</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertConfirmation</td>
+	<td>Are you sure to remove this dashboard?</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- delete tab have special chars --</td>
+	<td>-- delete tab have special chars --</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>css=div.UITab.SelectedTab &gt; a.CloseIcon</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=div.UITab.SelectedTab &gt; a.CloseIcon</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertConfirmation</td>
+	<td>Are you sure to remove this dashboard?</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Delete tab start with underscore --</td>
+	<td>-- Delete tab start with underscore --</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=div.UITab.SelectedTab &gt; a.CloseIcon</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertConfirmation</td>
+	<td>Are you sure to remove this dashboard?</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Delete tab with valid value --</td>
+	<td>-- Delete tab with valid value --</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=div.UITab.SelectedTab &gt; a.CloseIcon</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertConfirmation</td>
+	<td>Are you sure to remove this dashboard?</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Delete the last tab --</td>
+	<td>-- Delete the last tab --</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>css=a.CloseIcon</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertConfirmation</td>
+	<td>Are you sure to remove this dashboard?</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>css=a.CloseIcon</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertConfirmation</td>
+	<td>Are you sure to remove this dashboard?</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyTextPresent</td>
+	<td>Cannot delete the last tab</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr><tr>
+<td><a name="testresult3">Test_PRL_17_001_002.html</a><br/><div>
+<table border="1" cellpadding="1" cellspacing="1">
+<thead>
+<tr class="title status_passed"><td rowspan="1" colspan="3">Test_PRL_17_001_002</td></tr>
+</thead><tbody>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>setSpeed</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>open</td>
+	<td>/portal/intranet</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Manage Tab--</td>
+	<td>-- Manage Tab--</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>windowMaximize</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//b[contains(text(),'Sign in')]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>username</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>username</td>
+	<td>john</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>password</td>
+	<td>gtn</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>//a[@id='UIPortalLoginFormAction']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Show Dashboard page --</td>
+	<td>-- Show Dashboard page --</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=Dashboard</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=Dashboard</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Drag and drop Space list gadget into dashboard</td>
+	<td>-- Drag and drop Space list gadget into dashboard</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//div[@title='My Spaces Gadget']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>dragAndDropToObject</td>
+	<td>//div[@title='My Spaces Gadget']</td>
+	<td>xpath=//div[@class='UIDashboardContainer']</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Close Dashboard workspace</td>
+	<td>-- Close Dashboard workspace</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=a.CloseButton</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Delete gadget without confirm --</td>
+	<td>-- Delete gadget without confirm --</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>chooseCancelOnNextConfirmation</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=span.CloseGadget.IconControl</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertConfirmation</td>
+	<td>Are you sure to delete this gadget?</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Delete gadget without confirm --</td>
+	<td>-- Delete gadget without confirm --</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=span.CloseGadget.IconControl</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertConfirmation</td>
+	<td>Are you sure to delete this gadget?</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr></table><pre>
+info: Starting test /selenium-server/tests/Test_PRL_10_001_11_001_002_003_004.html
+info: Executing: |setSpeed | 1000 |  |
+info: Executing: |open | /portal/intranet |  |
+info: Executing: |echo | -- Manage Tab-- |  |
+info: Executing: |windowMaximize |  |  |
+info: Executing: |click | //b[contains(text(),&apos;Sign in&apos;)] |  |
+info: Executing: |waitForElementPresent | username |  |
+info: Executing: |type | username | john |
+info: Executing: |type | password | gtn |
+info: Executing: |clickAndWait | //a[@id=&apos;UIPortalLoginFormAction&apos;] |  |
+info: Executing: |echo | -- Show Dashboard page -- |  |
+info: Executing: |waitForElementPresent | link=Dashboard |  |
+info: Executing: |clickAndWait | link=Dashboard |  |
+info: Executing: |pause | 5000 |  |
+info: Executing: |verifyTextPresent | Add Gadgets |  |
+info: Executing: |echo | -- Add new gadget into dashboard with blank URL -- |  |
+info: Executing: |click | link=Add Gadgets |  |
+info: Executing: |click | //img[@alt=&apos;Add Gadget&apos;] |  |
+info: Executing: |verifyTextPresent | The text field is required. |  |
+info: Executing: |click | link=OK |  |
+info: Executing: |echo | -- Add new gadget into dashboard with invalid value -- |  |
+info: Executing: |type | id=url | aaaa |
+info: Executing: |click | //img[@alt=&apos;Add Gadget&apos;] |  |
+info: Executing: |pause | 5000 |  |
+info: Executing: |verifyTextPresent | The URL is invalid. Please enter a correct URL of a gadget XML or of an RSS feed. |  |
+info: Executing: |click | link=OK |  |
+info: Executing: |echo | -- Add new gadget into dashboard with URL is not correct URL of gadget&apos;s xml or RSS feed -- |  |
+info: Executing: |waitForElementPresent | id=url |  |
+info: Executing: |type | id=url | http://google.com |
+info: Executing: |waitForElementPresent | //img[@alt=&apos;Add Gadget&apos;] |  |
+info: Executing: |click | //img[@alt=&apos;Add Gadget&apos;] |  |
+info: Executing: |pause | 5000 |  |
+info: Executing: |waitForElementPresent | //iframe[contains(@id,&apos;remote_iframe_&apos;)] |  |
+info: Executing: |selectFrame | //iframe[contains(@id,&apos;remote_iframe_&apos;)] |  |
+info: Executing: |waitForTextPresent | the url: http://google.com is down or invalid |  |
+info: Executing: |verifyTextPresent | the url: http://google.com is down or invalid |  |
+info: Executing: |selectWindow |  |  |
+info: Executing: |waitForElementPresent | //span[@class=&apos;MaximizeGadget IconControl&apos; and @title=&apos;Maximize&apos;] |  |
+info: Executing: |click | //span[@class=&apos;MaximizeGadget IconControl&apos; and @title=&apos;Maximize&apos;] |  |
+info: Executing: |pause | 10000 |  |
+info: Executing: |waitForElementPresent | css=span.CloseGadget.IconControl |  |
+info: Executing: |click | css=span.CloseGadget.IconControl |  |
+info: Executing: |assertConfirmation | Are you sure to delete this gadget? |  |
+info: Executing: |echo | -- Add new gadget -- |  |
+info: Executing: |waitForElementPresent | id=url |  |
+info: Executing: |type | id=url | http://orawiz.googlepages.com/hangman.xml |
+info: Executing: |echo | -- Click Add Gadget |  |
+info: Executing: |waitForElementPresent | css=img.AddNewNodeIcon |  |
+info: Executing: |click | css=img.AddNewNodeIcon |  |
+info: Executing: |echo | -- Delete gadget -- |  |
+info: Executing: |waitForElementPresent | css=span.MaximizeGadget.IconControl |  |
+info: Executing: |click | css=span.MaximizeGadget.IconControl |  |
+info: Executing: |waitForElementPresent | css=span.CloseGadget.IconControl |  |
+info: Executing: |click | css=span.CloseGadget.IconControl |  |
+info: Executing: |assertConfirmation | Are you sure to delete this gadget? |  |
+info: Executing: |echo | -- Close Add Gadget form -- |  |
+info: Executing: |waitForElementPresent | css=a.CloseButton |  |
+info: Executing: |click | css=a.CloseButton |  |
+info: Executing: |clickAndWait | link=Logout |  |
+info: Starting test /selenium-server/tests/Test_PRL_12_001_002.html
+info: Executing: |setSpeed | 1000 |  |
+info: Executing: |open | /portal/intranet |  |
+info: Executing: |echo | -- Manage Tab-- |  |
+info: Executing: |windowMaximize |  |  |
+info: Executing: |click | //b[contains(text(),&apos;Sign in&apos;)] |  |
+info: Executing: |waitForElementPresent | username |  |
+info: Executing: |type | username | john |
+info: Executing: |type | password | gtn |
+info: Executing: |clickAndWait | //a[@id=&apos;UIPortalLoginFormAction&apos;] |  |
+info: Executing: |echo | -- Show Dashboard page -- |  |
+info: Executing: |waitForElementPresent | link=Dashboard |  |
+info: Executing: |clickAndWait | link=Dashboard |  |
+info: Executing: |verifyTextPresent | Add Gadgets |  |
+info: Executing: |echo | -- Add new gadget -- |  |
+info: Executing: |waitForElementPresent | link=Add Gadgets |  |
+info: Executing: |click | link=Add Gadgets |  |
+info: Executing: |waitForElementPresent | id=url |  |
+info: Executing: |type | id=url | http://www.labpixies.com/campaigns/calories/calories.xml |
+info: Executing: |waitForElementPresent | //img[@alt=&apos;Add Gadget&apos;] |  |
+info: Executing: |click | //img[@alt=&apos;Add Gadget&apos;] |  |
+info: Executing: |echo | -- -- Drag and drop Calorie Calculator gadget into dashboard -- |  |
+info: Executing: |waitForElementPresent | //span[text()=&apos;Calorie Calculator&apos;] |  |
+info: Executing: |dragAndDropToObject | //span[text()=&apos;Calorie Calculator&apos;] | xpath=//div[@class=&apos;UIDashboardContainer&apos;] |
+info: Executing: |echo | -- Close Dashboard workspace |  |
+info: Executing: |waitForElementPresent | css=a.CloseButton |  |
+info: Executing: |click | css=a.CloseButton |  |
+info: Executing: |echo | -- Verify Calorie Calculator gadget is added -- |  |
+info: Executing: |pause | 3000 |  |
+info: Executing: |echo | -- Change position of gadget -- |  |
+info: Executing: |waitForElementPresent | xpath=//div[@class=&apos;UIDashboardContainer&apos;]/div/div/div[3] |  |
+info: Executing: |waitForElementPresent | //span[text()=&apos;Calorie Calculator&apos;] |  |
+info: Executing: |dragAndDropToObject | //span[text()=&apos;Calorie Calculator&apos;] | //div[text()=&apos;Drag your gadgets here.&apos;] |
+info: Executing: |echo | -- Close Dashboard Workspace-- |  |
+info: Executing: |waitForElementPresent | css=a.CloseButton |  |
+info: Executing: |click | css=a.CloseButton |  |
+info: Executing: |pause | 10000 |  |
+info: Executing: |echo | --Delete gadget-- |  |
+info: Executing: |click | css=span.MaximizeGadget.IconControl |  |
+info: Executing: |waitForElementPresent | css=span.CloseGadget.IconControl |  |
+info: Executing: |click | css=span.CloseGadget.IconControl |  |
+info: Executing: |waitForConfirmationPresent |  |  |
+info: Executing: |assertConfirmation | Are you sure to delete this gadget? |  |
+info: Executing: |waitForElementPresent | link=Logout |  |
+info: Executing: |clickAndWait | link=Logout |  |
+info: Starting test /selenium-server/tests/Test_PRL_13_001_15_003.html
+info: Executing: |setSpeed | 1000 |  |
+info: Executing: |open | /portal/intranet |  |
+info: Executing: |echo | -- Manage Tab-- |  |
+info: Executing: |windowMaximize |  |  |
+info: Executing: |click | //b[contains(text(),&apos;Sign in&apos;)] |  |
+info: Executing: |waitForElementPresent | username |  |
+info: Executing: |type | username | john |
+info: Executing: |type | password | gtn |
+info: Executing: |clickAndWait | //a[@id=&apos;UIPortalLoginFormAction&apos;] |  |
+info: Executing: |echo | -- Show Dashboard page -- |  |
+info: Executing: |waitForElementPresent | link=Dashboard |  |
+info: Executing: |clickAndWait | link=Dashboard |  |
+info: Executing: |waitForElementPresent | css=a.AddDashboard |  |
+info: Executing: |click | css=a.AddDashboard |  |
+info: Executing: |echo | -- Add new tab with valid value -- |  |
+info: Executing: |type | //div[@id=&apos;UITabPaneDashboard&apos;]/div[2]/input | Test_PRL_13_001 |
+info: Executing: |keyPress | //div[@id=&apos;UITabPaneDashboard&apos;]/div[2]/input | \13 |
+info: Executing: |pause | 5000 |  |
+info: Executing: |waitForTextPresent | Test_PRL_13_001 |  |
+info: Executing: |verifyTextPresent | Test_PRL_13_001 |  |
+info: Executing: |echo | -- Add new tab start is number -- |  |
+info: Executing: |waitForElementPresent | css=a.AddDashboard |  |
+info: Executing: |click | css=a.AddDashboard |  |
+info: Executing: |waitForElementPresent | //div[@id=&apos;UITabPaneDashboard&apos;]/div[3]/input |  |
+info: Executing: |type | //div[@id=&apos;UITabPaneDashboard&apos;]/div[3]/input | 13_001 |
+info: Executing: |keyPress | //div[@id=&apos;UITabPaneDashboard&apos;]/div[3]/input | \13 |
+info: Executing: |waitForTextPresent | Name cannot be empty and must start with a character |  |
+info: Executing: |verifyTextPresent | Name cannot be empty and must start with a character |  |
+info: Executing: |click | link=OK |  |
+info: Executing: |echo | -- Add new tab for Dashboard starts with underscore, dash and dot -- |  |
+info: Executing: |waitForElementPresent | css=a.AddDashboard |  |
+info: Executing: |click | css=a.AddDashboard |  |
+info: Executing: |type | //div[@id=&apos;UITabPaneDashboard&apos;]/div[3]/input | _13_001 |
+info: Executing: |keyPress | //div[@id=&apos;UITabPaneDashboard&apos;]/div[3]/input | \13 |
+info: Executing: |pause | 5000 |  |
+info: Executing: |waitForTextPresent | _13_001 |  |
+info: Executing: |verifyTextPresent | _13_001 |  |
+info: Executing: |echo | -- Add new tab for Dashboard starts with dot -- |  |
+info: Executing: |waitForElementPresent | css=a.AddDashboard |  |
+info: Executing: |click | css=a.AddDashboard |  |
+info: Executing: |type | //div[@id=&apos;UITabPaneDashboard&apos;]/div[4]/input | -13_001 |
+info: Executing: |keyPress | //div[@id=&apos;UITabPaneDashboard&apos;]/div[4]/input | \13 |
+info: Executing: |waitForTextPresent | Name cannot be empty and must start with a character |  |
+info: Executing: |verifyTextPresent | Name cannot be empty and must start with a character |  |
+info: Executing: |click | link=OK |  |
+info: Executing: |echo | -- Add new tab for Dashboard contains special characters -- |  |
+info: Executing: |waitForElementPresent | css=a.AddDashboard |  |
+info: Executing: |click | css=a.AddDashboard |  |
+info: Executing: |type | //div[@id=&apos;UITabPaneDashboard&apos;]/div[4]/input | @$@$@ |
+info: Executing: |keyPress | //div[@id=&apos;UITabPaneDashboard&apos;]/div[4]/input | \13 |
+info: Executing: |waitForTextPresent | @$@$@ |  |
+info: Executing: |verifyTextPresent | @$@$@ |  |
+info: Executing: |echo | -- Add new tab for Dashboard when name over 50 characters -- |  |
+info: Executing: |waitForElementPresent | css=a.AddDashboard |  |
+info: Executing: |click | css=a.AddDashboard |  |
+info: Executing: |type | //div[@id=&apos;UITabPaneDashboard&apos;]/div[5]/input | Test_PRL_13_001Test_PRL_13_001Test_PRL_13_001Test_PRL_13_001Test_PRL_13_001Test_PRL_13_001Test_PRL_13_001Test_PRL_13_001Test_PRL_13_001Test_PRL_13_001Test_PRL_13_001Test_PRL_13_001Test_PRL_13_001Test_PRL_13_001Test_PRL_13_001Test_PRL_13_001Test_PRL_13_001Test_PRL_13_001Test_PRL_13_001Test_PRL_13_001Test_PRL_13_001Test_PRL_13_001Test_PRL_13_001Test_PRL_13_001Test_PRL_13_001Test_PRL_13_001Test_PRL_13_001Test_PRL_13_001 |
+info: Executing: |keyPress | //div[@id=&apos;UITabPaneDashboard&apos;]/div[5]/input | \13 |
+info: Executing: |waitForTextPresent | Test_PRL_13_001Test_PRL_13_001Test_PRL_13_001Test_ |  |
+info: Executing: |verifyTextPresent | Test_PRL_13_001Test_PRL_13_001Test_PRL_13_001Test_ |  |
+info: Executing: |echo | -- Add new tab for Dashboard includes some spaces -- |  |
+info: Executing: |waitForElementPresent | css=a.AddDashboard |  |
+info: Executing: |click | css=a.AddDashboard |  |
+info: Executing: |type | //div[@id=&apos;UITabPaneDashboard&apos;]/div[6]/input | Test PRL 13 001 |
+info: Executing: |keyPress | //div[@id=&apos;UITabPaneDashboard&apos;]/div[6]/input | \13 |
+info: Executing: |waitForTextPresent | Test PRL 13 001 |  |
+info: Executing: |verifyTextPresent | Test PRL 13 001 |  |
+info: Executing: |echo | -- Edit tab with valid value -- |  |
+info: Executing: |waitForElementPresent | //div[@id=&apos;UITabPaneDashboard&apos;]/div/span |  |
+info: Executing: |doubleClick | //div[@id=&apos;UITabPaneDashboard&apos;]/div/span |  |
+info: Executing: |waitForElementPresent | //div[@id=&apos;UITabPaneDashboard&apos;]/div[6]/input |  |
+info: Executing: |type | //div[@id=&apos;UITabPaneDashboard&apos;]/div[6]/input | test |
+info: Executing: |keyPress | //div[@id=&apos;UITabPaneDashboard&apos;]/div[6]/input | \13 |
+info: Executing: |waitForText | css=div.UITab.SelectedTab &gt; span | test |
+info: Executing: |verifyText | css=div.UITab.SelectedTab &gt; span | test |
+info: Executing: |echo | -- Edit tab with invalid value -- |  |
+info: Executing: |waitForElementPresent | //div[@id=&apos;UITabPaneDashboard&apos;]/div/span |  |
+info: Executing: |doubleClick | //div[@id=&apos;UITabPaneDashboard&apos;]/div/span |  |
+info: Executing: |waitForElementPresent | id=test |  |
+info: Executing: |type | id=test | 1234 |
+info: Executing: |keyPress | id=test | \13 |
+info: Executing: |waitForTextPresent | Name cannot be empty and must start with a character |  |
+info: Executing: |verifyTextPresent | Name cannot be empty and must start with a character |  |
+info: Executing: |click | link=OK |  |
+info: Executing: |echo | -- Delete tab without confirm -- |  |
+info: Executing: |clickAndWait | xpath=(//a[contains(text(),&apos;Test_PRL_13_001&apos;)])[2] |  |
+info: Executing: |chooseCancelOnNextConfirmation |  |  |
+info: Executing: |click | css=div.UITab.SelectedTab &gt; a.CloseIcon |  |
+info: Executing: |assertConfirmation | Are you sure to remove this dashboard? |  |
+info: Executing: |echo | -- Delete tab with name have space-- |  |
+info: Executing: |click | css=div.UITab.SelectedTab &gt; a.CloseIcon |  |
+info: Executing: |assertConfirmation | Are you sure to remove this dashboard? |  |
+info: Executing: |pause | 5000 |  |
+info: Executing: |echo | -- Delete tab with name over 50 chars -- |  |
+info: Executing: |click | css=div.UITab.SelectedTab &gt; a.CloseIcon |  |
+info: Executing: |assertConfirmation | Are you sure to remove this dashboard? |  |
+info: Executing: |pause | 5000 |  |
+info: Executing: |echo | -- delete tab have special chars -- |  |
+info: Executing: |waitForElementPresent | css=div.UITab.SelectedTab &gt; a.CloseIcon |  |
+info: Executing: |click | css=div.UITab.SelectedTab &gt; a.CloseIcon |  |
+info: Executing: |assertConfirmation | Are you sure to remove this dashboard? |  |
+info: Executing: |pause | 5000 |  |
+info: Executing: |echo | -- Delete tab start with underscore -- |  |
+info: Executing: |click | css=div.UITab.SelectedTab &gt; a.CloseIcon |  |
+info: Executing: |assertConfirmation | Are you sure to remove this dashboard? |  |
+info: Executing: |pause | 5000 |  |
+info: Executing: |echo | -- Delete tab with valid value -- |  |
+info: Executing: |click | css=div.UITab.SelectedTab &gt; a.CloseIcon |  |
+info: Executing: |assertConfirmation | Are you sure to remove this dashboard? |  |
+info: Executing: |pause | 5000 |  |
+info: Executing: |echo | -- Delete the last tab -- |  |
+info: Executing: |clickAndWait | css=a.CloseIcon |  |
+info: Executing: |assertConfirmation | Are you sure to remove this dashboard? |  |
+info: Executing: |pause | 5000 |  |
+info: Executing: |clickAndWait | css=a.CloseIcon |  |
+info: Executing: |assertConfirmation | Are you sure to remove this dashboard? |  |
+info: Executing: |verifyTextPresent | Cannot delete the last tab |  |
+info: Executing: |waitForElementPresent | link=OK |  |
+info: Executing: |click | link=OK |  |
+info: Executing: |clickAndWait | link=Logout |  |
+info: Starting test /selenium-server/tests/Test_PRL_17_001_002.html
+info: Executing: |setSpeed | 1000 |  |
+info: Executing: |open | /portal/intranet |  |
+info: Executing: |echo | -- Manage Tab-- |  |
+info: Executing: |windowMaximize |  |  |
+info: Executing: |click | //b[contains(text(),&apos;Sign in&apos;)] |  |
+info: Executing: |waitForElementPresent | username |  |
+info: Executing: |type | username | john |
+info: Executing: |type | password | gtn |
+info: Executing: |clickAndWait | //a[@id=&apos;UIPortalLoginFormAction&apos;] |  |
+info: Executing: |echo | -- Show Dashboard page -- |  |
+info: Executing: |waitForElementPresent | link=Dashboard |  |
+info: Executing: |clickAndWait | link=Dashboard |  |
+info: Executing: |echo | -- Drag and drop Space list gadget into dashboard |  |
+info: Executing: |waitForElementPresent | //div[@title=&apos;My Spaces Gadget&apos;] |  |
+info: Executing: |dragAndDropToObject | //div[@title=&apos;My Spaces Gadget&apos;] | xpath=//div[@class=&apos;UIDashboardContainer&apos;] |
+info: Executing: |pause | 3000 |  |
+info: Executing: |echo | -- Close Dashboard workspace |  |
+info: Executing: |click | css=a.CloseButton |  |
+info: Executing: |echo | -- Delete gadget without confirm -- |  |
+info: Executing: |chooseCancelOnNextConfirmation |  |  |
+info: Executing: |click | css=span.CloseGadget.IconControl |  |
+info: Executing: |assertConfirmation | Are you sure to delete this gadget? |  |
+info: Executing: |echo | -- Delete gadget without confirm -- |  |
+info: Executing: |click | css=span.CloseGadget.IconControl |  |
+info: Executing: |assertConfirmation | Are you sure to delete this gadget? |  |
+info: Executing: |clickAndWait | link=Logout |  |
+</pre></body></html>

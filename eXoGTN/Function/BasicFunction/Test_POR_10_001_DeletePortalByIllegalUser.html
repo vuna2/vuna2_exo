@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="" />
+<title>Test_POR_10_001_DeletePortalByIllegalUser</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Test_POR_10_001_DeletePortalByIllegalUser</td></tr>
+</thead><tbody>
+<tr>
+	<td>setSpeed</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/portal/intranet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Delete portal by illegal user --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>windowMaximize</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>login</td>
+	<td>root</td>
+	<td>gtn</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>10000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Sites</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Sites</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Add New Portal</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Add New Portal</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>10000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>name</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name</td>
+	<td>Test_SNF_PRL_10_001</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Choose Properties tab--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[text()='Properties']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[text()='Properties']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Choose Portal Template --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[text()='Portal Templates']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[text()='Portal Templates']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[text()='Intranet Portal']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[text()='Intranet Portal']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Choose Permission setting tab--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[text()='Permission Settings']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[text()='Permission Settings']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Access Permission Setting tab--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>name=publicMode</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=publicMode</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Edit Permission Setting tab--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Edit Permission Settings</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Edit Permission Settings</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Select Permission</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Select Permission</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='PermissionSelector']//a[@title=&quot;Organization&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='PermissionSelector']//a[@title=&quot;Organization&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='PermissionSelector']//a[@title=&quot;Management&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='PermissionSelector']//a[@title=&quot;Management&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='PermissionSelector']//a[@title=&quot;Executive Board&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='PermissionSelector']//a[@title=&quot;Executive Board&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='PermissionSelector']//a[@title=&quot;manager&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//a[contains(text(),'Save')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>//a[contains(text(),'Save')]</td>
+	<td>2,2</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>20000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>refreshAndWait</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>--View new portal- Test_SNF_PRL_23--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Test_SNF_PRL_10_001</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Test_SNF_PRL_10_001</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Return to default's portal --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=intranet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=intranet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Login by user who has right to access admin tool-bar but is not in the group/membership has edit right on portal created --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>login</td>
+	<td>john</td>
+	<td>gtn</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>10000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Sites</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Sites</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextNotPresent</td>
+	<td>Test_POR_10_001</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextNotPresent</td>
+	<td>Test_POR_10_001</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Delete portal --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>login</td>
+	<td>root</td>
+	<td>gtn</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>10000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Sites</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//td/div[text()='Test_SNF_PRL_10_001']/following::td/a[text()='Delete']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>//td/div[text()='Test_SNF_PRL_10_001']/following::td/a[text()='Delete']</td>
+	<td>2,2</td>
+</tr>
+<tr>
+	<td>waitForConfirmationPresent</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertConfirmation</td>
+	<td>Are you sure to delete this portal?</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>90000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>gotoPortalSites</td>
+	<td>john</td>
+	<td>gtn</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementNotPresent</td>
+	<td>Test_SNF_PRL_10_001</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementNotPresent</td>
+	<td>Test_SNF_PRL_10_001</td>
+	<td></td>
+</tr>
+<tr>
+	<td>logout</td>
+	<td></td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

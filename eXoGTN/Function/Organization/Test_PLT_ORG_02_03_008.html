@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://localhost:8080/" />
+<title>Test_PLT_ORG_02_03_008</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Test_PLT_ORG_02_03_008</td></tr>
+</thead><tbody>
+<tr>
+	<td>setSpeed</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/portal/intranet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Change User Profile in Community Management--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>windowMaximize</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//b[contains(text(),'Sign in')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>username</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>username</td>
+	<td>john</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>password</td>
+	<td>gtn</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//a[@id='UIPortalLoginFormAction']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Go to Users and group management --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Group and Roles</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Group and Roles</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=searchTerm</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=searchTerm</td>
+	<td>james</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Do search --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//a[@title='Quick Search']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[@title='Quick Search']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//img[@alt='ViewUserInfo']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//img[@alt='ViewUserInfo']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Change normal User Profile information --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=firstName</td>
+	<td>Jamestest</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=lastName</td>
+	<td>Davistest</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Choose User Profile tab--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[text()='User Profile']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[text()='User Profile']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=user.name.nickName</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=user.name.nickName</td>
+	<td>test</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=user.language</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=user.language</td>
+	<td>label=English</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Cancel</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Cancel</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Davis</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>James</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

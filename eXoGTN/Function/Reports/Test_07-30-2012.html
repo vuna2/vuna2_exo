@@ -1,0 +1,2289 @@
+<html>
+<head><style type='text/css'>
+body, table {
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 12;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+}
+
+a {
+    text-decoration: none;
+}
+
+.title {
+    font-style: italic;
+}
+
+.selected {
+    background-color: #ffffcc;
+}
+
+.status_done {
+    background-color: #eeffee;
+}
+
+.status_passed {
+    background-color: #ccffcc;
+}
+
+.status_failed {
+    background-color: #ffcccc;
+}
+
+.breakpoint {
+    background-color: #cccccc;
+    border: 1px solid black;
+}
+</style><title>Test suite results</title></head>
+<body>
+<h1>Test suite results </h1>
+
+<table>
+<tr>
+<td>result:</td>
+<td>passed</td>
+</tr>
+<tr>
+<td>totalTime:</td>
+<td>1112</td>
+</tr>
+<tr>
+<td>numTestTotal:</td>
+<td>3</td>
+</tr>
+<tr>
+<td>numTestPasses:</td>
+<td>3</td>
+</tr>
+<tr>
+<td>numTestFailures:</td>
+<td>0</td>
+</tr>
+<tr>
+<td>numCommandPasses:</td>
+<td>33</td>
+</tr>
+<tr>
+<td>numCommandFailures:</td>
+<td>0</td>
+</tr>
+<tr>
+<td>numCommandErrors:</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Selenium Version:</td>
+<td>2.21</td>
+</tr>
+<tr>
+<td>Selenium Revision:</td>
+<td>.0</td>
+</tr>
+<tr>
+<td>
+<table id="suiteTable" class="selenium" border="1" cellpadding="1" cellspacing="1"><tbody>
+<tr class="title status_passed"><td><b>Test Suite</b></td></tr>
+<tr class="  status_passed"><td><a href="#testresult0">Test_POR_04_006</a></td></tr>
+<tr class="  status_passed"><td><a href="#testresult1">Test_POR_09_002_003_004_008_009</a></td></tr>
+<tr class="  status_passed"><td><a href="#testresult2">Test_POR_10_001_DeletePortalByIllegalUser</a></td></tr>
+</tbody></table>
+
+
+</td>
+<td>&nbsp;</td>
+</tr>
+</table><table><tr>
+<td><a name="testresult0">Test_POR_04_006.html</a><br/><div>
+<table border="1" cellpadding="1" cellspacing="1">
+<thead>
+<tr class="title status_passed"><td rowspan="1" colspan="3">Test_POR_04_006</td></tr>
+</thead><tbody>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>setSpeed</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>open</td>
+	<td>/portal/intranet</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Check Account Setting form from User Infor portlet --</td>
+	<td>-- Check Account Setting form from User Infor portlet --</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>windowMaximize</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>login</td>
+	<td>john</td>
+	<td>gtn</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>10000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=My Account</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- verify Account Profile --</td>
+	<td>-- verify Account Profile --</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//td/label[@for='userName']/following::td/input[@value='john']</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyElementPresent</td>
+	<td>//td/label[@for='userName']/following::td/input[@value='john']</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyElementPresent</td>
+	<td>//td/label[@for='firstName']/following::td/input[@value='John']</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyElementPresent</td>
+	<td>//td/label[@for='lastName']/following::td/input[@value='Smith']</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyElementPresent</td>
+	<td>//td/label[@for='email']/following::td/input[@value='john.smith@acme.exoplatform.com']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Check Reset when there's no change --</td>
+	<td>-- Check Reset when there's no change --</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=Reset</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- verify Account Profile --</td>
+	<td>-- verify Account Profile --</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//td/label[@for='userName']/following::td/input[@value='john']</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyElementPresent</td>
+	<td>//td/label[@for='userName']/following::td/input[@value='john']</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyElementPresent</td>
+	<td>//td/label[@for='firstName']/following::td/input[@value='John']</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyElementPresent</td>
+	<td>//td/label[@for='lastName']/following::td/input[@value='Smith']</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyElementPresent</td>
+	<td>//td/label[@for='email']/following::td/input[@value='john.smith@acme.exoplatform.com']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Check Reset when there're changes without Save --</td>
+	<td>-- Check Reset when there're changes without Save --</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=firstName</td>
+	<td>John test</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=lastName</td>
+	<td>Smith test</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=Reset</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- verify Account Profile --</td>
+	<td>-- verify Account Profile --</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//td/label[@for='userName']/following::td/input[@value='john']</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyElementPresent</td>
+	<td>//td/label[@for='userName']/following::td/input[@value='john']</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyElementPresent</td>
+	<td>//td/label[@for='firstName']/following::td/input[@value='John']</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyElementPresent</td>
+	<td>//td/label[@for='lastName']/following::td/input[@value='Smith']</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyElementPresent</td>
+	<td>//td/label[@for='email']/following::td/input[@value='john.smith@acme.exoplatform.com']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Check Reset when there're changes with Save --</td>
+	<td>-- Check Reset when there're changes with Save --</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=firstName</td>
+	<td>John test</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=lastName</td>
+	<td>Smith test</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>10000</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyTextPresent</td>
+	<td>The account information has been updated.</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=Reset</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- verify Account Profile --</td>
+	<td>-- verify Account Profile --</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//td/label[@for='userName']/following::td/input[@value='john']</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyElementPresent</td>
+	<td>//td/label[@for='userName']/following::td/input[@value='john']</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyElementPresent</td>
+	<td>//td/label[@for='firstName']/following::td/input[@value='John test']</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyElementPresent</td>
+	<td>//td/label[@for='lastName']/following::td/input[@value='Smith test']</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyElementPresent</td>
+	<td>//td/label[@for='email']/following::td/input[@value='john.smith@acme.exoplatform.com']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Return to default value --</td>
+	<td>-- Return to default value --</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=firstName</td>
+	<td>John</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=lastName</td>
+	<td>Smith</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>10000</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyTextPresent</td>
+	<td>The account information has been updated.</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=Close</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>10000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr><tr>
+<td><a name="testresult1">Test_POR_09_002_003_004_008_009.html</a><br/><div>
+<table border="1" cellpadding="1" cellspacing="1">
+<thead>
+<tr class="title status_passed"><td rowspan="1" colspan="3">Test_POR_09_002_003_004_008_009</td></tr>
+</thead><tbody>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>setSpeed</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>open</td>
+	<td>/portal/intranet</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Create new portal with blank name --</td>
+	<td>-- Create new portal with blank name --</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>windowMaximize</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>login</td>
+	<td>john</td>
+	<td>gtn</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>10000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=Sites</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=Sites</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>10000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=Add New Portal</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=Add New Portal</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>name</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>name</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Choose Properties tab--</td>
+	<td>-- Choose Properties tab--</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//div[text()='Properties']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[text()='Properties']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>10000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Choose Portal Template --</td>
+	<td>-- Choose Portal Template --</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//div[text()='Portal Templates']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[text()='Portal Templates']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//div[text()='Intranet Portal']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[text()='Intranet Portal']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Choose Permission setting tab--</td>
+	<td>-- Choose Permission setting tab--</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//div[text()='Permission Settings']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[text()='Permission Settings']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Access Permission Setting tab--</td>
+	<td>-- Access Permission Setting tab--</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>name=publicMode</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>name=publicMode</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Edit Permission Setting tab--</td>
+	<td>-- Edit Permission Setting tab--</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=Edit Permission Settings</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=Edit Permission Settings</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=Select Permission</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=Select Permission</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//div[@id='PermissionSelector']//a[@title="Organization"]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[@id='PermissionSelector']//a[@title="Organization"]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//div[@id='PermissionSelector']//a[@title="Management"]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[@id='PermissionSelector']//a[@title="Management"]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//div[@id='PermissionSelector']//a[@title="Executive Board"]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[@id='PermissionSelector']//a[@title="Executive Board"]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[@id='PermissionSelector']//a[@title="manager"]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//a[contains(text(),'Save')]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAt</td>
+	<td>//a[contains(text(),'Save')]</td>
+	<td>2,2</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForTextPresent</td>
+	<td>The field "Portal Name:" is required.</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyTextPresent</td>
+	<td>The field "Portal Name:" is required.</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Create new portal with name starts with number --</td>
+	<td>-- Create new portal with name starts with number --</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//div[text()='Portal Settings']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[text()='Portal Settings']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>name</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>name</td>
+	<td>09_004</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Choose Properties tab--</td>
+	<td>-- Choose Properties tab--</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//div[text()='Properties']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[text()='Properties']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Choose Portal Template --</td>
+	<td>-- Choose Portal Template --</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//div[text()='Portal Templates']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[text()='Portal Templates']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//div[text()='Intranet Portal']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[text()='Intranet Portal']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//a[contains(text(),'Save')]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAt</td>
+	<td>//a[contains(text(),'Save')]</td>
+	<td>2,2</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForTextPresent</td>
+	<td>The field "Portal Name:" must start with a character and must not contain special characters." </td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyTextPresent</td>
+	<td>The field "Portal Name:" must start with a character and must not contain special characters." </td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Create new portal with valid value --</td>
+	<td>-- Create new portal with valid value --</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//div[text()='Portal Settings']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[text()='Portal Settings']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>name</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>name</td>
+	<td>Test_POR_09_002</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Choose Properties tab--</td>
+	<td>-- Choose Properties tab--</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//div[text()='Properties']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[text()='Properties']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Choose Portal Template --</td>
+	<td>-- Choose Portal Template --</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//div[text()='Portal Templates']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[text()='Portal Templates']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//div[text()='Intranet Portal']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[text()='Intranet Portal']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//a[contains(text(),'Save')]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAt</td>
+	<td>//a[contains(text(),'Save')]</td>
+	<td>2,2</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>10000</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyTextPresent</td>
+	<td>Test_POR_09_002</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Create new portal with name is the same with existing one --</td>
+	<td>-- Create new portal with name is the same with existing one --</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=Add New Portal</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=Add New Portal</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>10000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>name</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>name</td>
+	<td>Test_POR_09_002</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Choose Properties tab--</td>
+	<td>-- Choose Properties tab--</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//div[text()='Properties']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[text()='Properties']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Choose Portal Template --</td>
+	<td>-- Choose Portal Template --</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//div[text()='Portal Templates']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[text()='Portal Templates']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//div[text()='Intranet Portal']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[text()='Intranet Portal']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Choose Permission setting tab--</td>
+	<td>-- Choose Permission setting tab--</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//div[text()='Permission Settings']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[text()='Permission Settings']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Access Permission Setting tab--</td>
+	<td>-- Access Permission Setting tab--</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>name=publicMode</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>name=publicMode</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Edit Permission Setting tab--</td>
+	<td>-- Edit Permission Setting tab--</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=Edit Permission Settings</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=Edit Permission Settings</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=Select Permission</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=Select Permission</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//div[@id='PermissionSelector']//a[@title="Organization"]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[@id='PermissionSelector']//a[@title="Organization"]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//div[@id='PermissionSelector']//a[@title="Management"]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[@id='PermissionSelector']//a[@title="Management"]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//div[@id='PermissionSelector']//a[@title="Executive Board"]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[@id='PermissionSelector']//a[@title="Executive Board"]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>10000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//div[@id='PermissionSelector']//a[@title="manager"]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[@id='PermissionSelector']//a[@title="manager"]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//a[contains(text(),'Save')]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAt</td>
+	<td>//a[contains(text(),'Save')]</td>
+	<td>2,2</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>10000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForTextPresent</td>
+	<td>This portal name already exists.</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyTextPresent</td>
+	<td>This portal name already exists.</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=Cancel</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=Cancel</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Create new portal with portal name the same with existing but different by lower/upper case --</td>
+	<td>-- Create new portal with portal name the same with existing but different by lower/upper case --</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=Add New Portal</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=Add New Portal</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>10000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>name</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>name</td>
+	<td>test</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Choose Properties tab--</td>
+	<td>-- Choose Properties tab--</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//div[text()='Properties']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[text()='Properties']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Choose Portal Template --</td>
+	<td>-- Choose Portal Template --</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//div[text()='Portal Templates']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[text()='Portal Templates']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//div[text()='Intranet Portal']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[text()='Intranet Portal']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Choose Permission setting tab--</td>
+	<td>-- Choose Permission setting tab--</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//div[text()='Permission Settings']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[text()='Permission Settings']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Access Permission Setting tab--</td>
+	<td>-- Access Permission Setting tab--</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>name=publicMode</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>name=publicMode</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Edit Permission Setting tab--</td>
+	<td>-- Edit Permission Setting tab--</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=Edit Permission Settings</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=Edit Permission Settings</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=Select Permission</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=Select Permission</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//div[@id='PermissionSelector']//a[@title="Organization"]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[@id='PermissionSelector']//a[@title="Organization"]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//div[@id='PermissionSelector']//a[@title="Management"]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[@id='PermissionSelector']//a[@title="Management"]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//div[@id='PermissionSelector']//a[@title="Executive Board"]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[@id='PermissionSelector']//a[@title="Executive Board"]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[@id='PermissionSelector']//a[@title="manager"]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//a[contains(text(),'Save')]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAt</td>
+	<td>//a[contains(text(),'Save')]</td>
+	<td>2,2</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>10000</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyTextPresent</td>
+	<td>test</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Add new portal with upper case --</td>
+	<td>-- Add new portal with upper case --</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=Add New Portal</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=Add New Portal</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>10000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>name</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>name</td>
+	<td>TEST</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Choose Properties tab--</td>
+	<td>-- Choose Properties tab--</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//div[text()='Properties']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[text()='Properties']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Choose Portal Template --</td>
+	<td>-- Choose Portal Template --</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//div[text()='Portal Templates']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[text()='Portal Templates']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//div[text()='Intranet Portal']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[text()='Intranet Portal']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Choose Permission setting tab--</td>
+	<td>-- Choose Permission setting tab--</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//div[text()='Permission Settings']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[text()='Permission Settings']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Access Permission Setting tab--</td>
+	<td>-- Access Permission Setting tab--</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>name=publicMode</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>name=publicMode</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Edit Permission Setting tab--</td>
+	<td>-- Edit Permission Setting tab--</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=Edit Permission Settings</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=Edit Permission Settings</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=Select Permission</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=Select Permission</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//div[@id='PermissionSelector']//a[@title="Organization"]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[@id='PermissionSelector']//a[@title="Organization"]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//div[@id='PermissionSelector']//a[@title="Management"]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[@id='PermissionSelector']//a[@title="Management"]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//div[@id='PermissionSelector']//a[@title="Executive Board"]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[@id='PermissionSelector']//a[@title="Executive Board"]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[@id='PermissionSelector']//a[@title="manager"]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//a[contains(text(),'Save')]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAt</td>
+	<td>//a[contains(text(),'Save')]</td>
+	<td>2,2</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>10000</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyTextPresent</td>
+	<td>TEST</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Delete portal --</td>
+	<td>-- Delete portal --</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//td/div[text()='Test_POR_09_002']/following::td/a[text()='Delete']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//td/div[text()='Test_POR_09_002']/following::td/a[text()='Delete']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForConfirmationPresent</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertConfirmation</td>
+	<td>Are you sure to delete this portal?</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>100000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>gotoPortalSites</td>
+	<td>john</td>
+	<td>gtn</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>50000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//td/div[text()='test']/following::td/a[text()='Delete']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//td/div[text()='test']/following::td/a[text()='Delete']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForConfirmationPresent</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertConfirmation</td>
+	<td>Are you sure to delete this portal?</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>100000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>gotoPortalSites</td>
+	<td>john</td>
+	<td>gtn</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>50000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//td/div[text()='TEST']/following::td/a[text()='Delete']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//td/div[text()='TEST']/following::td/a[text()='Delete']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForConfirmationPresent</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertConfirmation</td>
+	<td>Are you sure to delete this portal?</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>100000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>gotoPortalSites</td>
+	<td>john</td>
+	<td>gtn</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>refreshAndWait</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementNotPresent</td>
+	<td>Test_POR_09_002</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyElementNotPresent</td>
+	<td>Test_POR_09_002</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementNotPresent</td>
+	<td>test</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyElementNotPresent</td>
+	<td>test</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementNotPresent</td>
+	<td>TEST</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyElementNotPresent</td>
+	<td>TEST</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>10000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr><tr>
+<td><a name="testresult2">Test_POR_10_001_DeletePortalByIllegalUser.html</a><br/><div>
+<table border="1" cellpadding="1" cellspacing="1">
+<thead>
+<tr class="title status_passed"><td rowspan="1" colspan="3">Test_POR_10_001_DeletePortalByIllegalUser</td></tr>
+</thead><tbody>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>setSpeed</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>open</td>
+	<td>/portal/intranet</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Delete portal by illegal user --</td>
+	<td>-- Delete portal by illegal user --</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>windowMaximize</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>login</td>
+	<td>root</td>
+	<td>gtn</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>10000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=Sites</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=Sites</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=Add New Portal</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=Add New Portal</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>10000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>name</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>name</td>
+	<td>Test_SNF_PRL_10_001</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Choose Properties tab--</td>
+	<td>-- Choose Properties tab--</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//div[text()='Properties']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[text()='Properties']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Choose Portal Template --</td>
+	<td>-- Choose Portal Template --</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//div[text()='Portal Templates']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[text()='Portal Templates']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//div[text()='Intranet Portal']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[text()='Intranet Portal']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Choose Permission setting tab--</td>
+	<td>-- Choose Permission setting tab--</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//div[text()='Permission Settings']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[text()='Permission Settings']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Access Permission Setting tab--</td>
+	<td>-- Access Permission Setting tab--</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>name=publicMode</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>name=publicMode</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Edit Permission Setting tab--</td>
+	<td>-- Edit Permission Setting tab--</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=Edit Permission Settings</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=Edit Permission Settings</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=Select Permission</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=Select Permission</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//div[@id='PermissionSelector']//a[@title="Organization"]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[@id='PermissionSelector']//a[@title="Organization"]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//div[@id='PermissionSelector']//a[@title="Management"]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[@id='PermissionSelector']//a[@title="Management"]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//div[@id='PermissionSelector']//a[@title="Executive Board"]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[@id='PermissionSelector']//a[@title="Executive Board"]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[@id='PermissionSelector']//a[@title="manager"]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//a[contains(text(),'Save')]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAt</td>
+	<td>//a[contains(text(),'Save')]</td>
+	<td>2,2</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>20000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>refreshAndWait</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>--View new portal- Test_SNF_PRL_23--</td>
+	<td>--View new portal- Test_SNF_PRL_23--</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=Test_SNF_PRL_10_001</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=Test_SNF_PRL_10_001</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Return to default's portal --</td>
+	<td>-- Return to default's portal --</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=intranet</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=intranet</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Login by user who has right to access admin tool-bar but is not in the group/membership has edit right on portal created --</td>
+	<td>-- Login by user who has right to access admin tool-bar but is not in the group/membership has edit right on portal created --</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>login</td>
+	<td>john</td>
+	<td>gtn</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>10000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=Sites</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=Sites</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForTextNotPresent</td>
+	<td>Test_POR_10_001</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyTextNotPresent</td>
+	<td>Test_POR_10_001</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Delete portal --</td>
+	<td>-- Delete portal --</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>login</td>
+	<td>root</td>
+	<td>gtn</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>10000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=Sites</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//td/div[text()='Test_SNF_PRL_10_001']/following::td/a[text()='Delete']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAt</td>
+	<td>//td/div[text()='Test_SNF_PRL_10_001']/following::td/a[text()='Delete']</td>
+	<td>2,2</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForConfirmationPresent</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertConfirmation</td>
+	<td>Are you sure to delete this portal?</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>90000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>gotoPortalSites</td>
+	<td>john</td>
+	<td>gtn</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementNotPresent</td>
+	<td>Test_SNF_PRL_10_001</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyElementNotPresent</td>
+	<td>Test_SNF_PRL_10_001</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>logout</td>
+	<td></td>
+	<td></td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr></table><pre>
+info: Starting test /selenium-server/tests/Test_POR_04_006.html
+info: Executing: |setSpeed | 1000 |  |
+info: Executing: |open | /portal/intranet |  |
+info: Executing: |echo | -- Check Account Setting form from User Infor portlet -- |  |
+info: Executing: |windowMaximize |  |  |
+info: Executing: |login | john | gtn |
+info: Executing: |pause | 10000 |  |
+info: Executing: |click | link=My Account |  |
+info: Executing: |echo | -- verify Account Profile -- |  |
+info: Executing: |waitForElementPresent | //td/label[@for=&apos;userName&apos;]/following::td/input[@value=&apos;john&apos;] |  |
+info: Executing: |verifyElementPresent | //td/label[@for=&apos;userName&apos;]/following::td/input[@value=&apos;john&apos;] |  |
+info: Executing: |verifyElementPresent | //td/label[@for=&apos;firstName&apos;]/following::td/input[@value=&apos;John&apos;] |  |
+info: Executing: |verifyElementPresent | //td/label[@for=&apos;lastName&apos;]/following::td/input[@value=&apos;Smith&apos;] |  |
+info: Executing: |verifyElementPresent | //td/label[@for=&apos;email&apos;]/following::td/input[@value=&apos;john.smith@acme.exoplatform.com&apos;] |  |
+info: Executing: |echo | -- Check Reset when there&apos;s no change -- |  |
+info: Executing: |click | link=Reset |  |
+info: Executing: |echo | -- verify Account Profile -- |  |
+info: Executing: |waitForElementPresent | //td/label[@for=&apos;userName&apos;]/following::td/input[@value=&apos;john&apos;] |  |
+info: Executing: |verifyElementPresent | //td/label[@for=&apos;userName&apos;]/following::td/input[@value=&apos;john&apos;] |  |
+info: Executing: |verifyElementPresent | //td/label[@for=&apos;firstName&apos;]/following::td/input[@value=&apos;John&apos;] |  |
+info: Executing: |verifyElementPresent | //td/label[@for=&apos;lastName&apos;]/following::td/input[@value=&apos;Smith&apos;] |  |
+info: Executing: |verifyElementPresent | //td/label[@for=&apos;email&apos;]/following::td/input[@value=&apos;john.smith@acme.exoplatform.com&apos;] |  |
+info: Executing: |echo | -- Check Reset when there&apos;re changes without Save -- |  |
+info: Executing: |type | id=firstName | John test |
+info: Executing: |type | id=lastName | Smith test |
+info: Executing: |click | link=Reset |  |
+info: Executing: |echo | -- verify Account Profile -- |  |
+info: Executing: |waitForElementPresent | //td/label[@for=&apos;userName&apos;]/following::td/input[@value=&apos;john&apos;] |  |
+info: Executing: |verifyElementPresent | //td/label[@for=&apos;userName&apos;]/following::td/input[@value=&apos;john&apos;] |  |
+info: Executing: |verifyElementPresent | //td/label[@for=&apos;firstName&apos;]/following::td/input[@value=&apos;John&apos;] |  |
+info: Executing: |verifyElementPresent | //td/label[@for=&apos;lastName&apos;]/following::td/input[@value=&apos;Smith&apos;] |  |
+info: Executing: |verifyElementPresent | //td/label[@for=&apos;email&apos;]/following::td/input[@value=&apos;john.smith@acme.exoplatform.com&apos;] |  |
+info: Executing: |echo | -- Check Reset when there&apos;re changes with Save -- |  |
+info: Executing: |type | id=firstName | John test |
+info: Executing: |type | id=lastName | Smith test |
+info: Executing: |click | link=Save |  |
+info: Executing: |pause | 10000 |  |
+info: Executing: |verifyTextPresent | The account information has been updated. |  |
+info: Executing: |click | link=OK |  |
+info: Executing: |click | link=Reset |  |
+info: Executing: |echo | -- verify Account Profile -- |  |
+info: Executing: |waitForElementPresent | //td/label[@for=&apos;userName&apos;]/following::td/input[@value=&apos;john&apos;] |  |
+info: Executing: |verifyElementPresent | //td/label[@for=&apos;userName&apos;]/following::td/input[@value=&apos;john&apos;] |  |
+info: Executing: |verifyElementPresent | //td/label[@for=&apos;firstName&apos;]/following::td/input[@value=&apos;John test&apos;] |  |
+info: Executing: |verifyElementPresent | //td/label[@for=&apos;lastName&apos;]/following::td/input[@value=&apos;Smith test&apos;] |  |
+info: Executing: |verifyElementPresent | //td/label[@for=&apos;email&apos;]/following::td/input[@value=&apos;john.smith@acme.exoplatform.com&apos;] |  |
+info: Executing: |echo | -- Return to default value -- |  |
+info: Executing: |type | id=firstName | John |
+info: Executing: |type | id=lastName | Smith |
+info: Executing: |click | link=Save |  |
+info: Executing: |pause | 10000 |  |
+info: Executing: |verifyTextPresent | The account information has been updated. |  |
+info: Executing: |click | link=OK |  |
+info: Executing: |click | link=Close |  |
+info: Executing: |pause | 10000 |  |
+info: Executing: |clickAndWait | link=Logout |  |
+info: Starting test /selenium-server/tests/Test_POR_09_002_003_004_008_009.html
+info: Executing: |setSpeed | 1000 |  |
+info: Executing: |open | /portal/intranet |  |
+info: Executing: |echo | -- Create new portal with blank name -- |  |
+info: Executing: |windowMaximize |  |  |
+info: Executing: |login | john | gtn |
+info: Executing: |pause | 10000 |  |
+info: Executing: |waitForElementPresent | link=Sites |  |
+info: Executing: |clickAndWait | link=Sites |  |
+info: Executing: |pause | 10000 |  |
+info: Executing: |waitForElementPresent | link=Add New Portal |  |
+info: Executing: |click | link=Add New Portal |  |
+info: Executing: |waitForElementPresent | name |  |
+info: Executing: |type | name |  |
+info: Executing: |echo | -- Choose Properties tab-- |  |
+info: Executing: |waitForElementPresent | //div[text()=&apos;Properties&apos;] |  |
+info: Executing: |click | //div[text()=&apos;Properties&apos;] |  |
+info: Executing: |pause | 10000 |  |
+info: Executing: |echo | -- Choose Portal Template -- |  |
+info: Executing: |waitForElementPresent | //div[text()=&apos;Portal Templates&apos;] |  |
+info: Executing: |click | //div[text()=&apos;Portal Templates&apos;] |  |
+info: Executing: |waitForElementPresent | //div[text()=&apos;Intranet Portal&apos;] |  |
+info: Executing: |click | //div[text()=&apos;Intranet Portal&apos;] |  |
+info: Executing: |echo | -- Choose Permission setting tab-- |  |
+info: Executing: |waitForElementPresent | //div[text()=&apos;Permission Settings&apos;] |  |
+info: Executing: |click | //div[text()=&apos;Permission Settings&apos;] |  |
+info: Executing: |echo | -- Access Permission Setting tab-- |  |
+info: Executing: |waitForElementPresent | name=publicMode |  |
+info: Executing: |click | name=publicMode |  |
+info: Executing: |echo | -- Edit Permission Setting tab-- |  |
+info: Executing: |waitForElementPresent | link=Edit Permission Settings |  |
+info: Executing: |click | link=Edit Permission Settings |  |
+info: Executing: |waitForElementPresent | link=Select Permission |  |
+info: Executing: |click | link=Select Permission |  |
+info: Executing: |waitForElementPresent | //div[@id=&apos;PermissionSelector&apos;]//a[@title=&quot;Organization&quot;] |  |
+info: Executing: |click | //div[@id=&apos;PermissionSelector&apos;]//a[@title=&quot;Organization&quot;] |  |
+info: Executing: |waitForElementPresent | //div[@id=&apos;PermissionSelector&apos;]//a[@title=&quot;Management&quot;] |  |
+info: Executing: |click | //div[@id=&apos;PermissionSelector&apos;]//a[@title=&quot;Management&quot;] |  |
+info: Executing: |waitForElementPresent | //div[@id=&apos;PermissionSelector&apos;]//a[@title=&quot;Executive Board&quot;] |  |
+info: Executing: |click | //div[@id=&apos;PermissionSelector&apos;]//a[@title=&quot;Executive Board&quot;] |  |
+info: Executing: |click | //div[@id=&apos;PermissionSelector&apos;]//a[@title=&quot;manager&quot;] |  |
+info: Executing: |waitForElementPresent | //a[contains(text(),&apos;Save&apos;)] |  |
+info: Executing: |clickAt | //a[contains(text(),&apos;Save&apos;)] | 2,2 |
+info: Executing: |waitForTextPresent | The field &quot;Portal Name:&quot; is required. |  |
+info: Executing: |verifyTextPresent | The field &quot;Portal Name:&quot; is required. |  |
+info: Executing: |waitForElementPresent | link=OK |  |
+info: Executing: |click | link=OK |  |
+info: Executing: |echo | -- Create new portal with name starts with number -- |  |
+info: Executing: |waitForElementPresent | //div[text()=&apos;Portal Settings&apos;] |  |
+info: Executing: |click | //div[text()=&apos;Portal Settings&apos;] |  |
+info: Executing: |waitForElementPresent | name |  |
+info: Executing: |type | name | 09_004 |
+info: Executing: |echo | -- Choose Properties tab-- |  |
+info: Executing: |waitForElementPresent | //div[text()=&apos;Properties&apos;] |  |
+info: Executing: |click | //div[text()=&apos;Properties&apos;] |  |
+info: Executing: |echo | -- Choose Portal Template -- |  |
+info: Executing: |waitForElementPresent | //div[text()=&apos;Portal Templates&apos;] |  |
+info: Executing: |click | //div[text()=&apos;Portal Templates&apos;] |  |
+info: Executing: |waitForElementPresent | //div[text()=&apos;Intranet Portal&apos;] |  |
+info: Executing: |click | //div[text()=&apos;Intranet Portal&apos;] |  |
+info: Executing: |waitForElementPresent | //a[contains(text(),&apos;Save&apos;)] |  |
+info: Executing: |clickAt | //a[contains(text(),&apos;Save&apos;)] | 2,2 |
+info: Executing: |waitForTextPresent | The field &quot;Portal Name:&quot; must start with a character and must not contain special characters.&quot; |  |
+info: Executing: |verifyTextPresent | The field &quot;Portal Name:&quot; must start with a character and must not contain special characters.&quot; |  |
+info: Executing: |waitForElementPresent | link=OK |  |
+info: Executing: |click | link=OK |  |
+info: Executing: |echo | -- Create new portal with valid value -- |  |
+info: Executing: |waitForElementPresent | //div[text()=&apos;Portal Settings&apos;] |  |
+info: Executing: |click | //div[text()=&apos;Portal Settings&apos;] |  |
+info: Executing: |waitForElementPresent | name |  |
+info: Executing: |type | name | Test_POR_09_002 |
+info: Executing: |echo | -- Choose Properties tab-- |  |
+info: Executing: |waitForElementPresent | //div[text()=&apos;Properties&apos;] |  |
+info: Executing: |click | //div[text()=&apos;Properties&apos;] |  |
+info: Executing: |echo | -- Choose Portal Template -- |  |
+info: Executing: |waitForElementPresent | //div[text()=&apos;Portal Templates&apos;] |  |
+info: Executing: |click | //div[text()=&apos;Portal Templates&apos;] |  |
+info: Executing: |waitForElementPresent | //div[text()=&apos;Intranet Portal&apos;] |  |
+info: Executing: |click | //div[text()=&apos;Intranet Portal&apos;] |  |
+info: Executing: |waitForElementPresent | //a[contains(text(),&apos;Save&apos;)] |  |
+info: Executing: |clickAt | //a[contains(text(),&apos;Save&apos;)] | 2,2 |
+info: Executing: |pause | 10000 |  |
+info: Executing: |verifyTextPresent | Test_POR_09_002 |  |
+info: Executing: |echo | -- Create new portal with name is the same with existing one -- |  |
+info: Executing: |waitForElementPresent | link=Add New Portal |  |
+info: Executing: |click | link=Add New Portal |  |
+info: Executing: |pause | 10000 |  |
+info: Executing: |waitForElementPresent | name |  |
+info: Executing: |type | name | Test_POR_09_002 |
+info: Executing: |echo | -- Choose Properties tab-- |  |
+info: Executing: |waitForElementPresent | //div[text()=&apos;Properties&apos;] |  |
+info: Executing: |click | //div[text()=&apos;Properties&apos;] |  |
+info: Executing: |echo | -- Choose Portal Template -- |  |
+info: Executing: |waitForElementPresent | //div[text()=&apos;Portal Templates&apos;] |  |
+info: Executing: |click | //div[text()=&apos;Portal Templates&apos;] |  |
+info: Executing: |waitForElementPresent | //div[text()=&apos;Intranet Portal&apos;] |  |
+info: Executing: |click | //div[text()=&apos;Intranet Portal&apos;] |  |
+info: Executing: |echo | -- Choose Permission setting tab-- |  |
+info: Executing: |waitForElementPresent | //div[text()=&apos;Permission Settings&apos;] |  |
+info: Executing: |click | //div[text()=&apos;Permission Settings&apos;] |  |
+info: Executing: |echo | -- Access Permission Setting tab-- |  |
+info: Executing: |waitForElementPresent | name=publicMode |  |
+info: Executing: |click | name=publicMode |  |
+info: Executing: |echo | -- Edit Permission Setting tab-- |  |
+info: Executing: |waitForElementPresent | link=Edit Permission Settings |  |
+info: Executing: |click | link=Edit Permission Settings |  |
+info: Executing: |waitForElementPresent | link=Select Permission |  |
+info: Executing: |click | link=Select Permission |  |
+info: Executing: |waitForElementPresent | //div[@id=&apos;PermissionSelector&apos;]//a[@title=&quot;Organization&quot;] |  |
+info: Executing: |click | //div[@id=&apos;PermissionSelector&apos;]//a[@title=&quot;Organization&quot;] |  |
+info: Executing: |waitForElementPresent | //div[@id=&apos;PermissionSelector&apos;]//a[@title=&quot;Management&quot;] |  |
+info: Executing: |click | //div[@id=&apos;PermissionSelector&apos;]//a[@title=&quot;Management&quot;] |  |
+info: Executing: |waitForElementPresent | //div[@id=&apos;PermissionSelector&apos;]//a[@title=&quot;Executive Board&quot;] |  |
+info: Executing: |click | //div[@id=&apos;PermissionSelector&apos;]//a[@title=&quot;Executive Board&quot;] |  |
+info: Executing: |pause | 10000 |  |
+info: Executing: |waitForElementPresent | //div[@id=&apos;PermissionSelector&apos;]//a[@title=&quot;manager&quot;] |  |
+info: Executing: |click | //div[@id=&apos;PermissionSelector&apos;]//a[@title=&quot;manager&quot;] |  |
+info: Executing: |waitForElementPresent | //a[contains(text(),&apos;Save&apos;)] |  |
+info: Executing: |clickAt | //a[contains(text(),&apos;Save&apos;)] | 2,2 |
+info: Executing: |pause | 10000 |  |
+info: Executing: |waitForTextPresent | This portal name already exists. |  |
+info: Executing: |verifyTextPresent | This portal name already exists. |  |
+info: Executing: |waitForElementPresent | link=OK |  |
+info: Executing: |click | link=OK |  |
+info: Executing: |waitForElementPresent | link=Cancel |  |
+info: Executing: |click | link=Cancel |  |
+info: Executing: |echo | -- Create new portal with portal name the same with existing but different by lower/upper case -- |  |
+info: Executing: |waitForElementPresent | link=Add New Portal |  |
+info: Executing: |click | link=Add New Portal |  |
+info: Executing: |pause | 10000 |  |
+info: Executing: |waitForElementPresent | name |  |
+info: Executing: |type | name | test |
+info: Executing: |echo | -- Choose Properties tab-- |  |
+info: Executing: |waitForElementPresent | //div[text()=&apos;Properties&apos;] |  |
+info: Executing: |click | //div[text()=&apos;Properties&apos;] |  |
+info: Executing: |echo | -- Choose Portal Template -- |  |
+info: Executing: |waitForElementPresent | //div[text()=&apos;Portal Templates&apos;] |  |
+info: Executing: |click | //div[text()=&apos;Portal Templates&apos;] |  |
+info: Executing: |waitForElementPresent | //div[text()=&apos;Intranet Portal&apos;] |  |
+info: Executing: |click | //div[text()=&apos;Intranet Portal&apos;] |  |
+info: Executing: |echo | -- Choose Permission setting tab-- |  |
+info: Executing: |waitForElementPresent | //div[text()=&apos;Permission Settings&apos;] |  |
+info: Executing: |click | //div[text()=&apos;Permission Settings&apos;] |  |
+info: Executing: |echo | -- Access Permission Setting tab-- |  |
+info: Executing: |waitForElementPresent | name=publicMode |  |
+info: Executing: |click | name=publicMode |  |
+info: Executing: |echo | -- Edit Permission Setting tab-- |  |
+info: Executing: |waitForElementPresent | link=Edit Permission Settings |  |
+info: Executing: |click | link=Edit Permission Settings |  |
+info: Executing: |waitForElementPresent | link=Select Permission |  |
+info: Executing: |click | link=Select Permission |  |
+info: Executing: |waitForElementPresent | //div[@id=&apos;PermissionSelector&apos;]//a[@title=&quot;Organization&quot;] |  |
+info: Executing: |click | //div[@id=&apos;PermissionSelector&apos;]//a[@title=&quot;Organization&quot;] |  |
+info: Executing: |waitForElementPresent | //div[@id=&apos;PermissionSelector&apos;]//a[@title=&quot;Management&quot;] |  |
+info: Executing: |click | //div[@id=&apos;PermissionSelector&apos;]//a[@title=&quot;Management&quot;] |  |
+info: Executing: |waitForElementPresent | //div[@id=&apos;PermissionSelector&apos;]//a[@title=&quot;Executive Board&quot;] |  |
+info: Executing: |click | //div[@id=&apos;PermissionSelector&apos;]//a[@title=&quot;Executive Board&quot;] |  |
+info: Executing: |click | //div[@id=&apos;PermissionSelector&apos;]//a[@title=&quot;manager&quot;] |  |
+info: Executing: |waitForElementPresent | //a[contains(text(),&apos;Save&apos;)] |  |
+info: Executing: |clickAt | //a[contains(text(),&apos;Save&apos;)] | 2,2 |
+info: Executing: |pause | 10000 |  |
+info: Executing: |verifyTextPresent | test |  |
+info: Executing: |echo | -- Add new portal with upper case -- |  |
+info: Executing: |waitForElementPresent | link=Add New Portal |  |
+info: Executing: |click | link=Add New Portal |  |
+info: Executing: |pause | 10000 |  |
+info: Executing: |waitForElementPresent | name |  |
+info: Executing: |type | name | TEST |
+info: Executing: |echo | -- Choose Properties tab-- |  |
+info: Executing: |waitForElementPresent | //div[text()=&apos;Properties&apos;] |  |
+info: Executing: |click | //div[text()=&apos;Properties&apos;] |  |
+info: Executing: |echo | -- Choose Portal Template -- |  |
+info: Executing: |waitForElementPresent | //div[text()=&apos;Portal Templates&apos;] |  |
+info: Executing: |click | //div[text()=&apos;Portal Templates&apos;] |  |
+info: Executing: |waitForElementPresent | //div[text()=&apos;Intranet Portal&apos;] |  |
+info: Executing: |click | //div[text()=&apos;Intranet Portal&apos;] |  |
+info: Executing: |echo | -- Choose Permission setting tab-- |  |
+info: Executing: |waitForElementPresent | //div[text()=&apos;Permission Settings&apos;] |  |
+info: Executing: |click | //div[text()=&apos;Permission Settings&apos;] |  |
+info: Executing: |echo | -- Access Permission Setting tab-- |  |
+info: Executing: |waitForElementPresent | name=publicMode |  |
+info: Executing: |click | name=publicMode |  |
+info: Executing: |echo | -- Edit Permission Setting tab-- |  |
+info: Executing: |waitForElementPresent | link=Edit Permission Settings |  |
+info: Executing: |click | link=Edit Permission Settings |  |
+info: Executing: |waitForElementPresent | link=Select Permission |  |
+info: Executing: |click | link=Select Permission |  |
+info: Executing: |waitForElementPresent | //div[@id=&apos;PermissionSelector&apos;]//a[@title=&quot;Organization&quot;] |  |
+info: Executing: |click | //div[@id=&apos;PermissionSelector&apos;]//a[@title=&quot;Organization&quot;] |  |
+info: Executing: |waitForElementPresent | //div[@id=&apos;PermissionSelector&apos;]//a[@title=&quot;Management&quot;] |  |
+info: Executing: |click | //div[@id=&apos;PermissionSelector&apos;]//a[@title=&quot;Management&quot;] |  |
+info: Executing: |waitForElementPresent | //div[@id=&apos;PermissionSelector&apos;]//a[@title=&quot;Executive Board&quot;] |  |
+info: Executing: |click | //div[@id=&apos;PermissionSelector&apos;]//a[@title=&quot;Executive Board&quot;] |  |
+info: Executing: |click | //div[@id=&apos;PermissionSelector&apos;]//a[@title=&quot;manager&quot;] |  |
+info: Executing: |waitForElementPresent | //a[contains(text(),&apos;Save&apos;)] |  |
+info: Executing: |clickAt | //a[contains(text(),&apos;Save&apos;)] | 2,2 |
+info: Executing: |pause | 10000 |  |
+info: Executing: |verifyTextPresent | TEST |  |
+info: Executing: |echo | -- Delete portal -- |  |
+info: Executing: |waitForElementPresent | //td/div[text()=&apos;Test_POR_09_002&apos;]/following::td/a[text()=&apos;Delete&apos;] |  |
+info: Executing: |click | //td/div[text()=&apos;Test_POR_09_002&apos;]/following::td/a[text()=&apos;Delete&apos;] |  |
+info: Executing: |waitForConfirmationPresent |  |  |
+info: Executing: |assertConfirmation | Are you sure to delete this portal? |  |
+info: Executing: |pause | 100000 |  |
+info: Executing: |gotoPortalSites | john | gtn |
+info: Executing: |pause | 50000 |  |
+info: Executing: |waitForElementPresent | //td/div[text()=&apos;test&apos;]/following::td/a[text()=&apos;Delete&apos;] |  |
+info: Executing: |click | //td/div[text()=&apos;test&apos;]/following::td/a[text()=&apos;Delete&apos;] |  |
+info: Executing: |waitForConfirmationPresent |  |  |
+info: Executing: |assertConfirmation | Are you sure to delete this portal? |  |
+info: Executing: |pause | 100000 |  |
+info: Executing: |gotoPortalSites | john | gtn |
+info: Executing: |pause | 50000 |  |
+info: Executing: |waitForElementPresent | //td/div[text()=&apos;TEST&apos;]/following::td/a[text()=&apos;Delete&apos;] |  |
+info: Executing: |click | //td/div[text()=&apos;TEST&apos;]/following::td/a[text()=&apos;Delete&apos;] |  |
+info: Executing: |waitForConfirmationPresent |  |  |
+info: Executing: |assertConfirmation | Are you sure to delete this portal? |  |
+info: Executing: |pause | 100000 |  |
+info: Executing: |gotoPortalSites | john | gtn |
+info: Executing: |pause | 30000 |  |
+info: Executing: |refreshAndWait |  |  |
+info: Executing: |waitForElementNotPresent | Test_POR_09_002 |  |
+info: Executing: |verifyElementNotPresent | Test_POR_09_002 |  |
+info: Executing: |waitForElementNotPresent | test |  |
+info: Executing: |verifyElementNotPresent | test |  |
+info: Executing: |waitForElementNotPresent | TEST |  |
+info: Executing: |verifyElementNotPresent | TEST |  |
+info: Executing: |pause | 10000 |  |
+info: Executing: |waitForElementPresent | link=Logout |  |
+info: Executing: |click | link=Logout |  |
+info: Starting test /selenium-server/tests/Test_POR_10_001_DeletePortalByIllegalUser.html
+info: Executing: |setSpeed | 1000 |  |
+info: Executing: |open | /portal/intranet |  |
+info: Executing: |echo | -- Delete portal by illegal user -- |  |
+info: Executing: |windowMaximize |  |  |
+info: Executing: |login | root | gtn |
+info: Executing: |pause | 10000 |  |
+info: Executing: |waitForElementPresent | link=Sites |  |
+info: Executing: |clickAndWait | link=Sites |  |
+info: Executing: |waitForElementPresent | link=Add New Portal |  |
+info: Executing: |click | link=Add New Portal |  |
+info: Executing: |pause | 10000 |  |
+info: Executing: |waitForElementPresent | name |  |
+info: Executing: |type | name | Test_SNF_PRL_10_001 |
+info: Executing: |echo | -- Choose Properties tab-- |  |
+info: Executing: |waitForElementPresent | //div[text()=&apos;Properties&apos;] |  |
+info: Executing: |click | //div[text()=&apos;Properties&apos;] |  |
+info: Executing: |echo | -- Choose Portal Template -- |  |
+info: Executing: |waitForElementPresent | //div[text()=&apos;Portal Templates&apos;] |  |
+info: Executing: |click | //div[text()=&apos;Portal Templates&apos;] |  |
+info: Executing: |waitForElementPresent | //div[text()=&apos;Intranet Portal&apos;] |  |
+info: Executing: |click | //div[text()=&apos;Intranet Portal&apos;] |  |
+info: Executing: |echo | -- Choose Permission setting tab-- |  |
+info: Executing: |waitForElementPresent | //div[text()=&apos;Permission Settings&apos;] |  |
+info: Executing: |click | //div[text()=&apos;Permission Settings&apos;] |  |
+info: Executing: |echo | -- Access Permission Setting tab-- |  |
+info: Executing: |waitForElementPresent | name=publicMode |  |
+info: Executing: |click | name=publicMode |  |
+info: Executing: |echo | -- Edit Permission Setting tab-- |  |
+info: Executing: |waitForElementPresent | link=Edit Permission Settings |  |
+info: Executing: |click | link=Edit Permission Settings |  |
+info: Executing: |waitForElementPresent | link=Select Permission |  |
+info: Executing: |click | link=Select Permission |  |
+info: Executing: |waitForElementPresent | //div[@id=&apos;PermissionSelector&apos;]//a[@title=&quot;Organization&quot;] |  |
+info: Executing: |click | //div[@id=&apos;PermissionSelector&apos;]//a[@title=&quot;Organization&quot;] |  |
+info: Executing: |waitForElementPresent | //div[@id=&apos;PermissionSelector&apos;]//a[@title=&quot;Management&quot;] |  |
+info: Executing: |click | //div[@id=&apos;PermissionSelector&apos;]//a[@title=&quot;Management&quot;] |  |
+info: Executing: |waitForElementPresent | //div[@id=&apos;PermissionSelector&apos;]//a[@title=&quot;Executive Board&quot;] |  |
+info: Executing: |click | //div[@id=&apos;PermissionSelector&apos;]//a[@title=&quot;Executive Board&quot;] |  |
+info: Executing: |click | //div[@id=&apos;PermissionSelector&apos;]//a[@title=&quot;manager&quot;] |  |
+info: Executing: |waitForElementPresent | //a[contains(text(),&apos;Save&apos;)] |  |
+info: Executing: |clickAt | //a[contains(text(),&apos;Save&apos;)] | 2,2 |
+info: Executing: |pause | 20000 |  |
+info: Executing: |refreshAndWait |  |  |
+info: Executing: |echo | --View new portal- Test_SNF_PRL_23-- |  |
+info: Executing: |waitForElementPresent | link=Test_SNF_PRL_10_001 |  |
+info: Executing: |clickAndWait | link=Test_SNF_PRL_10_001 |  |
+info: Executing: |echo | -- Return to default&apos;s portal -- |  |
+info: Executing: |waitForElementPresent | link=intranet |  |
+info: Executing: |clickAndWait | link=intranet |  |
+info: Executing: |waitForElementPresent | link=Logout |  |
+info: Executing: |clickAndWait | link=Logout |  |
+info: Executing: |echo | -- Login by user who has right to access admin tool-bar but is not in the group/membership has edit right on portal created -- |  |
+info: Executing: |login | john | gtn |
+info: Executing: |pause | 10000 |  |
+info: Executing: |waitForElementPresent | link=Sites |  |
+info: Executing: |clickAndWait | link=Sites |  |
+info: Executing: |waitForTextNotPresent | Test_POR_10_001 |  |
+info: Executing: |verifyTextNotPresent | Test_POR_10_001 |  |
+info: Executing: |waitForElementPresent | link=Logout |  |
+info: Executing: |clickAndWait | link=Logout |  |
+info: Executing: |echo | -- Delete portal -- |  |
+info: Executing: |login | root | gtn |
+info: Executing: |pause | 10000 |  |
+info: Executing: |clickAndWait | link=Sites |  |
+info: Executing: |waitForElementPresent | //td/div[text()=&apos;Test_SNF_PRL_10_001&apos;]/following::td/a[text()=&apos;Delete&apos;] |  |
+info: Executing: |clickAt | //td/div[text()=&apos;Test_SNF_PRL_10_001&apos;]/following::td/a[text()=&apos;Delete&apos;] | 2,2 |
+info: Executing: |waitForConfirmationPresent |  |  |
+info: Executing: |assertConfirmation | Are you sure to delete this portal? |  |
+info: Executing: |pause | 90000 |  |
+info: Executing: |gotoPortalSites | john | gtn |
+info: Executing: |pause | 30000 |  |
+info: Executing: |waitForElementNotPresent | Test_SNF_PRL_10_001 |  |
+info: Executing: |verifyElementNotPresent | Test_SNF_PRL_10_001 |  |
+info: Executing: |logout |  |  |
+</pre></body></html>

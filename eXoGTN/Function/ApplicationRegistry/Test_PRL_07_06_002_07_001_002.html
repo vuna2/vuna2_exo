@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://localhost:8080/" />
+<title>Test_PRL_07_06_002_07_001_002</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Test_PRL_07_06_002_07_001_002</td></tr>
+</thead><tbody>
+<tr>
+	<td>setSpeed</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/portal/intranet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Manage local gadget--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>windowMaximize</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//b[contains(text(),'Sign in')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>username</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>username</td>
+	<td>john</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>password</td>
+	<td>gtn</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//a[@id='UIPortalLoginFormAction']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Go to Application Regsitry--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Applications</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Choose Gadget tab--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Gadgets</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Gadgets</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Create new gadget with blank name--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[text()='Create a New Gadget']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=name</td>
+	<td>test</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Edit invalid a gadget --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=hello world example</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@title='Edit Gadget']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=source</td>
+	<td>aaa</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>The sources do not respect the gadget specification.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Edit a specific gadget --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=source</td>
+	<td>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Module&gt;&lt;ModulePrefs title=&quot;hello world example1&quot; description=&quot;The hello world gadget.&quot;/&gt;&lt;Content type=&quot;html&quot;&gt; &lt;![CDATA[&nbsp;&nbsp;&nbsp;&nbsp;Hello, world! ]]&gt;&lt;/Content&gt;&lt;/Module&gt;</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>hello world example1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@title='Refresh']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Delete gadget without confirmation --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='UIGadgetManagement']//a[@title='hello world example1']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>chooseCancelOnNextConfirmation</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[@title='hello world example1']/following::a[@title='Delete Gadget']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertConfirmation</td>
+	<td>Are you sure to delete this gadget?</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Check delete gadget when it is being used by another --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@title='Edit Gadget']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[@title='hello world example1']/following::a[@title='Delete Gadget']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertConfirmation</td>
+	<td>Are you sure to delete this gadget?</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Cannot delete this gadget which is currently in use.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Cancel</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Delete gadget with confirmation --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='UIGadgetManagement']//a[@title='hello world example1']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[@title='hello world example1']/following::a[@title='Delete Gadget']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertConfirmation</td>
+	<td>Are you sure to delete this gadget?</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextNotPresent</td>
+	<td>hello world example1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

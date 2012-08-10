@@ -1,0 +1,621 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="" />
+<title>Test_POR_14_07_002_CheckCloneNodeContainSubNode</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Test_POR_14_07_002_CheckCloneNodeContainSubNode</td></tr>
+</thead><tbody>
+<tr>
+	<td>setSpeed</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/portal/intranet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>windowMaximize</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>--Login portal--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//b[contains(text(),'Sign in')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>username</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>username</td>
+	<td>john</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>password</td>
+	<td>gtn</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//a[@id='UIPortalLoginFormAction']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>10000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Add new page --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Add Page</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Add Page</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UIPageNodeSelector']//a[@title='Up Level']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='UIPageNodeSelector']//a[@title='Up Level']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>pageName</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>pageName</td>
+	<td>Test_POR_14_07_002</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=i18nizedLabel</td>
+	<td>Test_POR_14_07_002</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>--Click Next to move to step 2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//a[contains(text(),'Next')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[contains(text(),'Next')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Keep empty layout and click Next move step 3--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//a[contains(text(),'Next')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[contains(text(),'Next')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>--Click Save to complete adding page</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UIPageEditor']//a[@title='Finish']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//div[@id='UIPageEditor']//a[@title='Finish']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Add sub page --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Add Page</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Add Page</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>pageName</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>pageName</td>
+	<td>sub_page</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=i18nizedLabel</td>
+	<td>sub_page</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>--Click Next to move to step 2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//a[contains(text(),'Next')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[contains(text(),'Next')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Keep empty layout and click Next move step 3--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//a[contains(text(),'Next')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[contains(text(),'Next')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>--Click Save to complete adding page</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UIPageEditor']//a[@title='Finish']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//div[@id='UIPageEditor']//a[@title='Finish']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>--Open Navigation Menu--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Sites</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//a[contains(@href,'intranet')]/preceding-sibling::a[text()='Edit Navigation']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[contains(@href,'intranet')]/preceding-sibling::a[text()='Edit Navigation']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>--Clone a node--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>xpath=(//a[contains(text(),'Test_POR_14_07_002')])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//a[contains(text(),'Test_POR_14_07_002')])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseDownRight</td>
+	<td>//a[@class='NodeIcon DefaultPageIcon NodeSelected' and @title='Test_POR_14_07_002']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Clone Node</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>link=Clone Node</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>--Paste Clone node--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='UINavigationNodeSelector']/div/div/div/div[2]/div/div/div[3]/div/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseDownRight</td>
+	<td>//a[@class='NodeIcon DefaultPageIcon NodeSelected' and @title='Welcome']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>xpath=(//a[contains(text(),'Paste Node')])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//a[contains(text(),'Paste Node')])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>--Check page list in Manage Page--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Pages</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Pages</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//form[@id='UIPageSearchForm']/div[2]/input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//form[@id='UIPageSearchForm']/div[2]/input</td>
+	<td>Test_POR_14_07_002</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>name=searchOption</td>
+	<td>portal</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//a[@title='Quick Search']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[@title='Quick Search']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Delete page--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>xpath=//img[@title='Delete Page']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=//img[@title='Delete Page']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertConfirmation</td>
+	<td>Are you sure to delete this page?</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>xpath=//img[@title='Delete Page']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=//img[@title='Delete Page']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertConfirmation</td>
+	<td>Are you sure to delete this page?</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>No result found.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=pageTitle</td>
+	<td>Test_POR_14_07_002</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>name=searchOption</td>
+	<td>portal</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//a[@title='Quick Search']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[@title='Quick Search']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>10000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>No result found.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Delete sub-page --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=pageTitle</td>
+	<td>sub_page</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>name=searchOption</td>
+	<td>portal</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//a[@title='Quick Search']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[@title='Quick Search']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Delete page--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>xpath=//img[@title='Delete Page']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=//img[@title='Delete Page']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertConfirmation</td>
+	<td>Are you sure to delete this page?</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>xpath=//img[@title='Delete Page']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=//img[@title='Delete Page']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertConfirmation</td>
+	<td>Are you sure to delete this page?</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>No result found.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>--Delete page (node)--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Sites</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//a[contains(@href,'intranet')]/preceding-sibling::a[text()='Edit Navigation']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[contains(@href,'intranet')]/preceding-sibling::a[text()='Edit Navigation']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseDownRight</td>
+	<td>//a[@class='NodeIcon DefaultPageIcon' and @title='Test_POR_14_07_002']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Delete Node</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Delete Node</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertConfirmation</td>
+	<td>Are you sure to delete this node?</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//a[@class='NodeIcon DefaultPageIcon' and @title='Welcome']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[@class='NodeIcon DefaultPageIcon' and @title='Welcome']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseDownRight</td>
+	<td>//a[@class='NodeIcon DefaultPageIcon' and @title='Test_POR_14_07_002']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Delete Node</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Delete Node</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertConfirmation</td>
+	<td>Are you sure to delete this node?</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>refreshAndWait</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>--Sign out --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

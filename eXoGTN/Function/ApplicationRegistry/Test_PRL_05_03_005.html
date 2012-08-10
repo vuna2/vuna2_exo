@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://localhost:8080/" />
+<title>Test_PRL_05_03_005</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Test_PRL_05_03_005</td></tr>
+</thead><tbody>
+<tr>
+	<td>setSpeed</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/portal/intranet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>windowMaximize</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//b[contains(text(),'Sign in')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>username</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>username</td>
+	<td>john</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>password</td>
+	<td>gtn</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//a[@id='UIPortalLoginFormAction']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Go to Application Registry --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Applications</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Applications</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Delete all category in Application --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UIApplicationOrganizer']//a[@title='Collaboration']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='UIApplicationOrganizer']//a[@title='Collaboration']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[@title='Collaboration']/following::a[@title='Delete Category']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertConfirmation</td>
+	<td>Are you sure to delete this category and all its applications?</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UIApplicationOrganizer']//a[@title='Content']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='UIApplicationOrganizer']//a[@title='Content']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[@title='Content']/following::a[@title='Delete Category']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertConfirmation</td>
+	<td>Are you sure to delete this category and all its applications?</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UIApplicationOrganizer']//a[@title='Social']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='UIApplicationOrganizer']//a[@title='Social']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[@title='Social']/following::a[@title='Delete Category']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertConfirmation</td>
+	<td>Are you sure to delete this category and all its applications?</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>There are no categories. Use the &quot;Add Category&quot; or &quot;Import Applications&quot; buttons to add categories.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>There are no categories. Use the &quot;Add Category&quot; or &quot;Import Applications&quot; buttons to add categories.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Back to import application --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=div.IconControl.ImportIcon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.IconControl.ImportIcon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertConfirmation</td>
+	<td>This will automatically import all gadgets and portlets into new categories.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify after import again --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Admin</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//a[contains(text(),'Administration')])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Administration</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Collaboration</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Collaboration</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//a[contains(text(),'Content')])[4]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Content</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Controller</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Controller</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=ECM</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>ECM</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=faq</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>faq</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Form Generator Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Form Generator Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Forms</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Forms</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=forum</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>forum</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//a[contains(text(),'Gadgets')])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Gadgets</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Integration</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Integration</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//a[contains(text(),'Navigation')])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Navigation</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Newsletter</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Newsletter</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=platformNavigation</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>platformNavigation</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=poll</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>poll</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Search</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Search</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=SEOToolbar</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>SEOToolbar</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=social</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>social</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=System</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>System</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=WCM Admin</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>WCM Admin</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=wiki</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>wiki</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=workflow</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>workflow</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

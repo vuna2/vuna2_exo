@@ -1,0 +1,586 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://localhost:8080/" />
+<title>Test_SNF_PRL_17_ManageRemoteGadget</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Test_SNF_PRL_17_ManageRemoteGadget</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/portal/intranet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Manage remote gadget--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>windowMaximize</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//b[contains(text(),'Sign in')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>username</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>username</td>
+	<td>john</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>password</td>
+	<td>gtn</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//a[@id='UIPortalLoginFormAction']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Go to Application Regsitry--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Applications</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Choose Gadget tab--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Gadgets</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Gadgets</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Click add remote gadget icon --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UIGadgetManagement']//div[text()='Add a Remote Gadget']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='UIGadgetManagement']//div[text()='Add a Remote Gadget']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>url</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>url</td>
+	<td>http://www.labpixies.com/campaigns/phonebook/phonebook_igoogle.xml</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>10000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>Phonebook</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Phonebook</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Click refresh --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UIGadgetInfo']//div[@title='Refresh']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='UIGadgetInfo']//div[@title='Refresh']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Add gadget into category--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Click here to add this gadget to a category.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Click here to add this gadget to a category.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>name=category_Administration</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=category_Administration</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>//td[text()='Categories:']/following-sibling::td[contains(text(),'Administration')]</td>
+	<td>Administration</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//td[text()='Categories:']/following-sibling::td[contains(text(),'Administration')]</td>
+	<td>Administration</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Click create new gadget--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UIGadgetManagement']//div[text()='Create a New Gadget']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='UIGadgetManagement']//div[text()='Create a New Gadget']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>name</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name</td>
+	<td>Test_SNF_PRL_18</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Add gadget into category--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Click here to add this gadget to a category.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Click here to add this gadget to a category.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>name=category_Administration</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=category_Administration</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>//td[text()='Categories:']/following-sibling::td[contains(text(),'Administration')]</td>
+	<td>Administration</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//td[text()='Categories:']/following-sibling::td[contains(text(),'Administration')]</td>
+	<td>Administration</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Check after add remote gadget --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Dashboard</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Dashboard</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>--Click Add gadget --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Add Gadgets</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Add Gadgets</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Drag &amp; drop gadget --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>xpath=//div[@class='UIDashboardContainer']/div/div/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>dragAndDropToObject</td>
+	<td>css=div.GadgetControl</td>
+	<td>xpath=//div[@id='GadgetContainer']</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[contains(@id,'UIAddGadgetPopup')]/div/div[1]/div/div/div/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[contains(@id,'UIAddGadgetPopup')]/div/div[1]/div/div/div/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Check after add local gadget --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Drag &amp; drop gadget --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>xpath=//div[@class='UIDashboardContainer']/div/div/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>dragAndDropToObject</td>
+	<td>css=div.GadgetTitle</td>
+	<td>xpath=//div[@id='GadgetContainer']</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[contains(@id,'UIAddGadgetPopup')]/div/div[1]/div/div/div/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[contains(@id,'UIAddGadgetPopup')]/div/div[1]/div/div/div/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Go to Application Regsitry--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Applications</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Choose Gadget tab--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Gadgets</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Gadgets</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Delete remote gadget--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Phonebook</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Phonebook</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//a[@title='Phonebook']/following-sibling::a[@title='Delete Gadget']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[@title='Phonebook']/following-sibling::a[@title='Delete Gadget']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertConfirmation</td>
+	<td>Are you sure to delete this gadget?</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextNotPresent</td>
+	<td>Phonebook</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextNotPresent</td>
+	<td>Phonebook</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Edit local gadget --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=hello world example</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=hello world example</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UIGadgetInfo']//div[@title='Edit Gadget']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='UIGadgetInfo']//div[@title='Edit Gadget']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>source</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>source</td>
+	<td>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Module&gt;&lt;ModulePrefs title=&quot;Test_SNF_PRL_18_edit&quot; description=&quot;The hello world gadget.&quot;/&gt;&lt;Content type=&quot;html&quot;&gt;&lt;/Content&gt;&lt;/Module&gt;</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>Test_SNF_PRL_18_edit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Test_SNF_PRL_18_edit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Click Refresh --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UIGadgetInfo']//div[@title='Refresh']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='UIGadgetInfo']//div[@title='Refresh']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Delete local gadget--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Test_SNF_PRL_18_edit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Test_SNF_PRL_18_edit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//a[@title='Test_SNF_PRL_18_edit']/following-sibling::a[@title='Delete Gadget']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[@title='Test_SNF_PRL_18_edit']/following-sibling::a[@title='Delete Gadget']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForConfirmationPresent</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertConfirmation</td>
+	<td>Are you sure to delete this gadget?</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextNotPresent</td>
+	<td>Test_SNF_PRL_18_edit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextNotPresent</td>
+	<td>Test_SNF_PRL_18_edit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Go to Dashboard page--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Dashboard</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Dashboard</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextNotPresent</td>
+	<td>Phonebook</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextNotPresent</td>
+	<td>Phonebook</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextNotPresent</td>
+	<td>Test_SNF_PRL_18_edit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextNotPresent</td>
+	<td>Test_SNF_PRL_18_edit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

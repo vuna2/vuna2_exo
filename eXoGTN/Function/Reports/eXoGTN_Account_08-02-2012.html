@@ -1,0 +1,3485 @@
+<html>
+<head><style type='text/css'>
+body, table {
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 12;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+}
+
+a {
+    text-decoration: none;
+}
+
+.title {
+    font-style: italic;
+}
+
+.selected {
+    background-color: #ffffcc;
+}
+
+.status_done {
+    background-color: #eeffee;
+}
+
+.status_passed {
+    background-color: #ccffcc;
+}
+
+.status_failed {
+    background-color: #ffcccc;
+}
+
+.breakpoint {
+    background-color: #cccccc;
+    border: 1px solid black;
+}
+</style><title>Test suite results</title></head>
+<body>
+<h1>Test suite results </h1>
+
+<table>
+<tr>
+<td>result:</td>
+<td>failed</td>
+</tr>
+<tr>
+<td>totalTime:</td>
+<td>820</td>
+</tr>
+<tr>
+<td>numTestTotal:</td>
+<td>9</td>
+</tr>
+<tr>
+<td>numTestPasses:</td>
+<td>8</td>
+</tr>
+<tr>
+<td>numTestFailures:</td>
+<td>1</td>
+</tr>
+<tr>
+<td>numCommandPasses:</td>
+<td>38</td>
+</tr>
+<tr>
+<td>numCommandFailures:</td>
+<td>2</td>
+</tr>
+<tr>
+<td>numCommandErrors:</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Selenium Version:</td>
+<td>2.21</td>
+</tr>
+<tr>
+<td>Selenium Revision:</td>
+<td>.0</td>
+</tr>
+<tr>
+<td>
+<table id="suiteTable" class="selenium" border="1" cellpadding="1" cellspacing="1"><tbody>
+<tr class="title  status_failed"><td><b>Test Suite</b></td></tr>
+<tr class="  status_passed"><td><a href="#testresult0">Test_PLT_ACC_010</a></td></tr>
+<tr class="  status_passed"><td><a href="#testresult1">Test_PLT_ACC_011_012_013_014</a></td></tr>
+<tr class="  status_passed"><td><a href="#testresult2">Test_PLT_ACC_015_016_021_022</a></td></tr>
+<tr class="  status_passed"><td><a href="#testresult3">Test_PLT_ACC_024</a></td></tr>
+<tr class="  status_passed"><td><a href="#testresult4">Test_PLT_ACC_025</a></td></tr>
+<tr class="  status_passed"><td><a href="#testresult5">Test_PLT_ACC_026</a></td></tr>
+<tr class="  status_failed"><td><a href="#testresult6">Test_PLT_ACC_027</a></td></tr>
+<tr class="  status_passed"><td><a href="#testresult7">Test_PRL_01_017_18</a></td></tr>
+<tr class="  status_passed"><td><a href="#testresult8">Test_PRL_01_019_20</a></td></tr>
+</tbody></table>
+
+
+</td>
+<td>&nbsp;</td>
+</tr>
+</table><table><tr>
+<td><a name="testresult0">Test_PLT_ACC_010.html</a><br/><div>
+<table border="1" cellpadding="1" cellspacing="1">
+<thead>
+<tr class="title status_passed"><td rowspan="1" colspan="3">Test_PLT_ACC_010</td></tr>
+</thead><tbody>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>setSpeed</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>open</td>
+	<td>/portal/intranet</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>windowMaximize</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//b[contains(text(),'Sign in')]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>username</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>username</td>
+	<td>john</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>password</td>
+	<td>gtn</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>//a[@id='UIPortalLoginFormAction']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Create new account --</td>
+	<td>-- Create new account --</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=Add Users</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=Add Users</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>id=username</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=username</td>
+	<td>test_001_10_2012</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>password</td>
+	<td>GTN PLT ACC</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>Confirmpassword</td>
+	<td>GTN PLT ACC</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>firstName</td>
+	<td>GTN PLT ACC</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>lastName</td>
+	<td>GTN PLT ACC</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>email</td>
+	<td>exo_test10@gmail.com</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForTextPresent</td>
+	<td>You have registered a new account.</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyTextPresent</td>
+	<td>You have registered a new account.</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Check Availability function when new account's user name is existing --</td>
+	<td>-- Check Availability function when new account's user name is existing --</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>id=username</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=username</td>
+	<td>test_001_10_2012</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//img[@title='Check Availability']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//img[@title='Check Availability']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForTextPresent</td>
+	<td>This username already exists, please enter another one.</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyTextPresent</td>
+	<td>This username already exists, please enter another one.</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Check Availability function when new account's user name does not exist --</td>
+	<td>-- Check Availability function when new account's user name does not exist --</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>id=username</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=username</td>
+	<td>test_001_11112012</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//img[@title='Check Availability']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//img[@title='Check Availability']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForTextPresent</td>
+	<td>This username is available.</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyTextPresent</td>
+	<td>This username is available.</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Check Availability function when new account's user name is the same with deleted account's user name --</td>
+	<td>-- Check Availability function when new account's user name is the same with deleted account's user name --</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=Group and Roles</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=Group and Roles</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Search user --</td>
+	<td>-- Search user --</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>id=searchTerm</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=searchTerm</td>
+	<td>test_001_10_2012</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//form[@id='UISearchForm']//a[@title='Quick Search']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//form[@id='UISearchForm']//a[@title='Quick Search']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>css=img.DeleteUserIcon</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=img.DeleteUserIcon</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertConfirmation</td>
+	<td>Are you sure to delete user test_001_10_2012?</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>10000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForTextPresent</td>
+	<td>No result found.</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyTextPresent</td>
+	<td>No result found.</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=Add Users</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=Add Users</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>id=username</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=username</td>
+	<td>test_001_10_2012</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>css=img.SearchIcon</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=img.SearchIcon</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForTextPresent</td>
+	<td>This username is available.</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyTextPresent</td>
+	<td>This username is available.</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Check Availability function when new account's user name is blank --</td>
+	<td>-- Check Availability function when new account's user name is blank --</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>id=username</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=username</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>css=img.SearchIcon</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=img.SearchIcon</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForTextPresent</td>
+	<td>The field "User Name:" is required.</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyTextPresent</td>
+	<td>The field "User Name:" is required.</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr><tr>
+<td><a name="testresult1">Test_PLT_ACC_011_012_013_014.html</a><br/><div>
+<table border="1" cellpadding="1" cellspacing="1">
+<thead>
+<tr class="title status_passed"><td rowspan="1" colspan="3">Test_PLT_ACC_011</td></tr>
+</thead><tbody>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>setSpeed</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>open</td>
+	<td>/portal/intranet</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>windowMaximize</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//b[contains(text(),'Sign in')]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>username</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>username</td>
+	<td>john</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>password</td>
+	<td>gtn</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>//a[@id='UIPortalLoginFormAction']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Create new account with Password and&nbsp;&nbsp;Confirm Password fields are not the same&nbsp;&nbsp;--</td>
+	<td>-- Create new account with Password and  Confirm Password fields are not the same  --</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=Add Users</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=Add Users</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>id=username</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=username</td>
+	<td>exogtn2013</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>password</td>
+	<td>GTN PLT</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>Confirmpassword</td>
+	<td>GTN PLT ACC</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>firstName</td>
+	<td>GTN PLT ACC</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>lastName</td>
+	<td>GTN PLT ACC</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>email</td>
+	<td>exo_test2013@gmail.com</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForTextPresent</td>
+	<td>Password and Confirm Password must be the same.</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyTextPresent</td>
+	<td>Password and Confirm Password must be the same.</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Create new account when copy from Password and paste to Confirm Password field --</td>
+	<td>-- Create new account when copy from Password and paste to Confirm Password field --</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=Reset</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=Reset</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>id=username</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=username</td>
+	<td>exogtn2013</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>password</td>
+	<td>GTN PLT ACC</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=Confirmpassword</td>
+	<td>&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>firstName</td>
+	<td>GTN PLT ACC</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>lastName</td>
+	<td>GTN PLT ACC</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>email</td>
+	<td>exo_test112013@gmail.com</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForTextPresent</td>
+	<td>Password and Confirm Password must be the same.</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyTextPresent</td>
+	<td>Password and Confirm Password must be the same.</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Create new account with Password/Confirm Password less than 6 characters&nbsp;&nbsp;--</td>
+	<td>-- Create new account with Password/Confirm Password less than 6 characters  --</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=Reset</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=Reset</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>id=username</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=username</td>
+	<td>exogtn2013</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>password</td>
+	<td>GTN P</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=Confirmpassword</td>
+	<td>GTN P</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>firstName</td>
+	<td>GTN PLT ACC</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>lastName</td>
+	<td>GTN PLT ACC</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>email</td>
+	<td>exo_test12213@gmail.com</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForTextPresent</td>
+	<td>The length of the text in field "Password:" must be between "6" and "30" characters. </td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyTextPresent</td>
+	<td>The length of the text in field "Password:" must be between "6" and "30" characters. </td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Create new account with Password/Confirm Password over 30 characters --</td>
+	<td>-- Create new account with Password/Confirm Password over 30 characters --</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=Reset</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=Reset</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>id=username</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=username</td>
+	<td>exogtn2013</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>password</td>
+	<td>GTN PLT ACC GTN PLT ACC GTN PLT ACC GTN PLT ACC</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=Confirmpassword</td>
+	<td>GTN PLT ACC GTN PLT ACC GTN PLT ACC GTN PLT ACC</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>firstName</td>
+	<td>GTN PLT ACC</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>lastName</td>
+	<td>GTN PLT ACC</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>email</td>
+	<td>exo_test3313@gmail.com</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForTextPresent</td>
+	<td>The length of the text in field "Password:" must be between "6" and "30" characters. </td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyTextPresent</td>
+	<td>The length of the text in field "Password:" must be between "6" and "30" characters. </td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr><tr>
+<td><a name="testresult2">Test_PLT_ACC_015_016_021_022.html</a><br/><div>
+<table border="1" cellpadding="1" cellspacing="1">
+<thead>
+<tr class="title status_passed"><td rowspan="1" colspan="3">Test_PLT_ACC_015</td></tr>
+</thead><tbody>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>setSpeed</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>open</td>
+	<td>/portal/intranet</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>windowMaximize</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//b[contains(text(),'Sign in')]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>username</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>username</td>
+	<td>john</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>password</td>
+	<td>gtn</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>//a[@id='UIPortalLoginFormAction']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Create new account with First Name existing&nbsp;&nbsp;--</td>
+	<td>-- Create new account with First Name existing  --</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=Add Users</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=Add Users</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>id=username</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=username</td>
+	<td>exogtn</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>password</td>
+	<td>GTN PLT ACC</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>Confirmpassword</td>
+	<td>GTN PLT ACC</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>firstName</td>
+	<td>John</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>lastName</td>
+	<td>GTN PLT ACC</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>email</td>
+	<td>exo_test22@gmail.com</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForTextPresent</td>
+	<td> You have registered a new account.</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyTextPresent</td>
+	<td> You have registered a new account.</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Create new account with Last Name existing --</td>
+	<td>-- Create new account with Last Name existing --</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=Add Users</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=Add Users</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>id=username</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=username</td>
+	<td>plf</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>password</td>
+	<td>GTN PLT ACC</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>Confirmpassword</td>
+	<td>GTN PLT ACC</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>firstName</td>
+	<td>GTN PLT ACC</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>lastName</td>
+	<td>Smith</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>email</td>
+	<td>exo_test2222@gmail.com</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForTextPresent</td>
+	<td> You have registered a new account.</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyTextPresent</td>
+	<td> You have registered a new account.</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Create new account with First/Last Name field contains space&nbsp;&nbsp;--</td>
+	<td>-- Create new account with First/Last Name field contains space  --</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=Add Users</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=Add Users</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>id=username</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=username</td>
+	<td>soc</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>password</td>
+	<td>GTN PLT ACC</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>Confirmpassword</td>
+	<td>GTN PLT ACC</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>firstName</td>
+	<td>GTN PLT</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>lastName</td>
+	<td>GTN PLT</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>email</td>
+	<td>exo_test3232@gmail.com</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForTextPresent</td>
+	<td> You have registered a new account.</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyTextPresent</td>
+	<td> You have registered a new account.</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Create new account when First/Last Name less than 1 or over 45 characters --</td>
+	<td>-- Create new account when First/Last Name less than 1 or over 45 characters --</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=username</td>
+	<td>exomail</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>password</td>
+	<td>GTN PLT ACC</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>Confirmpassword</td>
+	<td>GTN PLT ACC</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>firstName</td>
+	<td>e</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>lastName</td>
+	<td>exomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtest</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>email</td>
+	<td>exomailtest232@gmail.com</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyTextPresent</td>
+	<td>The length of the text in field "Last Name:" must be between "1" and "45" characters.</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Delete user with First Name existing--</td>
+	<td>-- Delete user with First Name existing--</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=Group and Roles</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=searchTerm</td>
+	<td>exogtn</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//form[@id='UISearchForm']//a[@title='Quick Search']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=img.DeleteUserIcon</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertConfirmation</td>
+	<td>Are you sure to delete user exogtn?</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>10000</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyTextPresent</td>
+	<td>No result found.</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Delete user with Last Name existing --</td>
+	<td>-- Delete user with Last Name existing --</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=searchTerm</td>
+	<td>plf</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//form[@id='UISearchForm']//a[@title='Quick Search']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=img.DeleteUserIcon</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertConfirmation</td>
+	<td>Are you sure to delete user plf?</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>10000</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyTextPresent</td>
+	<td>No result found.</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Delete user with First/Last Name field contains space&nbsp;&nbsp;--</td>
+	<td>-- Delete user with First/Last Name field contains space  --</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>id=searchTerm</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=searchTerm</td>
+	<td>soc</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//form[@id='UISearchForm']//a[@title='Quick Search']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>css=img.DeleteUserIcon</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=img.DeleteUserIcon</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertConfirmation</td>
+	<td>Are you sure to delete user soc?</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>10000</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyTextPresent</td>
+	<td>No result found.</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr><tr>
+<td><a name="testresult3">Test_PLT_ACC_024.html</a><br/><div>
+<table border="1" cellpadding="1" cellspacing="1">
+<thead>
+<tr class="title status_passed"><td rowspan="1" colspan="3">Test_PLT_ACC_024</td></tr>
+</thead><tbody>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>setSpeed</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>open</td>
+	<td>/portal/intranet</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>windowMaximize</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//b[contains(text(),'Sign in')]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>username</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>username</td>
+	<td>john</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>password</td>
+	<td>gtn</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>//a[@id='UIPortalLoginFormAction']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Create new account with First Name existing&nbsp;&nbsp;--</td>
+	<td>-- Create new account with First Name existing  --</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=Add Users</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=Add Users</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>id=username</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=username</td>
+	<td>test33</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>password</td>
+	<td>GTN PLT ACC</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>Confirmpassword</td>
+	<td>GTN PLT ACC</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>firstName</td>
+	<td>John</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>lastName</td>
+	<td>GTN PLT ACC</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>email</td>
+	<td>exo_test</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForTextPresent</td>
+	<td> Your email address is invalid. Please enter another one.</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyTextPresent</td>
+	<td>Your email address is invalid. Please enter another one.</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr><tr>
+<td><a name="testresult4">Test_PLT_ACC_025.html</a><br/><div>
+<table border="1" cellpadding="1" cellspacing="1">
+<thead>
+<tr class="title status_passed"><td rowspan="1" colspan="3">Test_PLT_ACC_025</td></tr>
+</thead><tbody>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>setSpeed</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>open</td>
+	<td>/portal/intranet</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>windowMaximize</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//b[contains(text(),'Sign in')]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>username</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>username</td>
+	<td>john</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>password</td>
+	<td>gtn</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>//a[@id='UIPortalLoginFormAction']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Check Reset function while creating new account&nbsp;&nbsp;--</td>
+	<td>-- Check Reset function while creating new account  --</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=Add Users</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=Add Users</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>id=username</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=username</td>
+	<td>tulip44</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>password</td>
+	<td>GTN PLT ACC</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>Confirmpassword</td>
+	<td>GTN PLT ACC</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>firstName</td>
+	<td>John</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>lastName</td>
+	<td>GTN PLT ACC</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>email</td>
+	<td>tulip4@gmail.com</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=Reset</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=Reset</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr><tr>
+<td><a name="testresult5">Test_PLT_ACC_026.html</a><br/><div>
+<table border="1" cellpadding="1" cellspacing="1">
+<thead>
+<tr class="title status_passed"><td rowspan="1" colspan="3">Test_PLT_ACC_026</td></tr>
+</thead><tbody>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>setSpeed</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>open</td>
+	<td>/portal/intranet</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>windowMaximize</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//b[contains(text(),'Sign in')]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>username</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>username</td>
+	<td>john</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>password</td>
+	<td>gtn</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>//a[@id='UIPortalLoginFormAction']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Create new account with First Name existing&nbsp;&nbsp;--</td>
+	<td>-- Create new account with First Name existing  --</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=Add Users</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=Add Users</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>id=username</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=username</td>
+	<td>rose55</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>password</td>
+	<td>GTN PLT ACC</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>Confirmpassword</td>
+	<td>GTN PLT ACC</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>firstName</td>
+	<td>John</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>lastName</td>
+	<td>GTN PLT ACC</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>email</td>
+	<td>exo_test45@gmail.com</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Choose user profile --</td>
+	<td>-- Choose user profile --</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//div[text()='User Profile']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[text()='User Profile']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>user.language</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>select</td>
+	<td>user.language</td>
+	<td>label=French</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForTextPresent</td>
+	<td>You have registered a new account.</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyTextPresent</td>
+	<td>You have registered a new account.</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//div[@class="UIWindowContent"]//a[text()="OK"]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[@class="UIWindowContent"]//a[text()="OK"]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Login by new user --</td>
+	<td>-- Login by new user --</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//b[contains(text(),'Sign in')]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>username</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>username</td>
+	<td>rose55</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>password</td>
+	<td>GTN PLT ACC</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>//a[@id='UIPortalLoginFormAction']</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyTextPresent</td>
+	<td>John GTN PLT ACC</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=Se Déconnecter</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Delete user --</td>
+	<td>-- Delete user --</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//b[contains(text(),'Sign in')]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>username</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>username</td>
+	<td>john</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>password</td>
+	<td>gtn</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>//a[@id='UIPortalLoginFormAction']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=Group and Roles</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=Group and Roles</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>id=searchTerm</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=searchTerm</td>
+	<td>rose55</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//form[@id='UISearchForm']//a[@title='Quick Search']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>css=img.DeleteUserIcon</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=img.DeleteUserIcon</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertConfirmation</td>
+	<td>Are you sure to delete user rose55?</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyTextPresent</td>
+	<td>No result found.</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr><tr>
+<td><a name="testresult6">Test_PLT_ACC_027.html</a><br/><div>
+<table border="1" cellpadding="1" cellspacing="1">
+<thead>
+<tr class="title status_failed"><td rowspan="1" colspan="3">Test_PLT_ACC_027</td></tr>
+</thead><tbody>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>setSpeed</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>open</td>
+	<td>/portal/intranet</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Create new account--</td>
+	<td>-- Create new account--</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>windowMaximize</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//b[contains(text(),'Sign in')]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>username</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>username</td>
+	<td>john</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>password</td>
+	<td>gtn</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>//a[@id='UIPortalLoginFormAction']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Add new user --</td>
+	<td>-- Add new user --</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=Add Users</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=Add Users</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>id=username</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=username</td>
+	<td>minhnguyen1</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>password</td>
+	<td>gatein06</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>Confirmpassword</td>
+	<td>gatein06</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>firstName</td>
+	<td>gatein</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>lastName</td>
+	<td>gatein</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>email</td>
+	<td>minhnguyen@gmail.com</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Choose User Profile tab--</td>
+	<td>-- Choose User Profile tab--</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//div[text()='User Profile']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[text()='User Profile']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>user.language</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>select</td>
+	<td>user.language</td>
+	<td>label=French</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForTextPresent</td>
+	<td>You have registered a new account.</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyTextPresent</td>
+	<td>You have registered a new account.</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//div[@class="UIWindowContent"]//a[text()="OK"]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[@class="UIWindowContent"]//a[text()="OK"]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Login with new user --</td>
+	<td>-- Login with new user --</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>open</td>
+	<td>/portal/intranet</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//b[contains(text(),'Sign in')]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>username</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>username</td>
+	<td>minhnguyen1</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>password</td>
+	<td>gatein06</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>//a[@id='UIPortalLoginFormAction']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForTextPresent</td>
+	<td>gatein gatein</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyTextPresent</td>
+	<td>gatein gatein</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=Mon Profil</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Verify User Name --</td>
+	<td>-- Verify User Name --</td>
+</tr>
+<tr class="  status_failed" style="cursor: pointer;">
+	<td>waitForText</td>
+	<td>//td/label[@for='username']/following::td[contains(text(),'minhnguyen1')]</td>
+	<td>Timed&nbsp;out&nbsp;after&nbsp;30000ms</td>
+</tr>
+<tr class="  status_failed" style="cursor: pointer;">
+	<td>verifyText</td>
+	<td>//td/label[@for='username']/following::td[contains(text(),'minhnguyen1')]</td>
+	<td>Actual&nbsp;value&nbsp;'minhnguyen1'&nbsp;did&nbsp;not&nbsp;match&nbsp;'minhnguyen'</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Verify First Name --</td>
+	<td>-- Verify First Name --</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForText</td>
+	<td>//td/label[@for='firstName']/following::td[contains(text(),'gatein')]</td>
+	<td>gatein</td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyText</td>
+	<td>//td/label[@for='firstName']/following::td[contains(text(),'gatein')]</td>
+	<td>gatein</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Verify Last Name --</td>
+	<td>-- Verify Last Name --</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForText</td>
+	<td>//td/label[@for='lastName']/following::td[contains(text(),'gatein')]</td>
+	<td>gatein</td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyText</td>
+	<td>//td/label[@for='lastName']/following::td[contains(text(),'gatein')]</td>
+	<td>gatein</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Verify Email --</td>
+	<td>-- Verify Email --</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForText</td>
+	<td>//td/label[@for='email']/following::td/a[contains(text(),'minhnguyen@gmail.com')]</td>
+	<td>minhnguyen@gmail.com</td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyText</td>
+	<td>//td/label[@for='email']/following::td/a[contains(text(),'minhnguyen@gmail.com')]</td>
+	<td>minhnguyen@gmail.com</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=Se Déconnecter</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>open</td>
+	<td>/portal/intranet</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//b[contains(text(),'Sign in')]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>username</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>username</td>
+	<td>john</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>password</td>
+	<td>gtn</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>//a[@id='UIPortalLoginFormAction']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Go to users and group management - TEST_SNF_PRL_08--</td>
+	<td>-- Go to users and group management - TEST_SNF_PRL_08--</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=Group and Roles</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=Group and Roles</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Search user --</td>
+	<td>-- Search user --</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>searchTerm</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>searchTerm</td>
+	<td>minhnguyen1</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//form[@id='UISearchForm']//a[@title="Quick Search"]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//form[@id='UISearchForm']//a[@title="Quick Search"]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForTextPresent</td>
+	<td>minhnguyen1</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyTextPresent</td>
+	<td>minhnguyen1</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//form[@id='UISearchForm']//a[@title="Quick Search"]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//form[@id='UISearchForm']//a[@title="Quick Search"]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//img[@alt='DeleteUser']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//img[@alt='DeleteUser']</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertConfirmation</td>
+	<td>Are you sure to delete user minhnguyen1?</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Close popup message --</td>
+	<td>-- Close popup message --</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//a[contains(@onclick,"action=Close")]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//a[contains(@onclick,"action=Close")]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForTextNotPresent</td>
+	<td>minhnguyen1</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyTextNotPresent</td>
+	<td>minhnguyen1</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr><tr>
+<td><a name="testresult7">Test_PRL_01_017_18.html</a><br/><div>
+<table border="1" cellpadding="1" cellspacing="1">
+<thead>
+<tr class="title status_passed"><td rowspan="1" colspan="3">Test_PRL_01_017_CreateNewAccountWhenFirstNameStartsWithNumber</td></tr>
+</thead><tbody>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>setSpeed</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>open</td>
+	<td>/portal/intranet</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Create new account when First Name starts with number--</td>
+	<td>-- Create new account when First Name starts with number--</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>windowMaximize</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//b[contains(text(),'Sign in')]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>username</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>username</td>
+	<td>john</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>password</td>
+	<td>gtn</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>//a[@id='UIPortalLoginFormAction']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Add user with first name start number--</td>
+	<td>-- Add user with first name start number--</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=Add Users</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=Add Users</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>username</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>username</td>
+	<td>test071</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>password</td>
+	<td>Test_PRL_01_017</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>Confirmpassword</td>
+	<td>Test_PRL_01_017</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>firstName</td>
+	<td>01_017</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>lastName</td>
+	<td>test </td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>email</td>
+	<td>test07@gmail.com</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Choose User Profile--</td>
+	<td>-- Choose User Profile--</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//div[text()='User Profile']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[text()='User Profile']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>user.language</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>select</td>
+	<td>user.language</td>
+	<td>label=English</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForTextPresent</td>
+	<td>Only letters or spaces are allowed for the field "First Name:" </td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyTextPresent</td>
+	<td>Only letters or spaces are allowed for the field "First Name:" </td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//div[@class="UIWindowContent"]//a[text()="OK"]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[@class="UIWindowContent"]//a[text()="OK"]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Add new user with Last Name start is number --</td>
+	<td>-- Add new user with Last Name start is number --</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//div[text()='Account Settings']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[text()='Account Settings']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>username</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>username</td>
+	<td>test071</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>password</td>
+	<td>Test_PRL_01_017</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>Confirmpassword</td>
+	<td>Test_PRL_01_017</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>firstName</td>
+	<td>test</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>lastName</td>
+	<td>01_017</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>email</td>
+	<td>test07@gmail.com</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Choose User Profile--</td>
+	<td>-- Choose User Profile--</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//div[text()='User Profile']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[text()='User Profile']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>user.language</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>select</td>
+	<td>user.language</td>
+	<td>label=English</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForTextPresent</td>
+	<td>Only letters or spaces are allowed for the field "Last Name:"</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyTextPresent</td>
+	<td>Only letters or spaces are allowed for the field "Last Name:"</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//div[@class="UIWindowContent"]//a[text()="OK"]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[@class="UIWindowContent"]//a[text()="OK"]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr><tr>
+<td><a name="testresult8">Test_PRL_01_019_20.html</a><br/><div>
+<table border="1" cellpadding="1" cellspacing="1">
+<thead>
+<tr class="title status_passed"><td rowspan="1" colspan="3">Test_PRL_01_019_CreateNewAccoutFirstNameStartsWithUnderscoreDashDot</td></tr>
+</thead><tbody>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>setSpeed</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>open</td>
+	<td>/portal/intranet</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Create new account when First Name starts with underscore, dash and dot--</td>
+	<td>-- Create new account when First Name starts with underscore, dash and dot--</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>windowMaximize</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//b[contains(text(),'Sign in')]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>username</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>username</td>
+	<td>john</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>password</td>
+	<td>gtn</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>//a[@id='UIPortalLoginFormAction']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Add user with first name start with underscore,dash,dot--</td>
+	<td>-- Add user with first name start with underscore,dash,dot--</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=Add Users</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=Add Users</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>username</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>username</td>
+	<td>test0191</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>password</td>
+	<td>Test_PRL_01_019</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>Confirmpassword</td>
+	<td>Test_PRL_01_019</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>firstName</td>
+	<td>--Test_PRL_01_019</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>lastName</td>
+	<td>test</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>email</td>
+	<td>test019@gmail.com</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Choose User Profile--</td>
+	<td>-- Choose User Profile--</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//div[text()='User Profile']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[text()='User Profile']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>user.language</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>select</td>
+	<td>user.language</td>
+	<td>label=English</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForTextPresent</td>
+	<td>Only letters or spaces are allowed for the field "First Name:" </td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyTextPresent</td>
+	<td>Only letters or spaces are allowed for the field "First Name:" </td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//div[@class="UIWindowContent"]//a[text()="OK"]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[@class="UIWindowContent"]//a[text()="OK"]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Add new user with Last Name start is dot or underscore --</td>
+	<td>-- Add new user with Last Name start is dot or underscore --</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//div[text()='Account Settings']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[text()='Account Settings']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>username</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>username</td>
+	<td>test0191</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>password</td>
+	<td>Test_PRL_01_019</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>Confirmpassword</td>
+	<td>Test_PRL_01_019</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>firstName</td>
+	<td>test</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>lastName</td>
+	<td>.....test</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>email</td>
+	<td>test019@gmail.com</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>-- Choose User Profile--</td>
+	<td>-- Choose User Profile--</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//div[text()='User Profile']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[text()='User Profile']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>user.language</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>select</td>
+	<td>user.language</td>
+	<td>label=English</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForTextPresent</td>
+	<td>Only letters or spaces are allowed for the field "Last Name:"</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyTextPresent</td>
+	<td>Only letters or spaces are allowed for the field "Last Name:"</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//div[@class="UIWindowContent"]//a[text()="OK"]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[@class="UIWindowContent"]//a[text()="OK"]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr></table><pre>
+info: Starting test /selenium-server/tests/Test_PLT_ACC_010.html
+info: Executing: |setSpeed | 1000 |  |
+info: Executing: |open | /portal/intranet |  |
+info: Executing: |windowMaximize |  |  |
+info: Executing: |click | //b[contains(text(),&apos;Sign in&apos;)] |  |
+info: Executing: |waitForElementPresent | username |  |
+info: Executing: |type | username | john |
+info: Executing: |type | password | gtn |
+info: Executing: |clickAndWait | //a[@id=&apos;UIPortalLoginFormAction&apos;] |  |
+info: Executing: |echo | -- Create new account -- |  |
+info: Executing: |waitForElementPresent | link=Add Users |  |
+info: Executing: |clickAndWait | link=Add Users |  |
+info: Executing: |waitForElementPresent | id=username |  |
+info: Executing: |type | id=username | test_001_10_2012 |
+info: Executing: |type | password | GTN PLT ACC |
+info: Executing: |type | Confirmpassword | GTN PLT ACC |
+info: Executing: |type | firstName | GTN PLT ACC |
+info: Executing: |type | lastName | GTN PLT ACC |
+info: Executing: |type | email | exo_test10@gmail.com |
+info: Executing: |waitForElementPresent | link=Save |  |
+info: Executing: |click | link=Save |  |
+info: Executing: |waitForTextPresent | You have registered a new account. |  |
+info: Executing: |verifyTextPresent | You have registered a new account. |  |
+info: Executing: |waitForElementPresent | link=OK |  |
+info: Executing: |click | link=OK |  |
+info: Executing: |echo | -- Check Availability function when new account&apos;s user name is existing -- |  |
+info: Executing: |waitForElementPresent | id=username |  |
+info: Executing: |type | id=username | test_001_10_2012 |
+info: Executing: |waitForElementPresent | //img[@title=&apos;Check Availability&apos;] |  |
+info: Executing: |click | //img[@title=&apos;Check Availability&apos;] |  |
+info: Executing: |waitForTextPresent | This username already exists, please enter another one. |  |
+info: Executing: |verifyTextPresent | This username already exists, please enter another one. |  |
+info: Executing: |waitForElementPresent | link=OK |  |
+info: Executing: |click | link=OK |  |
+info: Executing: |echo | -- Check Availability function when new account&apos;s user name does not exist -- |  |
+info: Executing: |waitForElementPresent | id=username |  |
+info: Executing: |type | id=username | test_001_11112012 |
+info: Executing: |waitForElementPresent | //img[@title=&apos;Check Availability&apos;] |  |
+info: Executing: |click | //img[@title=&apos;Check Availability&apos;] |  |
+info: Executing: |waitForTextPresent | This username is available. |  |
+info: Executing: |verifyTextPresent | This username is available. |  |
+info: Executing: |waitForElementPresent | link=OK |  |
+info: Executing: |click | link=OK |  |
+info: Executing: |echo | -- Check Availability function when new account&apos;s user name is the same with deleted account&apos;s user name -- |  |
+info: Executing: |waitForElementPresent | link=Group and Roles |  |
+info: Executing: |clickAndWait | link=Group and Roles |  |
+info: Executing: |echo | -- Search user -- |  |
+info: Executing: |waitForElementPresent | id=searchTerm |  |
+info: Executing: |type | id=searchTerm | test_001_10_2012 |
+info: Executing: |waitForElementPresent | //form[@id=&apos;UISearchForm&apos;]//a[@title=&apos;Quick Search&apos;] |  |
+info: Executing: |click | //form[@id=&apos;UISearchForm&apos;]//a[@title=&apos;Quick Search&apos;] |  |
+info: Executing: |waitForElementPresent | css=img.DeleteUserIcon |  |
+info: Executing: |click | css=img.DeleteUserIcon |  |
+info: Executing: |assertConfirmation | Are you sure to delete user test_001_10_2012? |  |
+info: Executing: |pause | 10000 |  |
+info: Executing: |waitForTextPresent | No result found. |  |
+info: Executing: |verifyTextPresent | No result found. |  |
+info: Executing: |waitForElementPresent | link=OK |  |
+info: Executing: |click | link=OK |  |
+info: Executing: |waitForElementPresent | link=Add Users |  |
+info: Executing: |clickAndWait | link=Add Users |  |
+info: Executing: |waitForElementPresent | id=username |  |
+info: Executing: |type | id=username | test_001_10_2012 |
+info: Executing: |waitForElementPresent | css=img.SearchIcon |  |
+info: Executing: |click | css=img.SearchIcon |  |
+info: Executing: |waitForTextPresent | This username is available. |  |
+info: Executing: |verifyTextPresent | This username is available. |  |
+info: Executing: |waitForElementPresent | link=OK |  |
+info: Executing: |click | link=OK |  |
+info: Executing: |echo | -- Check Availability function when new account&apos;s user name is blank -- |  |
+info: Executing: |waitForElementPresent | id=username |  |
+info: Executing: |type | id=username |  |
+info: Executing: |waitForElementPresent | css=img.SearchIcon |  |
+info: Executing: |click | css=img.SearchIcon |  |
+info: Executing: |waitForTextPresent | The field &quot;User Name:&quot; is required. |  |
+info: Executing: |verifyTextPresent | The field &quot;User Name:&quot; is required. |  |
+info: Executing: |waitForElementPresent | link=OK |  |
+info: Executing: |click | link=OK |  |
+info: Executing: |waitForElementPresent | link=Logout |  |
+info: Executing: |clickAndWait | link=Logout |  |
+info: Starting test /selenium-server/tests/Test_PLT_ACC_011_012_013_014.html
+info: Executing: |setSpeed | 1000 |  |
+info: Executing: |open | /portal/intranet |  |
+info: Executing: |windowMaximize |  |  |
+info: Executing: |click | //b[contains(text(),&apos;Sign in&apos;)] |  |
+info: Executing: |waitForElementPresent | username |  |
+info: Executing: |type | username | john |
+info: Executing: |type | password | gtn |
+info: Executing: |clickAndWait | //a[@id=&apos;UIPortalLoginFormAction&apos;] |  |
+info: Executing: |echo | -- Create new account with Password and  Confirm Password fields are not the same  -- |  |
+info: Executing: |waitForElementPresent | link=Add Users |  |
+info: Executing: |clickAndWait | link=Add Users |  |
+info: Executing: |waitForElementPresent | id=username |  |
+info: Executing: |type | id=username | exogtn2013 |
+info: Executing: |type | password | GTN PLT |
+info: Executing: |type | Confirmpassword | GTN PLT ACC |
+info: Executing: |type | firstName | GTN PLT ACC |
+info: Executing: |type | lastName | GTN PLT ACC |
+info: Executing: |type | email | exo_test2013@gmail.com |
+info: Executing: |waitForElementPresent | link=Save |  |
+info: Executing: |click | link=Save |  |
+info: Executing: |waitForTextPresent | Password and Confirm Password must be the same. |  |
+info: Executing: |verifyTextPresent | Password and Confirm Password must be the same. |  |
+info: Executing: |waitForElementPresent | link=OK |  |
+info: Executing: |click | link=OK |  |
+info: Executing: |echo | -- Create new account when copy from Password and paste to Confirm Password field -- |  |
+info: Executing: |waitForElementPresent | link=Reset |  |
+info: Executing: |click | link=Reset |  |
+info: Executing: |waitForElementPresent | id=username |  |
+info: Executing: |type | id=username | exogtn2013 |
+info: Executing: |type | password | GTN PLT ACC |
+info: Executing: |type | id=Confirmpassword | &amp;#9679;&amp;#9679;&amp;#9679;&amp;#9679;&amp;#9679;&amp;#9679;&amp;#9679;&amp;#9679;&amp;#9679;&amp;#9679;&amp;#9679; |
+info: Executing: |type | firstName | GTN PLT ACC |
+info: Executing: |type | lastName | GTN PLT ACC |
+info: Executing: |type | email | exo_test112013@gmail.com |
+info: Executing: |waitForElementPresent | link=Save |  |
+info: Executing: |click | link=Save |  |
+info: Executing: |waitForTextPresent | Password and Confirm Password must be the same. |  |
+info: Executing: |verifyTextPresent | Password and Confirm Password must be the same. |  |
+info: Executing: |waitForElementPresent | link=OK |  |
+info: Executing: |click | link=OK |  |
+info: Executing: |echo | -- Create new account with Password/Confirm Password less than 6 characters  -- |  |
+info: Executing: |waitForElementPresent | link=Reset |  |
+info: Executing: |click | link=Reset |  |
+info: Executing: |waitForElementPresent | id=username |  |
+info: Executing: |type | id=username | exogtn2013 |
+info: Executing: |type | password | GTN P |
+info: Executing: |type | id=Confirmpassword | GTN P |
+info: Executing: |type | firstName | GTN PLT ACC |
+info: Executing: |type | lastName | GTN PLT ACC |
+info: Executing: |type | email | exo_test12213@gmail.com |
+info: Executing: |waitForElementPresent | link=Save |  |
+info: Executing: |click | link=Save |  |
+info: Executing: |waitForTextPresent | The length of the text in field &quot;Password:&quot; must be between &quot;6&quot; and &quot;30&quot; characters. |  |
+info: Executing: |verifyTextPresent | The length of the text in field &quot;Password:&quot; must be between &quot;6&quot; and &quot;30&quot; characters. |  |
+info: Executing: |waitForElementPresent | link=OK |  |
+info: Executing: |click | link=OK |  |
+info: Executing: |echo | -- Create new account with Password/Confirm Password over 30 characters -- |  |
+info: Executing: |waitForElementPresent | link=Reset |  |
+info: Executing: |click | link=Reset |  |
+info: Executing: |waitForElementPresent | id=username |  |
+info: Executing: |type | id=username | exogtn2013 |
+info: Executing: |type | password | GTN PLT ACC GTN PLT ACC GTN PLT ACC GTN PLT ACC |
+info: Executing: |type | id=Confirmpassword | GTN PLT ACC GTN PLT ACC GTN PLT ACC GTN PLT ACC |
+info: Executing: |type | firstName | GTN PLT ACC |
+info: Executing: |type | lastName | GTN PLT ACC |
+info: Executing: |type | email | exo_test3313@gmail.com |
+info: Executing: |waitForElementPresent | link=Save |  |
+info: Executing: |click | link=Save |  |
+info: Executing: |waitForTextPresent | The length of the text in field &quot;Password:&quot; must be between &quot;6&quot; and &quot;30&quot; characters. |  |
+info: Executing: |verifyTextPresent | The length of the text in field &quot;Password:&quot; must be between &quot;6&quot; and &quot;30&quot; characters. |  |
+info: Executing: |waitForElementPresent | link=OK |  |
+info: Executing: |click | link=OK |  |
+info: Executing: |waitForElementPresent | link=Logout |  |
+info: Executing: |clickAndWait | link=Logout |  |
+info: Starting test /selenium-server/tests/Test_PLT_ACC_015_016_021_022.html
+info: Executing: |setSpeed | 1000 |  |
+info: Executing: |open | /portal/intranet |  |
+info: Executing: |windowMaximize |  |  |
+info: Executing: |click | //b[contains(text(),&apos;Sign in&apos;)] |  |
+info: Executing: |waitForElementPresent | username |  |
+info: Executing: |type | username | john |
+info: Executing: |type | password | gtn |
+info: Executing: |clickAndWait | //a[@id=&apos;UIPortalLoginFormAction&apos;] |  |
+info: Executing: |echo | -- Create new account with First Name existing  -- |  |
+info: Executing: |waitForElementPresent | link=Add Users |  |
+info: Executing: |clickAndWait | link=Add Users |  |
+info: Executing: |waitForElementPresent | id=username |  |
+info: Executing: |type | id=username | exogtn |
+info: Executing: |type | password | GTN PLT ACC |
+info: Executing: |type | Confirmpassword | GTN PLT ACC |
+info: Executing: |type | firstName | John |
+info: Executing: |type | lastName | GTN PLT ACC |
+info: Executing: |type | email | exo_test22@gmail.com |
+info: Executing: |waitForElementPresent | link=Save |  |
+info: Executing: |click | link=Save |  |
+info: Executing: |waitForTextPresent | You have registered a new account. |  |
+info: Executing: |verifyTextPresent | You have registered a new account. |  |
+info: Executing: |waitForElementPresent | link=OK |  |
+info: Executing: |click | link=OK |  |
+info: Executing: |echo | -- Create new account with Last Name existing -- |  |
+info: Executing: |waitForElementPresent | link=Add Users |  |
+info: Executing: |clickAndWait | link=Add Users |  |
+info: Executing: |waitForElementPresent | id=username |  |
+info: Executing: |type | id=username | plf |
+info: Executing: |type | password | GTN PLT ACC |
+info: Executing: |type | Confirmpassword | GTN PLT ACC |
+info: Executing: |type | firstName | GTN PLT ACC |
+info: Executing: |type | lastName | Smith |
+info: Executing: |type | email | exo_test2222@gmail.com |
+info: Executing: |waitForElementPresent | link=Save |  |
+info: Executing: |click | link=Save |  |
+info: Executing: |waitForTextPresent | You have registered a new account. |  |
+info: Executing: |verifyTextPresent | You have registered a new account. |  |
+info: Executing: |waitForElementPresent | link=OK |  |
+info: Executing: |click | link=OK |  |
+info: Executing: |echo | -- Create new account with First/Last Name field contains space  -- |  |
+info: Executing: |waitForElementPresent | link=Add Users |  |
+info: Executing: |clickAndWait | link=Add Users |  |
+info: Executing: |waitForElementPresent | id=username |  |
+info: Executing: |type | id=username | soc |
+info: Executing: |type | password | GTN PLT ACC |
+info: Executing: |type | Confirmpassword | GTN PLT ACC |
+info: Executing: |type | firstName | GTN PLT |
+info: Executing: |type | lastName | GTN PLT |
+info: Executing: |type | email | exo_test3232@gmail.com |
+info: Executing: |waitForElementPresent | link=Save |  |
+info: Executing: |click | link=Save |  |
+info: Executing: |waitForTextPresent | You have registered a new account. |  |
+info: Executing: |verifyTextPresent | You have registered a new account. |  |
+info: Executing: |waitForElementPresent | link=OK |  |
+info: Executing: |click | link=OK |  |
+info: Executing: |echo | -- Create new account when First/Last Name less than 1 or over 45 characters -- |  |
+info: Executing: |type | id=username | exomail |
+info: Executing: |type | password | GTN PLT ACC |
+info: Executing: |type | Confirmpassword | GTN PLT ACC |
+info: Executing: |type | firstName | e |
+info: Executing: |type | lastName | exomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtestexomailtest |
+info: Executing: |type | email | exomailtest232@gmail.com |
+info: Executing: |waitForElementPresent | link=Save |  |
+info: Executing: |click | link=Save |  |
+info: Executing: |verifyTextPresent | The length of the text in field &quot;Last Name:&quot; must be between &quot;1&quot; and &quot;45&quot; characters. |  |
+info: Executing: |waitForElementPresent | link=OK |  |
+info: Executing: |click | link=OK |  |
+info: Executing: |echo | -- Delete user with First Name existing-- |  |
+info: Executing: |clickAndWait | link=Group and Roles |  |
+info: Executing: |type | id=searchTerm | exogtn |
+info: Executing: |click | //form[@id=&apos;UISearchForm&apos;]//a[@title=&apos;Quick Search&apos;] |  |
+info: Executing: |click | css=img.DeleteUserIcon |  |
+info: Executing: |assertConfirmation | Are you sure to delete user exogtn? |  |
+info: Executing: |pause | 10000 |  |
+info: Executing: |verifyTextPresent | No result found. |  |
+info: Executing: |click | link=OK |  |
+info: Executing: |echo | -- Delete user with Last Name existing -- |  |
+info: Executing: |type | id=searchTerm | plf |
+info: Executing: |click | //form[@id=&apos;UISearchForm&apos;]//a[@title=&apos;Quick Search&apos;] |  |
+info: Executing: |click | css=img.DeleteUserIcon |  |
+info: Executing: |assertConfirmation | Are you sure to delete user plf? |  |
+info: Executing: |pause | 10000 |  |
+info: Executing: |verifyTextPresent | No result found. |  |
+info: Executing: |click | link=OK |  |
+info: Executing: |echo | -- Delete user with First/Last Name field contains space  -- |  |
+info: Executing: |waitForElementPresent | id=searchTerm |  |
+info: Executing: |type | id=searchTerm | soc |
+info: Executing: |click | //form[@id=&apos;UISearchForm&apos;]//a[@title=&apos;Quick Search&apos;] |  |
+info: Executing: |waitForElementPresent | css=img.DeleteUserIcon |  |
+info: Executing: |click | css=img.DeleteUserIcon |  |
+info: Executing: |assertConfirmation | Are you sure to delete user soc? |  |
+info: Executing: |pause | 10000 |  |
+info: Executing: |verifyTextPresent | No result found. |  |
+info: Executing: |click | link=OK |  |
+info: Executing: |clickAndWait | link=Logout |  |
+info: Starting test /selenium-server/tests/Test_PLT_ACC_024.html
+info: Executing: |setSpeed | 1000 |  |
+info: Executing: |open | /portal/intranet |  |
+info: Executing: |windowMaximize |  |  |
+info: Executing: |click | //b[contains(text(),&apos;Sign in&apos;)] |  |
+info: Executing: |waitForElementPresent | username |  |
+info: Executing: |type | username | john |
+info: Executing: |type | password | gtn |
+info: Executing: |clickAndWait | //a[@id=&apos;UIPortalLoginFormAction&apos;] |  |
+info: Executing: |echo | -- Create new account with First Name existing  -- |  |
+info: Executing: |waitForElementPresent | link=Add Users |  |
+info: Executing: |clickAndWait | link=Add Users |  |
+info: Executing: |waitForElementPresent | id=username |  |
+info: Executing: |type | id=username | test33 |
+info: Executing: |type | password | GTN PLT ACC |
+info: Executing: |type | Confirmpassword | GTN PLT ACC |
+info: Executing: |type | firstName | John |
+info: Executing: |type | lastName | GTN PLT ACC |
+info: Executing: |type | email | exo_test |
+info: Executing: |waitForElementPresent | link=Save |  |
+info: Executing: |click | link=Save |  |
+info: Executing: |waitForTextPresent | Your email address is invalid. Please enter another one. |  |
+info: Executing: |verifyTextPresent | Your email address is invalid. Please enter another one. |  |
+info: Executing: |waitForElementPresent | link=OK |  |
+info: Executing: |click | link=OK |  |
+info: Executing: |waitForElementPresent | link=Logout |  |
+info: Executing: |clickAndWait | link=Logout |  |
+info: Starting test /selenium-server/tests/Test_PLT_ACC_025.html
+info: Executing: |setSpeed | 1000 |  |
+info: Executing: |open | /portal/intranet |  |
+info: Executing: |windowMaximize |  |  |
+info: Executing: |click | //b[contains(text(),&apos;Sign in&apos;)] |  |
+info: Executing: |waitForElementPresent | username |  |
+info: Executing: |type | username | john |
+info: Executing: |type | password | gtn |
+info: Executing: |clickAndWait | //a[@id=&apos;UIPortalLoginFormAction&apos;] |  |
+info: Executing: |echo | -- Check Reset function while creating new account  -- |  |
+info: Executing: |waitForElementPresent | link=Add Users |  |
+info: Executing: |clickAndWait | link=Add Users |  |
+info: Executing: |waitForElementPresent | id=username |  |
+info: Executing: |type | id=username | tulip44 |
+info: Executing: |type | password | GTN PLT ACC |
+info: Executing: |type | Confirmpassword | GTN PLT ACC |
+info: Executing: |type | firstName | John |
+info: Executing: |type | lastName | GTN PLT ACC |
+info: Executing: |type | email | tulip4@gmail.com |
+info: Executing: |waitForElementPresent | link=Reset |  |
+info: Executing: |click | link=Reset |  |
+info: Executing: |waitForElementPresent | link=Logout |  |
+info: Executing: |clickAndWait | link=Logout |  |
+info: Starting test /selenium-server/tests/Test_PLT_ACC_026.html
+info: Executing: |setSpeed | 1000 |  |
+info: Executing: |open | /portal/intranet |  |
+info: Executing: |windowMaximize |  |  |
+info: Executing: |click | //b[contains(text(),&apos;Sign in&apos;)] |  |
+info: Executing: |waitForElementPresent | username |  |
+info: Executing: |type | username | john |
+info: Executing: |type | password | gtn |
+info: Executing: |clickAndWait | //a[@id=&apos;UIPortalLoginFormAction&apos;] |  |
+info: Executing: |echo | -- Create new account with First Name existing  -- |  |
+info: Executing: |waitForElementPresent | link=Add Users |  |
+info: Executing: |clickAndWait | link=Add Users |  |
+info: Executing: |waitForElementPresent | id=username |  |
+info: Executing: |type | id=username | rose55 |
+info: Executing: |type | password | GTN PLT ACC |
+info: Executing: |type | Confirmpassword | GTN PLT ACC |
+info: Executing: |type | firstName | John |
+info: Executing: |type | lastName | GTN PLT ACC |
+info: Executing: |type | email | exo_test45@gmail.com |
+info: Executing: |echo | -- Choose user profile -- |  |
+info: Executing: |waitForElementPresent | //div[text()=&apos;User Profile&apos;] |  |
+info: Executing: |click | //div[text()=&apos;User Profile&apos;] |  |
+info: Executing: |waitForElementPresent | user.language |  |
+info: Executing: |select | user.language | label=French |
+info: Executing: |waitForElementPresent | link=Save |  |
+info: Executing: |click | link=Save |  |
+info: Executing: |waitForTextPresent | You have registered a new account. |  |
+info: Executing: |verifyTextPresent | You have registered a new account. |  |
+info: Executing: |waitForElementPresent | //div[@class=&quot;UIWindowContent&quot;]//a[text()=&quot;OK&quot;] |  |
+info: Executing: |click | //div[@class=&quot;UIWindowContent&quot;]//a[text()=&quot;OK&quot;] |  |
+info: Executing: |waitForElementPresent | link=Logout |  |
+info: Executing: |clickAndWait | link=Logout |  |
+info: Executing: |echo | -- Login by new user -- |  |
+info: Executing: |click | //b[contains(text(),&apos;Sign in&apos;)] |  |
+info: Executing: |waitForElementPresent | username |  |
+info: Executing: |type | username | rose55 |
+info: Executing: |type | password | GTN PLT ACC |
+info: Executing: |clickAndWait | //a[@id=&apos;UIPortalLoginFormAction&apos;] |  |
+info: Executing: |verifyTextPresent | John GTN PLT ACC |  |
+info: Executing: |clickAndWait | link=Se Déconnecter |  |
+info: Executing: |echo | -- Delete user -- |  |
+info: Executing: |click | //b[contains(text(),&apos;Sign in&apos;)] |  |
+info: Executing: |waitForElementPresent | username |  |
+info: Executing: |type | username | john |
+info: Executing: |type | password | gtn |
+info: Executing: |clickAndWait | //a[@id=&apos;UIPortalLoginFormAction&apos;] |  |
+info: Executing: |waitForElementPresent | link=Group and Roles |  |
+info: Executing: |clickAndWait | link=Group and Roles |  |
+info: Executing: |waitForElementPresent | id=searchTerm |  |
+info: Executing: |type | id=searchTerm | rose55 |
+info: Executing: |click | //form[@id=&apos;UISearchForm&apos;]//a[@title=&apos;Quick Search&apos;] |  |
+info: Executing: |waitForElementPresent | css=img.DeleteUserIcon |  |
+info: Executing: |click | css=img.DeleteUserIcon |  |
+info: Executing: |assertConfirmation | Are you sure to delete user rose55? |  |
+info: Executing: |pause | 5000 |  |
+info: Executing: |verifyTextPresent | No result found. |  |
+info: Executing: |waitForElementPresent | link=OK |  |
+info: Executing: |click | link=OK |  |
+info: Executing: |clickAndWait | link=Logout |  |
+info: Starting test /selenium-server/tests/Test_PLT_ACC_027.html
+info: Executing: |setSpeed | 1000 |  |
+info: Executing: |open | /portal/intranet |  |
+info: Executing: |echo | -- Create new account-- |  |
+info: Executing: |windowMaximize |  |  |
+info: Executing: |click | //b[contains(text(),&apos;Sign in&apos;)] |  |
+info: Executing: |waitForElementPresent | username |  |
+info: Executing: |type | username | john |
+info: Executing: |type | password | gtn |
+info: Executing: |clickAndWait | //a[@id=&apos;UIPortalLoginFormAction&apos;] |  |
+info: Executing: |echo | -- Add new user -- |  |
+info: Executing: |waitForElementPresent | link=Add Users |  |
+info: Executing: |clickAndWait | link=Add Users |  |
+info: Executing: |waitForElementPresent | id=username |  |
+info: Executing: |type | id=username | minhnguyen1 |
+info: Executing: |type | password | gatein06 |
+info: Executing: |type | Confirmpassword | gatein06 |
+info: Executing: |type | firstName | gatein |
+info: Executing: |type | lastName | gatein |
+info: Executing: |type | email | minhnguyen@gmail.com |
+info: Executing: |echo | -- Choose User Profile tab-- |  |
+info: Executing: |waitForElementPresent | //div[text()=&apos;User Profile&apos;] |  |
+info: Executing: |click | //div[text()=&apos;User Profile&apos;] |  |
+info: Executing: |waitForElementPresent | user.language |  |
+info: Executing: |select | user.language | label=French |
+info: Executing: |waitForElementPresent | link=Save |  |
+info: Executing: |click | link=Save |  |
+info: Executing: |waitForTextPresent | You have registered a new account. |  |
+info: Executing: |verifyTextPresent | You have registered a new account. |  |
+info: Executing: |waitForElementPresent | //div[@class=&quot;UIWindowContent&quot;]//a[text()=&quot;OK&quot;] |  |
+info: Executing: |click | //div[@class=&quot;UIWindowContent&quot;]//a[text()=&quot;OK&quot;] |  |
+info: Executing: |waitForElementPresent | link=Logout |  |
+info: Executing: |clickAndWait | link=Logout |  |
+info: Executing: |echo | -- Login with new user -- |  |
+info: Executing: |open | /portal/intranet |  |
+info: Executing: |click | //b[contains(text(),&apos;Sign in&apos;)] |  |
+info: Executing: |waitForElementPresent | username |  |
+info: Executing: |type | username | minhnguyen1 |
+info: Executing: |type | password | gatein06 |
+info: Executing: |clickAndWait | //a[@id=&apos;UIPortalLoginFormAction&apos;] |  |
+info: Executing: |waitForTextPresent | gatein gatein |  |
+info: Executing: |verifyTextPresent | gatein gatein |  |
+info: Executing: |clickAndWait | link=Mon Profil |  |
+info: Executing: |echo | -- Verify User Name -- |  |
+info: Executing: |waitForText | //td/label[@for=&apos;username&apos;]/following::td[contains(text(),&apos;minhnguyen1&apos;)] | minhnguyen |
+warn: currentTest.recordFailure: Timed out after 30000ms
+info: Executing: |verifyText | //td/label[@for=&apos;username&apos;]/following::td[contains(text(),&apos;minhnguyen1&apos;)] | minhnguyen |
+warn: currentTest.recordFailure: Actual value &apos;minhnguyen1&apos; did not match &apos;minhnguyen&apos;
+info: Executing: |echo | -- Verify First Name -- |  |
+info: Executing: |waitForText | //td/label[@for=&apos;firstName&apos;]/following::td[contains(text(),&apos;gatein&apos;)] | gatein |
+info: Executing: |verifyText | //td/label[@for=&apos;firstName&apos;]/following::td[contains(text(),&apos;gatein&apos;)] | gatein |
+info: Executing: |echo | -- Verify Last Name -- |  |
+info: Executing: |waitForText | //td/label[@for=&apos;lastName&apos;]/following::td[contains(text(),&apos;gatein&apos;)] | gatein |
+info: Executing: |verifyText | //td/label[@for=&apos;lastName&apos;]/following::td[contains(text(),&apos;gatein&apos;)] | gatein |
+info: Executing: |echo | -- Verify Email -- |  |
+info: Executing: |waitForText | //td/label[@for=&apos;email&apos;]/following::td/a[contains(text(),&apos;minhnguyen@gmail.com&apos;)] | minhnguyen@gmail.com |
+info: Executing: |verifyText | //td/label[@for=&apos;email&apos;]/following::td/a[contains(text(),&apos;minhnguyen@gmail.com&apos;)] | minhnguyen@gmail.com |
+info: Executing: |clickAndWait | link=Se Déconnecter |  |
+info: Executing: |open | /portal/intranet |  |
+info: Executing: |click | //b[contains(text(),&apos;Sign in&apos;)] |  |
+info: Executing: |waitForElementPresent | username |  |
+info: Executing: |type | username | john |
+info: Executing: |type | password | gtn |
+info: Executing: |clickAndWait | //a[@id=&apos;UIPortalLoginFormAction&apos;] |  |
+info: Executing: |echo | -- Go to users and group management - TEST_SNF_PRL_08-- |  |
+info: Executing: |waitForElementPresent | link=Group and Roles |  |
+info: Executing: |clickAndWait | link=Group and Roles |  |
+info: Executing: |echo | -- Search user -- |  |
+info: Executing: |waitForElementPresent | searchTerm |  |
+info: Executing: |type | searchTerm | minhnguyen1 |
+info: Executing: |waitForElementPresent | //form[@id=&apos;UISearchForm&apos;]//a[@title=&quot;Quick Search&quot;] |  |
+info: Executing: |click | //form[@id=&apos;UISearchForm&apos;]//a[@title=&quot;Quick Search&quot;] |  |
+info: Executing: |waitForTextPresent | minhnguyen1 |  |
+info: Executing: |verifyTextPresent | minhnguyen1 |  |
+info: Executing: |waitForElementPresent | //form[@id=&apos;UISearchForm&apos;]//a[@title=&quot;Quick Search&quot;] |  |
+info: Executing: |click | //form[@id=&apos;UISearchForm&apos;]//a[@title=&quot;Quick Search&quot;] |  |
+info: Executing: |waitForElementPresent | //img[@alt=&apos;DeleteUser&apos;] |  |
+info: Executing: |click | //img[@alt=&apos;DeleteUser&apos;] |  |
+info: Executing: |assertConfirmation | Are you sure to delete user minhnguyen1? |  |
+info: Executing: |echo | -- Close popup message -- |  |
+info: Executing: |waitForElementPresent | //a[contains(@onclick,&quot;action=Close&quot;)] |  |
+info: Executing: |click | //a[contains(@onclick,&quot;action=Close&quot;)] |  |
+info: Executing: |waitForTextNotPresent | minhnguyen1 |  |
+info: Executing: |verifyTextNotPresent | minhnguyen1 |  |
+info: Executing: |waitForElementPresent | link=Logout |  |
+info: Executing: |clickAndWait | link=Logout |  |
+info: Starting test /selenium-server/tests/Test_PRL_01_017_18.html
+info: Executing: |setSpeed | 1000 |  |
+info: Executing: |open | /portal/intranet |  |
+info: Executing: |echo | -- Create new account when First Name starts with number-- |  |
+info: Executing: |windowMaximize |  |  |
+info: Executing: |click | //b[contains(text(),&apos;Sign in&apos;)] |  |
+info: Executing: |waitForElementPresent | username |  |
+info: Executing: |type | username | john |
+info: Executing: |type | password | gtn |
+info: Executing: |clickAndWait | //a[@id=&apos;UIPortalLoginFormAction&apos;] |  |
+info: Executing: |echo | -- Add user with first name start number-- |  |
+info: Executing: |waitForElementPresent | link=Add Users |  |
+info: Executing: |clickAndWait | link=Add Users |  |
+info: Executing: |waitForElementPresent | username |  |
+info: Executing: |type | username | test071 |
+info: Executing: |type | password | Test_PRL_01_017 |
+info: Executing: |type | Confirmpassword | Test_PRL_01_017 |
+info: Executing: |type | firstName | 01_017 |
+info: Executing: |type | lastName | test |
+info: Executing: |type | email | test07@gmail.com |
+info: Executing: |echo | -- Choose User Profile-- |  |
+info: Executing: |waitForElementPresent | //div[text()=&apos;User Profile&apos;] |  |
+info: Executing: |click | //div[text()=&apos;User Profile&apos;] |  |
+info: Executing: |waitForElementPresent | user.language |  |
+info: Executing: |select | user.language | label=English |
+info: Executing: |waitForElementPresent | link=Save |  |
+info: Executing: |click | link=Save |  |
+info: Executing: |waitForTextPresent | Only letters or spaces are allowed for the field &quot;First Name:&quot; |  |
+info: Executing: |verifyTextPresent | Only letters or spaces are allowed for the field &quot;First Name:&quot; |  |
+info: Executing: |waitForElementPresent | //div[@class=&quot;UIWindowContent&quot;]//a[text()=&quot;OK&quot;] |  |
+info: Executing: |click | //div[@class=&quot;UIWindowContent&quot;]//a[text()=&quot;OK&quot;] |  |
+info: Executing: |echo | -- Add new user with Last Name start is number -- |  |
+info: Executing: |waitForElementPresent | //div[text()=&apos;Account Settings&apos;] |  |
+info: Executing: |click | //div[text()=&apos;Account Settings&apos;] |  |
+info: Executing: |waitForElementPresent | username |  |
+info: Executing: |type | username | test071 |
+info: Executing: |type | password | Test_PRL_01_017 |
+info: Executing: |type | Confirmpassword | Test_PRL_01_017 |
+info: Executing: |type | firstName | test |
+info: Executing: |type | lastName | 01_017 |
+info: Executing: |type | email | test07@gmail.com |
+info: Executing: |echo | -- Choose User Profile-- |  |
+info: Executing: |waitForElementPresent | //div[text()=&apos;User Profile&apos;] |  |
+info: Executing: |click | //div[text()=&apos;User Profile&apos;] |  |
+info: Executing: |waitForElementPresent | user.language |  |
+info: Executing: |select | user.language | label=English |
+info: Executing: |waitForElementPresent | link=Save |  |
+info: Executing: |click | link=Save |  |
+info: Executing: |waitForTextPresent | Only letters or spaces are allowed for the field &quot;Last Name:&quot; |  |
+info: Executing: |verifyTextPresent | Only letters or spaces are allowed for the field &quot;Last Name:&quot; |  |
+info: Executing: |waitForElementPresent | //div[@class=&quot;UIWindowContent&quot;]//a[text()=&quot;OK&quot;] |  |
+info: Executing: |click | //div[@class=&quot;UIWindowContent&quot;]//a[text()=&quot;OK&quot;] |  |
+info: Executing: |waitForElementPresent | link=Logout |  |
+info: Executing: |clickAndWait | link=Logout |  |
+info: Starting test /selenium-server/tests/Test_PRL_01_019_20.html
+info: Executing: |setSpeed | 1000 |  |
+info: Executing: |open | /portal/intranet |  |
+info: Executing: |echo | -- Create new account when First Name starts with underscore, dash and dot-- |  |
+info: Executing: |windowMaximize |  |  |
+info: Executing: |click | //b[contains(text(),&apos;Sign in&apos;)] |  |
+info: Executing: |waitForElementPresent | username |  |
+info: Executing: |type | username | john |
+info: Executing: |type | password | gtn |
+info: Executing: |clickAndWait | //a[@id=&apos;UIPortalLoginFormAction&apos;] |  |
+info: Executing: |echo | -- Add user with first name start with underscore,dash,dot-- |  |
+info: Executing: |waitForElementPresent | link=Add Users |  |
+info: Executing: |clickAndWait | link=Add Users |  |
+info: Executing: |waitForElementPresent | username |  |
+info: Executing: |type | username | test0191 |
+info: Executing: |type | password | Test_PRL_01_019 |
+info: Executing: |type | Confirmpassword | Test_PRL_01_019 |
+info: Executing: |type | firstName | --Test_PRL_01_019 |
+info: Executing: |type | lastName | test |
+info: Executing: |type | email | test019@gmail.com |
+info: Executing: |echo | -- Choose User Profile-- |  |
+info: Executing: |waitForElementPresent | //div[text()=&apos;User Profile&apos;] |  |
+info: Executing: |click | //div[text()=&apos;User Profile&apos;] |  |
+info: Executing: |waitForElementPresent | user.language |  |
+info: Executing: |select | user.language | label=English |
+info: Executing: |waitForElementPresent | link=Save |  |
+info: Executing: |click | link=Save |  |
+info: Executing: |waitForTextPresent | Only letters or spaces are allowed for the field &quot;First Name:&quot; |  |
+info: Executing: |verifyTextPresent | Only letters or spaces are allowed for the field &quot;First Name:&quot; |  |
+info: Executing: |waitForElementPresent | //div[@class=&quot;UIWindowContent&quot;]//a[text()=&quot;OK&quot;] |  |
+info: Executing: |click | //div[@class=&quot;UIWindowContent&quot;]//a[text()=&quot;OK&quot;] |  |
+info: Executing: |echo | -- Add new user with Last Name start is dot or underscore -- |  |
+info: Executing: |waitForElementPresent | //div[text()=&apos;Account Settings&apos;] |  |
+info: Executing: |click | //div[text()=&apos;Account Settings&apos;] |  |
+info: Executing: |waitForElementPresent | username |  |
+info: Executing: |type | username | test0191 |
+info: Executing: |type | password | Test_PRL_01_019 |
+info: Executing: |type | Confirmpassword | Test_PRL_01_019 |
+info: Executing: |type | firstName | test |
+info: Executing: |type | lastName | .....test |
+info: Executing: |type | email | test019@gmail.com |
+info: Executing: |echo | -- Choose User Profile-- |  |
+info: Executing: |waitForElementPresent | //div[text()=&apos;User Profile&apos;] |  |
+info: Executing: |click | //div[text()=&apos;User Profile&apos;] |  |
+info: Executing: |waitForElementPresent | user.language |  |
+info: Executing: |select | user.language | label=English |
+info: Executing: |waitForElementPresent | link=Save |  |
+info: Executing: |click | link=Save |  |
+info: Executing: |waitForTextPresent | Only letters or spaces are allowed for the field &quot;Last Name:&quot; |  |
+info: Executing: |verifyTextPresent | Only letters or spaces are allowed for the field &quot;Last Name:&quot; |  |
+info: Executing: |waitForElementPresent | //div[@class=&quot;UIWindowContent&quot;]//a[text()=&quot;OK&quot;] |  |
+info: Executing: |click | //div[@class=&quot;UIWindowContent&quot;]//a[text()=&quot;OK&quot;] |  |
+info: Executing: |waitForElementPresent | link=Logout |  |
+info: Executing: |clickAndWait | link=Logout |  |
+</pre></body></html>

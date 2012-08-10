@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://localhost:8080/" />
+<title>Test_POR_14_06_001_ChangeOrderOfNode</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Test_POR_14_06_001_ChangeOrderOfNode</td></tr>
+</thead><tbody>
+<tr>
+	<td>setSpeed</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/portal/intranet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Manage node for portal --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>windowMaximize</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//b[contains(text(),'Sign in')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>username</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>username</td>
+	<td>root</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>password</td>
+	<td>gtn</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//a[@id='UIPortalLoginFormAction']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>10000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Sites</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Edit Navigation --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//a[contains(@href,'intranet')]/preceding-sibling::a[text()='Edit Navigation']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[contains(@href,'intranet')]/preceding-sibling::a[text()='Edit Navigation']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Check move up when node is the first&nbsp;&nbsp;--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UINavigationNodeSelector']//a[@title='Home']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='UINavigationNodeSelector']//a[@title='Home']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseDownRight</td>
+	<td>xpath=//a[@title='Home']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>xpath=//div[@id='UINavigationNodeSelector']//div[@id='NavigationNodePopupMenu']//a[@class='ItemIcon MoveUp16x16Icon']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=//div[@id='UINavigationNodeSelector']//div[@id='NavigationNodePopupMenu']//a[@class='ItemIcon MoveUp16x16Icon']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Check move down when node is the last --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UINavigationNodeSelector']//a[@title='Wiki']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='UINavigationNodeSelector']//a[@title='Wiki']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseDownRight</td>
+	<td>xpath=//a[@title='Wiki']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>xpath=//div[@id='UINavigationNodeSelector']//div[@id='NavigationNodePopupMenu']//a[@class='ItemIcon MoveDown16x16Icon']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=//div[@id='UINavigationNodeSelector']//div[@id='NavigationNodePopupMenu']//a[@class='ItemIcon MoveDown16x16Icon']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Move node up --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UINavigationNodeSelector']//a[@title='Welcome']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='UINavigationNodeSelector']//a[@title='Welcome']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseDownRight</td>
+	<td>xpath=//a[@title='Welcome']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>xpath=//div[@id='UINavigationNodeSelector']//div[@id='NavigationNodePopupMenu']//a[@class='ItemIcon MoveUp16x16Icon']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=//div[@id='UINavigationNodeSelector']//div[@id='NavigationNodePopupMenu']//a[@class='ItemIcon MoveUp16x16Icon']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>--Move node down</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UINavigationNodeSelector']//a[@title='Welcome']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='UINavigationNodeSelector']//a[@title='Welcome']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseDownRight</td>
+	<td>xpath=//a[@title='Welcome']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>xpath=//div[@id='UINavigationNodeSelector']//div[@id='NavigationNodePopupMenu']//a[@class='ItemIcon MoveDown16x16Icon']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=//div[@id='UINavigationNodeSelector']//div[@id='NavigationNodePopupMenu']//a[@class='ItemIcon MoveDown16x16Icon']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

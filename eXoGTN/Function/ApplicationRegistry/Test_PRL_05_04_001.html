@@ -1,0 +1,736 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://localhost:8080/" />
+<title>Test_PRL_05_04_001</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Test_PRL_05_04_001</td></tr>
+</thead><tbody>
+<tr>
+	<td>setSpeed</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/portal/intranet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>--Import application--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>windowMaximize</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//b[contains(text(),'Sign in')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>username</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>username</td>
+	<td>root</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>password</td>
+	<td>gtn</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//a[@id='UIPortalLoginFormAction']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Go to Application Registry --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Applications</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>link=Administration</td>
+	<td>Administration</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=Administration</td>
+	<td>Administration</td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>link=collaboration</td>
+	<td>collaboration</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=collaboration</td>
+	<td>collaboration</td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>link=Content</td>
+	<td>Content</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=Content</td>
+	<td>Content</td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>link=Controller</td>
+	<td>Controller</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=Controller</td>
+	<td>Controller</td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>link=Controller</td>
+	<td>Controller</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=Controller</td>
+	<td>Controller</td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>link=ECM</td>
+	<td>ECM</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=ECM</td>
+	<td>ECM</td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>link=faq</td>
+	<td>faq</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=faq</td>
+	<td>faq</td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>link=Form Generator Portlet</td>
+	<td>Form Generator Portlet</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=Form Generator Portlet</td>
+	<td>Form Generator Portlet</td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>link=Forms</td>
+	<td>Forms</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=Forms</td>
+	<td>Forms</td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>link=forum</td>
+	<td>forum</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=forum</td>
+	<td>forum</td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>link=Gadgets</td>
+	<td>Gadgets</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=Gadgets</td>
+	<td>Gadgets</td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>link=Integration</td>
+	<td>Integration</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=Integration</td>
+	<td>Integration</td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>link=Navigation</td>
+	<td>Navigation</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=Navigation</td>
+	<td>Navigation</td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>link=Newsletter</td>
+	<td>Newsletter</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=Newsletter</td>
+	<td>Newsletter</td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>link=platformNavigation</td>
+	<td>platformNavigation</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=platformNavigation</td>
+	<td>platformNavigation</td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>link=poll</td>
+	<td>poll</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=poll</td>
+	<td>poll</td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>link=Search</td>
+	<td>Search</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=Search</td>
+	<td>Search</td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>link=SEOToolbar</td>
+	<td>SEOToolbar</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=SEOToolbar</td>
+	<td>SEOToolbar</td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>link=System</td>
+	<td>System</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=System</td>
+	<td>System</td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>link=WCM Admin</td>
+	<td>WCM Admin</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=WCM Admin</td>
+	<td>WCM Admin</td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>link=Wiki</td>
+	<td>Wiki</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=Wiki</td>
+	<td>Wiki</td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>link=workflow</td>
+	<td>workflow</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=workflow</td>
+	<td>workflow</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Click Import Application --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.IconControl.ImportIcon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertConfirmation</td>
+	<td>This will automatically import all gadgets and portlets into new categories.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Show existing portlets and category are imported successfully--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>link=Admin</td>
+	<td>Admin</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=Admin</td>
+	<td>Admin</td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>link=Administration</td>
+	<td>Administration</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=Administration</td>
+	<td>Administration</td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>link=collaboration</td>
+	<td>collaboration</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=collaboration</td>
+	<td>collaboration</td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>link=Content</td>
+	<td>Content</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=Content</td>
+	<td>Content</td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>link=Controller</td>
+	<td>Controller</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=Controller</td>
+	<td>Controller</td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>link=ECM</td>
+	<td>ECM</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=ECM</td>
+	<td>ECM</td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>link=faq</td>
+	<td>faq</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=faq</td>
+	<td>faq</td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>link=Form Generator Portlet</td>
+	<td>Form Generator Portlet</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=Form Generator Portlet</td>
+	<td>Form Generator Portlet</td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>link=Forms</td>
+	<td>Forms</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=Forms</td>
+	<td>Forms</td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>link=forum</td>
+	<td>forum</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=forum</td>
+	<td>forum</td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>link=Gadgets</td>
+	<td>Gadgets</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=Gadgets</td>
+	<td>Gadgets</td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>link=Integration</td>
+	<td>Integration</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=Integration</td>
+	<td>Integration</td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>link=Navigation</td>
+	<td>Navigation</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=Navigation</td>
+	<td>Navigation</td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>link=Newsletter</td>
+	<td>Newsletter</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=Newsletter</td>
+	<td>Newsletter</td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>link=platformNavigation</td>
+	<td>platformNavigation</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=platformNavigation</td>
+	<td>platformNavigation</td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>link=poll</td>
+	<td>poll</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=poll</td>
+	<td>poll</td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>link=Search</td>
+	<td>Search</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=Search</td>
+	<td>Search</td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>link=SEOToolbar</td>
+	<td>SEOToolbar</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=SEOToolbar</td>
+	<td>SEOToolbar</td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>link=social</td>
+	<td>social</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=social</td>
+	<td>social</td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>link=System</td>
+	<td>System</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=System</td>
+	<td>System</td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>link=WCM Admin</td>
+	<td>WCM Admin</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=WCM Admin</td>
+	<td>WCM Admin</td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>link=Wiki</td>
+	<td>Wiki</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=Wiki</td>
+	<td>Wiki</td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>link=workflow</td>
+	<td>workflow</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=workflow</td>
+	<td>workflow</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- verify import application icon --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>Import Applications</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Import Applications</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Layout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Layout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Hide import application icon --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[contains(@title,&quot;Hold this area to drag this portlet.&quot;)]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>//div[contains(@title,&quot;Hold this area to drag this portlet.&quot;)]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//a[@title=&quot;Edit Portlet&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[@title=&quot;Edit Portlet&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>showImport</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>showImport</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Close</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Close</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UIPageEditor']//a[@title='Finish']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='UIPageEditor']//a[@title='Finish']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextNotPresent</td>
+	<td>Import Applications</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextNotPresent</td>
+	<td>Import Applications</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Show Import Application icon --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Layout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Layout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[contains(@title,&quot;Hold this area to drag this portlet.&quot;)]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>//div[contains(@title,&quot;Hold this area to drag this portlet.&quot;)]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//a[@title=&quot;Edit Portlet&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[@title=&quot;Edit Portlet&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>showImport</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>showImport</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Close</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Close</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UIPageEditor']//a[@title='Finish']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='UIPageEditor']//a[@title='Finish']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>Import Applications</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Import Applications</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

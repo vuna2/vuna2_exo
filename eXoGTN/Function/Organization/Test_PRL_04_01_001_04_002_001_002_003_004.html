@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://localhost:8080/" />
+<title>Test_PRL_04_01_001_04_002_001_002_003_004</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Test_PRL_04_01_001_04_002_001_002_003_004</td></tr>
+</thead><tbody>
+<tr>
+	<td>setSpeed</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/portal/intranet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Groups Management --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>windowMaximize</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//b[contains(text(),'Sign in')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>username</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>username</td>
+	<td>john</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>password</td>
+	<td>gtn</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//a[@id='UIPortalLoginFormAction']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Go to Users and group management --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Group and Roles</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Choose Membership Management --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Membership Management</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>member</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>author</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>editor</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>manager</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>redactor</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Add new blank name membership --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=description</td>
+	<td>FNC_GTN_PLT_ORG_04_02<br /></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>The field &quot;Membership Name &quot; is required.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Add new membership with special characters in Name --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=name</td>
+	<td>@#$$@$@$</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=description</td>
+	<td>FNC_GTN_PLT_ORG_04_02<br /></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Only alpha, digit, dot, dash and underscore characters are allowed for the field &quot;Membership Name &quot;. </td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Add new membership with name less than 3 chars--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=name</td>
+	<td>te</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=description</td>
+	<td>FNC_GTN_PLT_ORG_04_02<br /></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>The length of the text in field &quot;Membership Name &quot; must be between &quot;3&quot; and &quot;30&quot; characters.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Add new membership with name over 30 chars --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=name</td>
+	<td>FNC_GTN_PLT_ORG_04_02FNC_GTN_PLT_ORG_04_02FNC_GTN_PLT_ORG_04_02FNC_GTN_PLT_ORG_04_02FNC_GTN_PLT_ORG_04_02FNC_GTN_PLT_ORG_04_02FNC_GTN_PLT_ORG_04_02FNC_GTN_PLT_ORG_04_02FNC_GTN_PLT_ORG_04_02FNC_GTN_PLT_ORG_04_02FNC_GTN_PLT_ORG_04_02FNC_GTN_PLT_ORG_04_02FNC_GTN_PLT_ORG_04_02FNC_GTN_PLT_ORG_04_02FNC_GTN_PLT_ORG_04_02FNC_GTN_PLT_ORG_04_02FNC_GTN_PLT_ORG_04_02FNC_GTN_PLT_ORG_04_02FNC_GTN_PLT_ORG_04_02FNC_GTN_PLT_ORG_04_02</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=description</td>
+	<td>FNC_GTN_PLT_ORG_04_02</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>The length of the text in field &quot;Membership Name &quot; must be between &quot;3&quot; and &quot;30&quot; characters.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Check Reset function in Add new membership form --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=name</td>
+	<td>te</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=description</td>
+	<td>FNC_GTN_PLT_ORG_04_02<br /></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Reset</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Add new membership&nbsp;&nbsp;--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=name</td>
+	<td>test</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=description</td>
+	<td>FNC_GTN_PLT_ORG_04_02</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- verify new membership --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>test</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Add new membership with name the same with existing --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=name</td>
+	<td>test</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=description</td>
+	<td>FNC_GTN_PLT_ORG_04_02</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>This membership already exists, please enter another one.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Delete new membership --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//img[@alt='DeleteMembership']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertConfirmation</td>
+	<td>Are you sure to delete this membership?</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextNotPresent</td>
+	<td>test</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

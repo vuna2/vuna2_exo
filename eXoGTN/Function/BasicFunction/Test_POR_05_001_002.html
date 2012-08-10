@@ -1,0 +1,621 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://localhost:8080/" />
+<title>Test_POR_05_001</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Test_POR_05_001</td></tr>
+</thead><tbody>
+<tr>
+	<td>setSpeed</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/portal/intranet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Create new account--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>windowMaximize</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>login</td>
+	<td>john</td>
+	<td>gtn</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>10000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Go to New Staff&nbsp;&nbsp;--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Add Users</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Add Users</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=username</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>jeremi</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>password</td>
+	<td>gatein06</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>Confirmpassword</td>
+	<td>gatein06</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>firstName</td>
+	<td>Smith</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>lastName</td>
+	<td>Smith</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>email</td>
+	<td>gatein06@gmail.com</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Choose User Profile tab--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[text()='User Profile']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[text()='User Profile']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>user.language</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>user.language</td>
+	<td>label=English</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>10000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>You have registered a new account.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>You have registered a new account.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@class=&quot;UIWindowContent&quot;]//a[text()=&quot;OK&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@class=&quot;UIWindowContent&quot;]//a[text()=&quot;OK&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>10000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Login by new account --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>login</td>
+	<td>jeremi</td>
+	<td>gatein06</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>10000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=My Account</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- verify Change Password --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//td/label[@for='currentpass']/following::td/input[@name='currentpass']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//td/label[@for='currentpass']/following::td/input[@name='currentpass']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//td/label[@for='newpass']/following::td/input[@name='newpass']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//td/label[@for='confirmnewpass']/following::td/input[@name='confirmnewpass']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Choose Change Password tab --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Change Password</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Edit without inputing current password --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=newpass</td>
+	<td>test1234</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=confirmnewpass</td>
+	<td>test1234</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>xpath=(//a[contains(text(),'Save')])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//a[contains(text(),'Save')])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>10000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>The field &quot;Current Password:&quot; is required.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Edit with invalid current password --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=currentpass</td>
+	<td>111111</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>xpath=(//a[contains(text(),'Save')])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//a[contains(text(),'Save')])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>10000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Current Password is not correct.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>--&nbsp;&nbsp;Edit with blank New Password --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=currentpass</td>
+	<td>gatein06</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=confirmnewpass</td>
+	<td>test1234</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>xpath=(//a[contains(text(),'Save')])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//a[contains(text(),'Save')])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>10000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>The field &quot;New Password:&quot; is required.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Edit with New Password/Confirm Password less than 6 or over 30 characters --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=newpass</td>
+	<td>test1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=confirmnewpass</td>
+	<td>test123456</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>xpath=(//a[contains(text(),'Save')])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//a[contains(text(),'Save')])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>10000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>The length of the text in field &quot;New Password:&quot; must be between &quot;6&quot; and &quot;30&quot; characters.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>The length of the text in field &quot;Confirm New Password:&quot; must be between &quot;6&quot; and &quot;30&quot; characters.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>--&nbsp;&nbsp;Edit with blank Confirm New Password --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=currentpass</td>
+	<td>gatein06</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=newpass</td>
+	<td>test1234</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=confirmnewpass</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>xpath=(//a[contains(text(),'Save')])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//a[contains(text(),'Save')])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>10000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>The length of the text in field &quot;Confirm New Password:&quot; must be between &quot;6&quot; and &quot;30&quot; characters.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Edit password with valid values --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=currentpass</td>
+	<td>gatein06</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=newpass</td>
+	<td>test1234</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=confirmnewpass</td>
+	<td>test1234</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=#UIAccountChangePass &gt; div.HorizontalLayout &gt; div.FormContainer &gt; div.UIAction &gt; a.ActionButton.LightBlueStyle</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#UIAccountChangePass &gt; div.HorizontalLayout &gt; div.FormContainer &gt; div.UIAction &gt; a.ActionButton.LightBlueStyle</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>10000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>The password has been changed.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Check Close function in Account Setting form after some change --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=currentpass</td>
+	<td>gatein06</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=newpass</td>
+	<td>test1234</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=confirmnewpass</td>
+	<td>test1234</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Close</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>10000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Check after change password --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>loginGTN</td>
+	<td>jeremi</td>
+	<td>test1234</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>10000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Smith Smith</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Delete user --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>loginGTN</td>
+	<td>john</td>
+	<td>gtn</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>10000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Go to Group and Roldes --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Group and Roles</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=searchTerm</td>
+	<td>jeremi</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=a.SimpleSearchIcon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=a.SimpleSearchIcon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Delete user --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=img.DeleteUserIcon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=img.DeleteUserIcon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertConfirmation</td>
+	<td>Are you sure to delete user jeremi?</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>10000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>No result found.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>10000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

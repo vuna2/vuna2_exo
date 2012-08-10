@@ -1,0 +1,786 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="" />
+<title>Test_SNF_PRL_06_CreateNewAccount</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Test_SNF_PRL_06_CreateNewAccount</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/portal/intranet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Create new account--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>windowMaximize</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//b[contains(text(),'Sign in')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>username</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>username</td>
+	<td>john</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>password</td>
+	<td>gtn</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//a[@id='UIPortalLoginFormAction']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Go to New Staff - TEST_SNF_PRL_06 --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Add Users</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Add Users</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=username</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>gatein06</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>password</td>
+	<td>gatein06</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>Confirmpassword</td>
+	<td>gatein06</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>firstName</td>
+	<td>gatein</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>lastName</td>
+	<td>gatein</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>email</td>
+	<td>gatein06@gmail.com</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Choose User Profile tab--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[text()='User Profile']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[text()='User Profile']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>user.language</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>user.language</td>
+	<td>label=French</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>You have registered a new account.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>You have registered a new account.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@class=&quot;UIWindowContent&quot;]//a[text()=&quot;OK&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@class=&quot;UIWindowContent&quot;]//a[text()=&quot;OK&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Login with new user --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/portal/intranet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//b[contains(text(),'Sign in')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>username</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>username</td>
+	<td>gatein06</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>password</td>
+	<td>gatein06</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//a[@id='UIPortalLoginFormAction']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>gatein gatein</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>gatein gatein</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Mon Profil</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify User Name --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>//td/label[@for='username']/following::td[contains(text(),'gatein06')]</td>
+	<td>gatein06</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//td/label[@for='username']/following::td[contains(text(),'gatein06')]</td>
+	<td>gatein06</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify First Name --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>//td/label[@for='firstName']/following::td[contains(text(),'gatein')]</td>
+	<td>gatein</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//td/label[@for='firstName']/following::td[contains(text(),'gatein')]</td>
+	<td>gatein</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify Last Name --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>//td/label[@for='lastName']/following::td[contains(text(),'gatein')]</td>
+	<td>gatein</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//td/label[@for='lastName']/following::td[contains(text(),'gatein')]</td>
+	<td>gatein</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify Email --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>//td/label[@for='email']/following::td/a[contains(text(),'gatein06@gmail.com')]</td>
+	<td>gatein06@gmail.com</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//td/label[@for='email']/following::td/a[contains(text(),'gatein06@gmail.com')]</td>
+	<td>gatein06@gmail.com</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Se Déconnecter</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/portal/intranet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//b[contains(text(),'Sign in')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>username</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>username</td>
+	<td>john</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>password</td>
+	<td>gtn</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//a[@id='UIPortalLoginFormAction']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Go to users and group management - TEST_SNF_PRL_08--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Group and Roles</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Search user --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>searchTerm</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>searchTerm</td>
+	<td>gatein06</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=searchOption</td>
+	<td>label=User Name</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//form[@id='UISearchForm']//a[@title=&quot;Quick Search&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//form[@id='UISearchForm']//a[@title=&quot;Quick Search&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>gatein06</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>gatein06</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Return to Users list--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>searchTerm</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>searchTerm</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//form[@id='UISearchForm']//a[@title=&quot;Quick Search&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//form[@id='UISearchForm']//a[@title=&quot;Quick Search&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Search by Last Name--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>searchTerm</td>
+	<td>gatein</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>searchTerm</td>
+	<td>gatein</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>searchOption</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>searchOption</td>
+	<td>label=Last Name</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//form[@id='UISearchForm']//a[@title=&quot;Quick Search&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//form[@id='UISearchForm']//a[@title=&quot;Quick Search&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>gatein</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>gatein</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Return to Users list--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>searchTerm</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>searchTerm</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//form[@id='UISearchForm']//a[@title=&quot;Quick Search&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//form[@id='UISearchForm']//a[@title=&quot;Quick Search&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Search by First Name--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>searchTerm</td>
+	<td>gatein</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>searchTerm</td>
+	<td>gatein</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>searchOption</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>searchOption</td>
+	<td>label=First Name</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//form[@id='UISearchForm']//a[@title=&quot;Quick Search&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//form[@id='UISearchForm']//a[@title=&quot;Quick Search&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>gatein</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>gatein</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Return to Users list --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>searchTerm</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>searchTerm</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//form[@id='UISearchForm']//a[@title=&quot;Quick Search&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//form[@id='UISearchForm']//a[@title=&quot;Quick Search&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Search by email--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>searchTerm</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>searchTerm</td>
+	<td>gatein06@gmail.com</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>searchOption</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>searchOption</td>
+	<td>label=Email</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//form[@id='UISearchForm']//a[@title=&quot;Quick Search&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//form[@id='UISearchForm']//a[@title=&quot;Quick Search&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>gatein06@gmail.com</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>gatein06@gmail.com</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Return to user list --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>searchTerm</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>searchTerm</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>searchOption</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>searchOption</td>
+	<td>label=User Name</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//form[@id='UISearchForm']//a[@title=&quot;Quick Search&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//form[@id='UISearchForm']//a[@title=&quot;Quick Search&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>searchTerm</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>searchTerm</td>
+	<td>gatein06</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//form[@id='UISearchForm']//a[@title=&quot;Quick Search&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//form[@id='UISearchForm']//a[@title=&quot;Quick Search&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Edit user information - Test_SNF_PRL_07--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>searchTerm</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>searchTerm</td>
+	<td>gatein06</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//form[@id='UISearchForm']//a[@title=&quot;Quick Search&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//form[@id='UISearchForm']//a[@title=&quot;Quick Search&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//img[@alt='ViewUserInfo']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//img[@alt='ViewUserInfo']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>firstName</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>firstName</td>
+	<td>gatein edit</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>lastName</td>
+	<td>gatein edit</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>The user profile has been updated.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>The user profile has been updated.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@class=&quot;UIWindowContent&quot;]//a[text()=&quot;OK&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@class=&quot;UIWindowContent&quot;]//a[text()=&quot;OK&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Delete new user --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>searchTerm</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>searchTerm</td>
+	<td>gatein06</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//form[@id='UISearchForm']//a[@title=&quot;Quick Search&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//form[@id='UISearchForm']//a[@title=&quot;Quick Search&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//img[@alt='DeleteUser']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//img[@alt='DeleteUser']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertConfirmation</td>
+	<td>Are you sure to delete user gatein06?</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Close popup message --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//a[contains(@onclick,&quot;action=Close&quot;)]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[contains(@onclick,&quot;action=Close&quot;)]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextNotPresent</td>
+	<td>gatein06</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextNotPresent</td>
+	<td>gatein06</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

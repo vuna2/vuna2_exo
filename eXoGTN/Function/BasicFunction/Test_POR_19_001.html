@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://localhost:8080/" />
+<title>Test_POR_19_001</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Test_POR_19_001</td></tr>
+</thead><tbody>
+<tr>
+	<td>setSpeed</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/portal/intranet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>--Go to Page Management--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>windowMaximize</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//b[contains(text(),'Sign in')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>username</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>username</td>
+	<td>john</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>password</td>
+	<td>gtn</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//a[@id='UIPortalLoginFormAction']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>10000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Show add new page&nbsp;&nbsp;form of Portal's page --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Add Page</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@class='UITrees ScrollArea']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@class='UITrees ScrollArea']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[text()='Selected Page Node:']/following::div[text()='/Home']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//td/label[@for='pageName']/following::td/input[@id='pageName']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//td/label[@for='switchmode']/following::td/input[@checked='checked']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//td/label[@for='languages']/following::td/select[@id='languages']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//td/label[@for='i18nizedLabel']/following::td/input[@id='i18nizedLabel']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//td/label[@for='visible']/following::td/input[@checked='checked']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//td/label[@for='showPublicationDate']/following::td/input[@type='checkbox']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Abort</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Show add new page&nbsp;&nbsp;form of group's page --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Applications</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Add Page</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Add Page</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@class='UITrees ScrollArea']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@class='UITrees ScrollArea']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[text()='Selected Page Node:']/following::div[text()='/Application Manager']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//td/label[@for='pageName']/following::td/input[@id='pageName']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//td/label[@for='switchmode']/following::td/input[@checked='checked']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//td/label[@for='languages']/following::td/select[@id='languages']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//td/label[@for='i18nizedLabel']/following::td/input[@id='i18nizedLabel']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//td/label[@for='visible']/following::td/input[@checked='checked']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//td/label[@for='showPublicationDate']/following::td/input[@type='checkbox']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Abort</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Show add new page&nbsp;&nbsp;form of user's Page --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Dashboard</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Add Page</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[text()='Selected Page Node:']/following::div[text()='/']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[text()='Selected Page Node:']/following::div[text()='/']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//td/label[@for='pageName']/following::td/input[@id='pageName']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//td/label[@for='switchmode']/following::td/input[@checked='checked']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//td/label[@for='languages']/following::td/select[@id='languages']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//td/label[@for='i18nizedLabel']/following::td/input[@id='i18nizedLabel']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Abort</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

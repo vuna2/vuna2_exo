@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://localhost:8080/" />
+<title>Test_PRL_05_05_001_002_003_004_005</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Test_PRL_05_05_001_002_003_004_005</td></tr>
+</thead><tbody>
+<tr>
+	<td>setSpeed</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/portal/intranet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>windowMaximize</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//b[contains(text(),'Sign in')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>username</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>username</td>
+	<td>john</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>password</td>
+	<td>gtn</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//a[@id='UIPortalLoginFormAction']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Go to Application Registry --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Applications</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Applications</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Select a category to add application --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Admin</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify before add application -- </td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>ECM Admin</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Add application into category--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UIApplicationOrganizer']//a[@title='Add an Application to this Category']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='UIApplicationOrganizer']//a[@title='Add an Application to this Category']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//input[@name='application' and @value='5']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//input[@name='application' and @value='5']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Answers Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>ECM Admin</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Delete application after added --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Answers Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Answers Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=a.ControlIcon.DeletePortalIcon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=a.ControlIcon.DeletePortalIcon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertConfirmation</td>
+	<td>Are you sure to delete this application?</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Add application into&nbsp;&nbsp;specific category with new invalid display name --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Select a category to add application --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UIApplicationOrganizer']//a[@title='Forms']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='UIApplicationOrganizer']//a[@title='Forms']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify before add application -- </td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Basic Content Creator</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Standard Content Creator</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Add application into category--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UIApplicationOrganizer']//a[@title='Add an Application to this Category']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='UIApplicationOrganizer']//a[@title='Add an Application to this Category']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//input[@name='application' and @value='5']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//input[@name='application' and @value='6']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Add with display name less than 3 characters--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=displayName</td>
+	<td>03</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>The length of the text in field &quot;Display Name: &quot; must be between &quot;3&quot; and &quot;30&quot; characters.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>The length of the text in field &quot;Display Name: &quot; must be between &quot;3&quot; and &quot;30&quot; characters.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Add with display name over 30 characters--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=displayName</td>
+	<td>Test_PRL_05_05_003 Test_PRL_05_05_003 Test_PRL_05_05_003 Test_PRL_05_05_003 Test_PRL_05_05_003 Test_PRL_05_05_003 Test_PRL_05_05_003</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>The length of the text in field &quot;Display Name: &quot; must be between &quot;3&quot; and &quot;30&quot; characters.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>The length of the text in field &quot;Display Name: &quot; must be between &quot;3&quot; and &quot;30&quot; characters.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Add application into&nbsp;&nbsp;specific category without confirmation --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UIApplicationOrganizer']//a[@title='Add an Application to this Category']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='UIApplicationOrganizer']//a[@title='Add an Application to this Category']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//input[@name='application' and @value='5']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//input[@name='application' and @value='6']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Add with display name less than 3 characters--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=displayName</td>
+	<td>Test_PRL_05_05_003</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Cancel</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Cancel</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextNotPresent</td>
+	<td>Test_PRL_05_05_003</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextNotPresent</td>
+	<td>Test_PRL_05_05_003</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Add application into&nbsp;&nbsp;specific category with new valid display name --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UIApplicationOrganizer']//a[@title='Forms']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='UIApplicationOrganizer']//a[@title='Forms']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify before add application -- </td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Basic Content Creator</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Standard Content Creator</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Add application into category--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UIApplicationOrganizer']//a[@title='Add an Application to this Category']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='UIApplicationOrganizer']//a[@title='Add an Application to this Category']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//input[@name='application' and @value='5']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//input[@name='application' and @value='6']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=displayName</td>
+	<td>Test_PRL_05_05_003</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Test_PRL_05_05_003</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Basic Content Creator</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Standard Content Creator</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Add application into specific category with existing application in category --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UIApplicationOrganizer']//a[@title='Add an Application to this Category']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='UIApplicationOrganizer']//a[@title='Add an Application to this Category']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//input[@name='application' and @value='5']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//input[@name='application' and @value='6']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=displayName</td>
+	<td>Test_PRL_05_05_003</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>The application already belongs to this category. Select another category.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Delete application after added --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Test_PRL_05_05_003</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Test_PRL_05_05_003</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[@title='Test_PRL_05_05_003']/following::a[@title='Delete Application']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertConfirmation</td>
+	<td>Are you sure to delete this application?</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextNotPresent</td>
+	<td>Test_PRL_05_05_003</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

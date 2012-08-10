@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="" />
+<title>Test_SNF_PRL_01_SignInSignOut</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Test_SNF_PRL_01_SignInSignOut</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/portal/intranet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-SignIn/SignOut-</td>
+	<td></td>
+</tr>
+<tr>
+	<td>windowMaximize</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-Login by Administrator-</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//b[contains(text(),'Sign in')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>username</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>username</td>
+	<td>root</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>password</td>
+	<td>gtn</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//a[@id='UIPortalLoginFormAction']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Go to My Profile --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=My Profile</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=My Profile</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify user name --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>//td/label[@for='username']/following::td[contains(text(),'root')]</td>
+	<td>root</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//td/label[@for='username']/following::td[contains(text(),'root')]</td>
+	<td>root</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify First Name --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>//td/label[@for='firstName']/following::td[contains(text(),'Root')]</td>
+	<td>Root</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//td/label[@for='firstName']/following::td[contains(text(),'Root')]</td>
+	<td>Root</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify Last Name --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>//td/label[@for='lastName']/following::td[contains(text(),'Root')]</td>
+	<td>Root</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//td/label[@for='lastName']/following::td[contains(text(),'Root')]</td>
+	<td>Root</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify Email --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>//td/label[@for='email']/following::td/a[contains(text(),'root@localhost')]</td>
+	<td>root@localhost</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//td/label[@for='email']/following::td/a[contains(text(),'root@localhost')]</td>
+	<td>root@localhost</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Logout --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Login by john --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//b[contains(text(),'Sign in')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//b[contains(text(),'Sign in')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>username</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>username</td>
+	<td>john</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>password</td>
+	<td>gtn</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[@id='UIPortalLoginFormAction']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Go to My Profile --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=My Profile</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=My Profile</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify user name --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>//td/label[@for='username']/following::td[contains(text(),'john')]</td>
+	<td>john</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//td/label[@for='username']/following::td[contains(text(),'john')]</td>
+	<td>john</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify First Name --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>//td/label[@for='firstName']/following::td[contains(text(),'John')]</td>
+	<td>John</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//td/label[@for='firstName']/following::td[contains(text(),'John')]</td>
+	<td>John</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify Last Name --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>//td/label[@for='lastName']/following::td[contains(text(),'Smith')]</td>
+	<td>Smith</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//td/label[@for='lastName']/following::td[contains(text(),'Smith')]</td>
+	<td>Smith</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify Email --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//td/label[@for='email']/following::td/a[contains(text(),'john.smith@acme.exoplatform.com')]</td>
+	<td>john.smith@acme.exoplatform.com</td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>//td/label[@for='email']/following::td/a[contains(text(),'john.smith@acme.exoplatform.com')]</td>
+	<td>john.smith@acme.exoplatform.com</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Login by Mary --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/portal/intranet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>windowMaximize</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//b[contains(text(),'Sign in')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>username</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>username</td>
+	<td>mary</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>password</td>
+	<td>gtn</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[@id='UIPortalLoginFormAction']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Go to My Profile --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=My Profile</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=My Profile</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify user name --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>//td/label[@for='username']/following::td[contains(text(),'mary')]</td>
+	<td>mary</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//td/label[@for='username']/following::td[contains(text(),'mary')]</td>
+	<td>mary</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify First Name --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>//td/label[@for='firstName']/following::td[contains(text(),'Mary')]</td>
+	<td>Mary</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//td/label[@for='firstName']/following::td[contains(text(),'Mary')]</td>
+	<td>Mary</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify Last Name --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>//td/label[@for='lastName']/following::td[contains(text(),'Williams')]</td>
+	<td>Williams</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//td/label[@for='lastName']/following::td[contains(text(),'Williams')]</td>
+	<td>Williams</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify Email --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//td/label[@for='email']/following::td/a[contains(text(),'mary.williams@acme.exoplatform.com')]</td>
+	<td>mary.williams@acme.exoplatform.com</td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>//td/label[@for='email']/following::td/a[contains(text(),'mary.williams@acme.exoplatform.com')]</td>
+	<td>mary.williams@acme.exoplatform.com</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Login by Demo --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/portal/intranet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>windowMaximize</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//b[contains(text(),'Sign in')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>username</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>username</td>
+	<td>demo</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>password</td>
+	<td>gtn</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[@id='UIPortalLoginFormAction']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Go to My Profile --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=My Profile</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=My Profile</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify user name --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>//td/label[@for='username']/following::td[contains(text(),'demo')]</td>
+	<td>demo</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//td/label[@for='username']/following::td[contains(text(),'demo')]</td>
+	<td>demo</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify First Name --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>//td/label[@for='firstName']/following::td[contains(text(),'Jack')]</td>
+	<td>Jack</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//td/label[@for='firstName']/following::td[contains(text(),'Jack')]</td>
+	<td>Jack</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify Last Name --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>//td/label[@for='lastName']/following::td[contains(text(),'Miller')]</td>
+	<td>Miller</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//td/label[@for='lastName']/following::td[contains(text(),'Miller')]</td>
+	<td>Miller</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify Email --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>//td/label[@for='email']/following::td/a[contains(text(),'jack.miller@acme.exoplatform.com')]</td>
+	<td>jack.miller@acme.exoplatform.com</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//td/label[@for='email']/following::td/a[contains(text(),'jack.miller@acme.exoplatform.com')]</td>
+	<td>jack.miller@acme.exoplatform.com</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

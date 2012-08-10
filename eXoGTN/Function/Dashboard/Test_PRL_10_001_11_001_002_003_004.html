@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://localhost:8080/" />
+<title>Test_PRL_10_001_11_001_002_003_004</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Test_PRL_10_001_11_001_002_003_004</td></tr>
+</thead><tbody>
+<tr>
+	<td>setSpeed</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/portal/intranet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Manage Tab--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>windowMaximize</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//b[contains(text(),'Sign in')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>username</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>username</td>
+	<td>john</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>password</td>
+	<td>gtn</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//a[@id='UIPortalLoginFormAction']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Show Dashboard page --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Dashboard</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Dashboard</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Add Gadgets</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Add new gadget into dashboard with blank URL --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Add Gadgets</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//img[@alt='Add Gadget']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>The text field is required.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Add new gadget into dashboard with invalid value --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=url</td>
+	<td>aaaa</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//img[@alt='Add Gadget']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>The URL is invalid. Please enter a correct URL of a gadget XML or of an RSS feed.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Add new gadget into dashboard with URL is not correct URL of gadget's xml or RSS feed --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=url</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=url</td>
+	<td>http://google.com</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//img[@alt='Add Gadget']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//img[@alt='Add Gadget']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//iframe[contains(@id,'remote_iframe_')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>//iframe[contains(@id,'remote_iframe_')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>the url: http://google.com is down or invalid</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>the url: http://google.com is down or invalid</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//span[@class='MaximizeGadget IconControl' and @title='Maximize']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[@class='MaximizeGadget IconControl' and @title='Maximize']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>10000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=span.CloseGadget.IconControl</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.CloseGadget.IconControl</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertConfirmation</td>
+	<td>Are you sure to delete this gadget?</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Add new gadget --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=url</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=url</td>
+	<td>http://orawiz.googlepages.com/hangman.xml</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Click Add Gadget</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=img.AddNewNodeIcon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=img.AddNewNodeIcon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Delete gadget --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=span.MaximizeGadget.IconControl</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.MaximizeGadget.IconControl</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=span.CloseGadget.IconControl</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.CloseGadget.IconControl</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertConfirmation</td>
+	<td>Are you sure to delete this gadget?</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Close Add Gadget form --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=a.CloseButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=a.CloseButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

@@ -1,0 +1,1686 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://localhost:8080/" />
+<title>Test_PRL_06_001_002</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Test_PRL_06_001_002</td></tr>
+</thead><tbody>
+<tr>
+	<td>setSpeed</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/portal/intranet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- View Portlets--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>windowMaximize</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//b[contains(text(),'Sign in')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>username</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>username</td>
+	<td>root</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>password</td>
+	<td>gtn</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//a[@id='UIPortalLoginFormAction']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Go to Application Registry --</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Applications</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Choose Portlet tab--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Portlets</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Portlets</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify details of acme-intranet-portlet &gt;&gt; Space Summary Info portlet--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Space Summary Info</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Space Summary Info</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify details of authoring-apps &gt;&gt;Authoring Dashboard--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Authoring Dashboard</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Authoring Dashboard</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify details of calendar &gt;&gt;Calendar Portlet--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Calendar Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Calendar Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify details of Chat &gt;&gt;Chat Portlet--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Chat Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Chat Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify details of chatbar &gt;&gt;ChatBar Portlet--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=ChatBar Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=ChatBar Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify details of contact &gt;&gt;Contact Portlet--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Contact Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Contact Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify details of content &gt;&gt;RSS Reader Portlet--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=RSS Reader Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=RSS Reader Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify details of dashboard &gt;&gt;Dashboard Portlet--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Dashboard Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Dashboard Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify details of dashboard &gt;&gt;Gadget Wrapper Portlet--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Gadget Wrapper Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Gadget Wrapper Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify details of dashboard &gt;&gt;Tabbed Dashboard--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Tabbed Dashboard</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Tabbed Dashboard</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify details of ecmadmin &gt;&gt;ECM Admin--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=ECM Admin</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=ECM Admin</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify details of ecmbrowsecontent &gt;&gt;Content Browser--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Content Browser</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Content Browser</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify details of Exoadmin &gt;&gt;Account Portlet--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Account Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Account Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify details of Exoadmin &gt;&gt;Administration Toolbar Portlet--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Administration Toolbar Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Administration Toolbar Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify details of Exoadmin &gt;&gt;Application Registry--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Application Registry</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Application Registry</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify details of Exoadmin &gt;&gt;Group Navigation Portlet--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Group Navigation Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Group Navigation Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify details of Exoadmin &gt;&gt;Organization Portlet--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Organization Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Organization Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify details of Exoadmin &gt;&gt;Page Management Portlet--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Page Management Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Page Management Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify details of Exoadmin &gt;&gt;Portal Navigation Portlet--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Portal Navigation Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Portal Navigation Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify details of Exoadmin &gt;&gt;Register Portlet--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Register Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Register Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify details of Exoadmin &gt;&gt;Star Toolbar Portlet--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Star Toolbar Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Star Toolbar Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify details of Exoadmin &gt;&gt;User Info Portlet--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=User Info Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=User Info Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify details of Exoadmin &gt;&gt;User Toolbar Dashboard Portlet--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=User Toolbar Dashboard Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=User Toolbar Dashboard Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify details of Exoadmin &gt;&gt;User Toolbar Group Portlet--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=User Toolbar Group Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=User Toolbar Group Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify details of Exoadmin &gt;&gt;User Toolbar Site Portlet--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=User Toolbar Site Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=User Toolbar Site Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify details of faq &gt;&gt;Answers Portlet--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Answers Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Answers Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify details of faq &gt;&gt;FAQPortlet--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=FAQPortlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=FAQPortlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify details of formgenerator &gt;&gt;Basic Content Creator--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Basic Content Creator</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Basic Content Creator</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify details of formgenerator &gt;&gt;Standard Content Creator--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Standard Content Creator</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Standard Content Creator</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify details of formgenerator &gt;&gt;Fast Content Creator--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Fast Content Creator</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Fast Content Creator</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify details of formgenerator &gt;&gt;Form Generator Portlet--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Form Generator Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Form Generator Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify details of forum &gt;&gt;Forum Icon State Portlet--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Forum Icon State Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Forum Icon State Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify details of forum &gt;&gt;Forum Link Portlet--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Forum Link Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Forum Link Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify details of forum &gt;&gt;Forum Moderate Portlet--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Forum Moderate Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Forum Moderate Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify details of forum &gt;&gt;Forum Poll Portlet--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Forum Poll Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Forum Poll Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify details of forum &gt;&gt;Forum Portlet--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Forum Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Forum Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify details of forum &gt;&gt;Forum Quick Reply Portlet--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Forum Quick Reply Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Forum Quick Reply Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify details of forum &gt;&gt;Forum Rule Portlet--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Forum Rule Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Forum Rule Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify details of forum &gt;&gt;Forum Statistic Portlet--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Forum Statistic Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Forum Statistic Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify details of mail &gt;&gt;Mail Portlet--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Mail Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Mail Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify details of newsletter &gt;&gt;Newsletter Manager--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Newsletter Manager</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Newsletter Manager</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify details of newsletter &gt;&gt;Newsletter--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Newsletter</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Newsletter</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify details of platformNavigation &gt;&gt;Platform Administration Toolbar Portlet--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Platform Administration Toolbar Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Platform Administration Toolbar Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify details of platformNavigation &gt;&gt;UIMyGroupsPlatformToolBarPortlet--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=UIMyGroupsPlatformToolBarPortlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=UIMyGroupsPlatformToolBarPortlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify details of platformNavigation &gt;&gt;UIMySpacePlatformToolBarPortlet--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=UIMySpacePlatformToolBarPortlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=UIMySpacePlatformToolBarPortlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify details of platformNavigation &gt;&gt;UISetupPlatformToolBarPortlet--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=UISetupPlatformToolBarPortlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=UISetupPlatformToolBarPortlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify details of platformNavigation &gt;&gt;Platform Toolbar Desktop Portlet--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Platform Toolbar Desktop Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Platform Toolbar Desktop Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify details of platformNavigation &gt;&gt;UIUserPlatformToolBarSitePortlet--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=UIUserPlatformToolBarSitePortlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=UIUserPlatformToolBarSitePortlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify details of platformNavigation &gt;&gt;UIUserPlatformToolBarPortlet--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=UIUserPlatformToolBarPortlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=UIUserPlatformToolBarPortlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify details of poll &gt;&gt;Poll Portlet--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Poll Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Poll Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify details of presentation &gt;&gt;Category Navigation--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Category Navigation</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Category Navigation</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify details of presentation &gt;&gt;Contents By Query--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Content By Query</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Content By Query</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify details of presentation &gt;&gt;Content List--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Content List</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Content List</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify details of presentation &gt;&gt;Editing Toolbar--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Editing Toolbar</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Editing Toolbar</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify details of presentation &gt;&gt;Category Contents--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Category Content</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Category Content</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify details of presentation &gt;&gt;Content by URL--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Content by URL</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Content by URL</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify details of presentation &gt;&gt;Content Detail--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Content Detail</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Content Detail</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify details of presentation &gt;&gt;WCM Administration Toolbar Portlet--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=WCM Administration Toolbar Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=WCM Administration Toolbar Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify details of searches &gt;&gt;Advanced Search--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Advanced Search</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Advanced Search</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify details of seo &gt;&gt;SEO Toolbar Portlet--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=SEO Toolbar Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=SEO Toolbar Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify details of social-portlet &gt;&gt;All People Portlet--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=All People Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=All People Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify details of social-portlet &gt;&gt;All Spaces Portlet--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=All Spaces Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=All Spaces Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify details of social-portlet &gt;&gt;Connections Navigation--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Connections Navigation</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Connections Navigation</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify details of social-portlet &gt;&gt;Connections Portlet--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Connections Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Connections Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify details of social-portlet &gt;&gt;Home Space--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Home Space</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Home Space</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify details of social-portlet &gt;&gt;Invitation Spaces Portlet--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Invitation Spaces Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Invitation Spaces Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify details of social-portlet &gt;&gt;Invitations Portlet--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Invitations Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Invitations Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify details of social-portlet &gt;&gt;Members--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Members</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Members</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify details of social-portlet &gt;&gt;My Connections Navigation Portlet--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=My Connections Navigation Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=My Connections Navigation Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify details of social-portlet &gt;&gt;My Spaces Portlet--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=My Spaces Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=My Spaces Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify details of social-portlet &gt;&gt;Pending Spaces Portlet--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Pending Spaces Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Pending Spaces Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify details of social-portlet &gt;&gt;People Directory--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=People Directory</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=People Directory</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify details of social-portlet &gt;&gt;People Toolbar Portlet--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=People Toolbar Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=People Toolbar Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify details of social-portlet &gt;&gt;Profile Navigation--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Profile Navigation</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Profile Navigation</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify details of social-portlet &gt;&gt;Profile Portlet--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Profile Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Profile Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify details of social-portlet &gt;&gt;Requests Portlet--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Requests Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Requests Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify details of social-portlet &gt;&gt;Social Banner Portlet--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Social Banner Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Social Banner Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify details of social-portlet &gt;&gt;Social Demo Home Page Portlet--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Social Demo Home Page Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Social Demo Home Page Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify details of social-portlet &gt;&gt;Social Demo Navigation Portlet--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Social Demo Navigation Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Social Demo Navigation Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify details of social-portlet &gt;&gt;Social Extension Home Page Portlet--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Social Extension Home Page Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Social Extension Home Page Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify details of social-portlet &gt;&gt;Social Extension Logo Portlet--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Social Extension Logo Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Social Extension Logo Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify details of social-portlet &gt;&gt;Footer Portlet--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Footer Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Footer Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify details of social-portlet &gt;&gt;Social Logo Portlet--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Social Logo Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Social Logo Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify details of social-portlet &gt;&gt;Social Navigation--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Social Navigation</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Social Navigation</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify details of social-portlet &gt;&gt;Social User ToolBar Group Portlet--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Social User ToolBar Group Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Social User ToolBar Group Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify details of social-portlet &gt;&gt;Space Activity Stream--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Space Activity Stream</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Space Activity Stream</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify details of social-portlet &gt;&gt;Space Menu--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Space Menu</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Space Menu</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify details of social-portlet &gt;&gt;Space Setting--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Space Setting</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Space Setting</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify details of social-portlet &gt;&gt;Spaces ToolBar Portlet--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Spaces ToolBar Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Spaces ToolBar Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify details of social-portlet &gt;&gt;User Activity Stream--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=User Activity Stream</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=User Activity Stream</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify details of social-portlet &gt;&gt;User Profile--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=User Profile</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=User Profile</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify details of social-portlet &gt;&gt;User Profile Toolbar Portlet--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=User Profile Toolbar Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=User Profile Toolbar Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify details of Web &gt;&gt;Banner Portlet--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Banner Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Banner Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify details of Web &gt;&gt;Breadcumbs Portlet--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Breadcumbs Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Breadcumbs Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify details of Web &gt;&gt;Footer Portlet--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Footer Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Footer Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify details of Web &gt;&gt;Homepage Portlet--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=HomePage Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=HomePage Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify details of Web &gt;&gt;Iframe Portlet--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=IFrame Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=IFrame Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify details of Web &gt;&gt;Logo Portlet--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Logo Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Logo Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify details of Web &gt;&gt;Navigation Portlet--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Navigation Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Navigation Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify details of Web &gt;&gt;Sitemap Portlet--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Site Map Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Site Map Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify details of webosadmin &gt;&gt;User Toolbar Desktop Portlet--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=User Toolbar Desktop Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=User Toolbar Desktop Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify details of webosadmin &gt;&gt;WebOS Administration Toolbar Portlet--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=WebOS Administration Toolbar Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=WebOS Administration Toolbar Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify details of webosadmin &gt;&gt;WebOS Tabbed Dashboard--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=WebOS Tabbed Dashboard</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=WebOS Tabbed Dashboard</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify details of wiki &gt;&gt;Wiki Portlet--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Wiki Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Wiki Portlet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify details of workflow &gt;&gt;Workflow Administration--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Workflow Administration</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Workflow Administration</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify details of workflow &gt;&gt;Workflow Controller--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Workflow Controller</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Workflow Controller</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

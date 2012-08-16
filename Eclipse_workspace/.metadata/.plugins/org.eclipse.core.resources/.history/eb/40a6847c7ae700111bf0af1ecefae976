@@ -1,0 +1,35 @@
+package org.exoplatform.Selenium;
+
+import static org.exoplatform.Selenium.Common.CommonHelpers.*;
+
+
+public class UserManagementHelpers {
+	public static final String ELEMENT_USER_PROFILE_TAB = "//div[text()='User Profile' and @class='MiddleTab']";
+	public static final String ELEMENT_SELECT_USER_LANGUAGE = "//select[@name='user.language']";
+	public static final String ELEMENT_SEARCH_ICON_REGISTER = "//img[@class='SearchIcon']";
+	public static final String ELEMENT_INPUT_USER_NAME_GIVEN = "//input[@id='user.name.given']";
+	public static final String ELEMENT_ACCOUNT_SETTING_TAB = "//div[text()='Account Setting' and @class='MiddleTab']";
+
+	public static void addNewAccountAtNewStaff(String username, String password, String confirmPassword, String firstName, 
+            String lastName, String email, String userNameGiven, String language, boolean verify) {
+        
+		System.out.println("--Create new user using \"New Staff\" portlet--");
+		type(ELEMENT_INPUT_USERNAME, username, true);
+		type(ELEMENT_INPUT_PASSWORD, password, true);
+		type(ELEMENT_INPUT_CONFIRM_PASSWORD, confirmPassword, true);
+		type(ELEMENT_INPUT_FIRSTNAME, firstName, true);
+		type(ELEMENT_INPUT_LASTNAME, lastName, true);
+		type(ELEMENT_INPUT_EMAIL, email, true);
+		click(ELEMENT_USER_PROFILE_TAB);
+		waitForTextPresent("Given Name:");
+		type(ELEMENT_INPUT_USER_NAME_GIVEN, userNameGiven, true);
+		select(ELEMENT_SELECT_USER_LANGUAGE, language);
+		click(ELEMENT_ACCOUNT_SETTING_TAB);
+		save();
+		if (verify) {
+			waitForMessage("You have registered a new account.");
+			closeMessageDialog();
+		}
+	}
+	
+}

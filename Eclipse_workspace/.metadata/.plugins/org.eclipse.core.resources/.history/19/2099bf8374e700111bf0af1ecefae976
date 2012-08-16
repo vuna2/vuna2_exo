@@ -1,0 +1,23 @@
+package org.exoplatform.Selenium.platform.eXoGTN.Account;
+
+
+import org.exoplatform.Selenium.platform.eXoGTN.EXoGTNTestSuite;
+import org.testng.annotations.*;
+
+public class Test_PLT_ACC_010 extends EXoGTNTestSuite{
+	
+	
+	@Test(groups="Account")
+	public void testPLT_ACC_010(){
+		System.out.println("-- Create new user with lower case--");
+        openPortal(true);
+		
+		signInAsRoot();
+		pause(3000);
+		goToNewStaff();
+		pause(3000);
+		
+	}
+	
+
+}

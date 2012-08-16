@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite Account" verbose="1" >
+	<test name="Test Account 010" preserve-order="true">
+		<!-- <packages>
+  			<package name = "org.exoplatform.Selenium.platform.eXoGTN.Account"/> -->
+  				<classes>
+    				<class name="org.exoplatform.Selenium.platform.eXoGTN.Account.Test_PLT_ACC_010" />
+  				</classes>
+ 	   <!-- </packages>  -->
+<	/test>
+</suite>

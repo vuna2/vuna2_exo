@@ -1,0 +1,207 @@
+package org.exoplatform.Selenium;
+
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.Properties;
+
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+
+import java.io.File;
+import java.util.Arrays;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriverService;
+import org.openqa.selenium.firefox.FirefoxBinary;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxProfile;
+import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
+import org.jbehave.web.selenium.*;
+
+public abstract class BasicTestCase {
+
+    public WebDriver webDriver;
+
+	public String timeout;
+	public int timeoutSecInt;
+	public String browser;
+	public String chromeBinary;
+	public String host;
+	public String hostPort;
+	public String portalPath;
+	public boolean httpsFlag;
+	public boolean ieFlag;
+	public boolean gateinFlag;
+	public boolean allowedNotCaseSensitiveSearch;
+    
+    private ChromeDriverService service;
+    
+	protected static Properties propsMes;
+	static {
+		try {
+			propsMes = getProperties("messages.properties");
+		} catch (Exception e) {
+            System.err.println("Exception when loading messages.properties.");
+            e.printStackTrace();
+		}
+	}
+
+	protected static SeleniumContext currentSeleniumContext;
+
+	public static SeleniumContext getCurrentSeleniumContext() {
+		return currentSeleniumContext;
+	}
+
+	@BeforeClass(alwaysRun = true)
+	/*public void setUp() throws Exception {
+		initSystemProperties();
+        
+        webDriver = getWebDriver();
+		TestCaseFailListener.webDriver = webDriver;
+		TestCaseFailListener.browser = browser;
+		currentSeleniumContext = new SeleniumContext(webDriver, timeout, portalPath, host, hostPort, browser, httpsFlag);
+        AbstractContextual.runned = false;
+	}*/
+    
+    public void initSystemProperties() {
+		browser = System.getProperty("selenium.browser");
+        chromeBinary = System.getProperty("chrome.binary");
+        timeout = System.getProperty("selenium.timeout");
+		timeoutSecInt = Integer.parseInt(timeout) / 1000;
+		host = System.getProperty("selenium.host");
+		hostPort = System.getProperty("selenium.host.port");
+		portalPath = System.getProperty("portal.path");
+		httpsFlag = "true".equals(System.getProperty("https.flag"));
+        ieFlag = browser.contains("explore");
+        allowedNotCaseSensitiveSearch = "true".equals(System.getProperty("allowed.not.case.sensitive.search"));
+        gateinFlag = "true".equals(System.getProperty("gatein.flag"));
+	}
+    
+    private WebDriver getWebDriver() throws IOException {
+        if (browser.contains("googlechrome")) {
+            return getChromeDriver();
+        } else if (browser.contains("iexplore")) {
+            return getInternetExplorerDriver();
+        } else {
+            return getFirefoxDriver();
+        }
+    }
+        
+    private WebDriver getFirefoxDriver() {
+        FirefoxDriver firefoxDriver;
+        
+        FirefoxProfile profile = new FirefoxProfile();
+        profile.setEnableNativeEvents(false);
+        
+        if (browser.equals("firefox")) {
+            System.out.println("Starting default firefox.");
+            firefoxDriver = new FirefoxDriver(profile);
+        } else {
+            String browserLocation = browser.replace("firefox ", "");
+            System.out.println("Strarting firefox from location: *" + browserLocation + "*");
+            File firefoxLocation = new File(browserLocation);
+            firefoxDriver = new FirefoxDriver(new FirefoxBinary(firefoxLocation), profile);
+        }
+        return firefoxDriver;
+    }
+    
+   /* private WebDriver getChromeDriver() throws IOException {
+        String chromedriver = browser.replace("googlechrome ", "");
+
+        File chromeFile = new File(chromedriver);
+        
+        service = new ChromeDriverService.Builder().usingChromeDriverExecutable(chromeFile).usingAnyFreePort().build();
+        service.start();
+
+        DesiredCapabilities capabilities = DesiredCapabilities.chrome();
+        capabilities.setCapability("chrome.switches", Arrays.asList("--start-maximized"));
+        if (chromeBinary != null && !chromeBinary.isEmpty()) {
+            capabilities.setCapability("chrome.binary", chromeBinary);
+        } 
+  
+        return new RemoteWebDriver(service.getUrl(), capabilities);
+    }*/
+    
+    private WebDriver getInternetExplorerDriver() {
+        return new InternetExplorerDriver();
+    }
+    
+	@AfterClass(alwaysRun = true)
+	public void tearDown() throws Exception {
+        if (browser.contains("chrome")) {
+            service.stop();
+        } else {
+            webDriver.quit();
+        }
+		currentSeleniumContext = null;
+	}
+     
+	public static String getMessage(String property) {
+		return getProperty(propsMes, property, null);
+	}
+
+	public static String getMessage(String property, String subst) {
+		return getProperty(propsMes, property, subst);
+	}
+
+	private static String getProperty(Properties properties, String property,
+			String subst) {
+
+		if (subst == null || "".equals(subst)) {
+			subst = "Substitude not set";
+		}
+
+		if (properties == null) {
+			return subst;
+		} else {
+			String message = properties.getProperty(property);
+			return message != null ? message : subst;
+		}
+	}
+
+	private static Properties getProperties(String resource) throws IOException {
+		ClassLoader cl = ClassLoader.getSystemClassLoader();
+		InputStream is = cl.getResourceAsStream(resource);
+		Properties props = new Properties();
+		props.load(is);
+		return props;
+	}
+}
+
+
+/*import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
+
+public class BaseTestSuite {
+  protected WebDriver driver;
+  protected String baseUrl;
+  protected StringBuffer verificationErrors = new StringBuffer();
+  
+  public static void log(String msg) {
+    //System.out.println(String.format("%-80s%s", "@Test-" + this.getClass().getName(), msg).replace(' ', '.'));
+    StackTraceElement callerClass = Thread.currentThread().getStackTrace()[2];
+    System.out.println(String.format("%-100s%s", "[" + callerClass.getClassName() + "." + callerClass.getMethodName() + "]", msg).replaceAll("  ", ".."));
+  }
+
+  public boolean isElementPresent(By by) {
+    try {
+      driver.findElement(by);
+      return true;
+    } catch (NoSuchElementException e) {
+      return false;
+    }
+  }
+
+  public void waitForElementPresent(By by) throws Exception {
+    for (int second = 0;; second++) {
+      if (second >= 60) Assert.fail("timeout");
+      try { if (isElementPresent(by)) break; } catch (Exception e) {}
+      Thread.sleep(1000);
+    }
+  }
+    
+}*/

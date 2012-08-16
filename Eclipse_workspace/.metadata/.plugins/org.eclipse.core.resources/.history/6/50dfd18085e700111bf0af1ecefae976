@@ -1,0 +1,55 @@
+package org.exoplatform.Selenium.platform.eXoGTN.Account;
+
+
+import org.exoplatform.Selenium.platform.eXoGTN.EXoGTNTestSuite;
+import org.testng.annotations.*;
+
+
+public class Test_PLT_ACC_010 extends EXoGTNTestSuite{
+	
+	
+	@Test(groups="Account")
+	public void testPLT_ACC_010(){
+		System.out.println("-- Create new user with lower case--");
+        openPortal(true);	
+		signInAsRoot();
+		pause(3000);
+		goToNewStaff();
+		pause(3000);
+		addNewAccountAtNewStaff("test_prl_010", "test_prl_010", "test_prl_010", "testprl", 
+				"testprlExo", "test_prl_010@localhost.com", "", "English", true);
+	
+		System.out.println("-- Check Availability function when new account's user name is existing --");
+		type(ELEMENT_INPUT_USERNAME, "test_prl_01_010", true);
+		click(ELEMENT_SEARCH_ICON_REGISTER);
+		waitForMessage("This user name already exists, please enter a different name.");
+		closeMessageDialog();
+
+		System.out.println("-- Check Availability function when new account's user name does not exist--");
+		type(ELEMENT_INPUT_USERNAME, "test1608", true);
+		click(ELEMENT_SEARCH_ICON_REGISTER);
+		waitForMessage("This user name is available.");
+		closeMessageDialog();
+		
+		System.out.println("-- Check Availability function when new account's user name is the same with deleted account's user name --");
+		goToUsersAndGroupsManagement();
+		deleteUser("test_prl_010");
+		
+		goToNewStaff();
+		type(ELEMENT_INPUT_USERNAME, "test_prl_010", true);
+		click(ELEMENT_SEARCH_ICON_REGISTER);
+		waitForMessage("This user name is available.");
+		closeMessageDialog();
+		
+		System.out.println("-- Check Availability function when new account's user name is blank--");	
+		type(ELEMENT_INPUT_USERNAME, "", true);
+		click(ELEMENT_SEARCH_ICON_REGISTER);
+		waitForMessage("The user name cannot be empty.");
+		closeMessageDialog();
+		
+		signOut();
+		
+	}
+	
+
+}

@@ -1,0 +1,38 @@
+package org.exoplatform.Selenium;
+
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.interactions.Actions;
+
+public class SetUpEnvironement  {
+    protected static boolean runned;
+	protected static WebDriver driver;
+	public static Actions actions;
+	protected static String timeout;
+	protected static int timeoutSecInt;
+    protected static String host;
+    protected static String hostPort;
+	protected static String portalPath;
+	protected static String browser;
+    protected static boolean httpsFlag;
+	protected static boolean ieFlag;
+	protected static boolean chromeFlag;
+	
+	protected static void setUp() {
+        if (!runned) {
+            final SeleniumContext seleniumContext = getSeleniumContext();
+            timeout = seleniumContext.getTimeout();
+            timeoutSecInt = seleniumContext.getTimeoutSecInt();
+            host = seleniumContext.getHost();
+            hostPort = seleniumContext.getHostPort();
+            portalPath = seleniumContext.getPortalPath();
+            browser = seleniumContext.getBrowser();
+            httpsFlag = seleniumContext.isHttpsFlag();
+            ieFlag = browser.contains("explore");
+            chromeFlag = browser.contains("chrome");
+            driver = seleniumContext.getWebDriver();
+            actions = new Actions(driver);
+            runned = true;
+        }
+	}
+}

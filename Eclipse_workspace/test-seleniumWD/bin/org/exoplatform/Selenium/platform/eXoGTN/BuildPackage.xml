@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Portal Account" verbose="1" >
+  <test name="Test Account"   >
+    <packages>
+      <package name="org.exoplatform.Selenium.platform.eXoGTN.Account" />
+   </packages>
+ </test>
+</suite>

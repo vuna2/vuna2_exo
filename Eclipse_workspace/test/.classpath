@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="/home/exo1/java/selenium-server-standalone-2.25.0.jar"/>
+	<classpathentry kind="lib" path="/home/exo1/java/testng-6.7.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

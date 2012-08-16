@@ -1,0 +1,6 @@
+package org.exoplatform.Selenium.platform;
+
+import org.exoplatform.Selenium.BaseTestSuite;
+
+public class PlatformTestSuite extends BaseTestSuite {
+}

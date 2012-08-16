@@ -1,0 +1,25 @@
+package org.exoplatform.Selenium.Common;
+
+public class CommonHelpers {
+	
+	 public static void pause(long timeInMillis) {
+	        try {
+	            Thread.sleep(timeInMillis);
+	        } catch (InterruptedException e) {
+	            e.printStackTrace();
+	        }
+	 }
+	 
+	 public static void openPortal(String newPortalPath, boolean publicMode) {
+	        setUp();
+	        
+	        String location = publicMode ? getPortalUrl() : getPortalUrl().concat("/private");
+
+	        if (newPortalPath != null) {
+	            location = location.replace(portalPath, newPortalPath);
+	        }
+
+	        open(location);
+	}
+	 
+}

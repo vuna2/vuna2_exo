@@ -1,0 +1,158 @@
+package org.exoplatform.Selenium.Common;
+
+import org.exoplatform.Selenium.SetUpEnvironement;
+import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.By;
+import org.openqa.selenium.StaleElementReferenceException;
+//import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.testng.Assert;
+
+public class CommonHelpers extends SetUpEnvironement{
+	 private static String portalUrl;
+	 
+	 public static int loopCount = 0;
+	 //private static int seconds = 0;
+	 
+	 public static void checkCycling(Exception e, int loopCountAllowed) {
+	        System.err.println(e.getClass());
+	        if (loopCount > loopCountAllowed) {
+	            Assert.fail("Cycled: " + e.getMessage());
+	        }
+	        loopCount++;
+	    }
+	 
+	 public static void open(String location) {
+	        setUp();
+
+	        System.out.println("--Opening location " + location + " --");
+	        driver.get(location);
+	    }
+	 
+	 public static void openPortal(String newPortalPath, boolean publicMode) {
+	        setUp();
+	        
+	        String location = publicMode ? getPortalUrl() : getPortalUrl().concat("/private");
+
+	        if (newPortalPath != null) {
+	            location = location.replace(portalPath, newPortalPath);
+	        }
+
+	        open(location);
+	 }
+	 public static void openPortal(boolean publicMode) {
+	        openPortal(null, publicMode);
+	 }
+	 
+	 private static void setPortalUrl() {
+	        portalUrl = (httpsFlag ? "https" : "http") + "://" + host + ":" + hostPort + portalPath;
+	 }
+
+	 public static String getPortalUrl() {
+	        setUp();
+	        
+	        if (portalUrl == null) {
+	            setPortalUrl();
+	        }
+	        return portalUrl;
+	 }
+	 
+	 public static void pause(long timeInMillis) {
+	        try {
+	            Thread.sleep(timeInMillis);
+	        } catch (InterruptedException e) {
+	            e.printStackTrace();
+	        }
+	 }
+	 
+	 public static WebElement getElement(String xpath) {
+	        pause(500);
+	        return driver.findElement(By.xpath(xpath));
+	 }
+	    
+	 public static WebElement waitForAndGetElement(String xpath) {
+	        WebElement element = null;
+	        for (int second = 0;; second++) {
+	            if (second >= timeoutSecInt) {
+	                Assert.fail("Timeout at waitForElementPresent: " + xpath);
+	            }
+	            try {
+	                element = driver.findElement(By.xpath(xpath));
+	                boolean isLoadingDisplayed = false;
+	                try {
+	                    WebElement loading = driver.findElement(By.xpath("//div[@id='AjaxLoadingMask']"));
+	                    isLoadingDisplayed = loading.isDisplayed();
+	                } catch (Exception e) {
+	                }
+	                if (element.isDisplayed() && !isLoadingDisplayed) {
+	                    break;
+	                }
+	            } catch (Exception e) {
+	            }
+	            pause(1000);
+	        }
+	        return element;
+	    }
+
+	    public static void waitForElementNotPresent(String xpath) {
+	        for (int second = 0;; second++) {
+	            if (second >= timeoutSecInt) {
+	                Assert.fail("Timeout at waitForElementNotPresent: " + xpath);
+	            }
+	            try {
+	                driver.findElement(By.xpath(xpath));
+	            } 
+	            catch (Exception e) {
+	            }
+	            pause(1000);
+	        }
+	    }
+	 public static String getText(String xpath) {
+	        WebElement element = null;
+	        try {
+	            element = waitForAndGetElement(xpath);
+	            return element.getText();
+	        } catch (StaleElementReferenceException e) {
+	            checkCycling(e, 5);
+	            pause(1000);
+	            return getText(xpath);
+	        } finally {
+	            loopCount = 0;
+	        }
+	    }
+	 public static boolean isTextPresent(String text) {
+	        pause(500);
+	        String allVisibleTexts = getText("//body");
+
+	        return allVisibleTexts.contains(text);
+	    }
+
+	    public static boolean isTextNotPresent(String text) {
+	        return !isTextPresent(text);
+	    }
+
+	    public static void waitForTextPresent(String text) {
+	        for (int second = 0;; second++) {
+	            if (second >= timeoutSecInt) {
+	                Assert.fail("Timeout at waitForTextPresent: " + text);
+	            }
+	            if (isTextPresent(text)) {
+	                break;
+	            }
+	            pause(500);
+	        }
+	    }
+
+	    public static void waitForTextNotPresent(String text) {
+	        for (int second = 0;; second++) {
+	            if (second >= timeoutSecInt) {
+	                Assert.fail("Timeout at waitForTextNotPresent: " + text);
+	            }
+	            if (isTextNotPresent(text)) {
+	                break;
+	            }
+	            pause(500);
+	        }
+	    }
+	 
+}

@@ -1,0 +1,44 @@
+package org.exoplatform.selenium.platform.portal.function.basicportlet;
+
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.testng.Assert;
+import org.testng.annotations.AfterGroups;
+import org.testng.annotations.BeforeGroups;
+import org.testng.annotations.Test;
+
+
+
+public class DemoPortal {
+	@BeforeGroups(groups = {"platform"})
+	public void beforeTest() throws Exception {
+		driver = new FirefoxDriver();
+    	actions = new Actions(driver);
+    	baseUrl = "http://localhost:8080";
+    	driver.get(baseUrl + "/portal/intranet/");
+    	pause(3000);
+		
+	}
+
+	@AfterGroups(groups = {"platform"})
+	public void afterTest() throws Exception {
+		driver.quit();
+		String verificationErrorString = verificationErrors.toString();
+		if (!"".equals(verificationErrorString)) {
+			Assert.fail(verificationErrorString);
+		}
+	}
+	
+	@Test(groups = {"platform", "demo"})
+    public void demoPortal(){
+		
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+}

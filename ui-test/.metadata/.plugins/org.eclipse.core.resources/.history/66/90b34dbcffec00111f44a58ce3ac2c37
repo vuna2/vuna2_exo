@@ -1,0 +1,59 @@
+package org.exoplatform.selenium.platform.portal.function.basicportlet;
+
+import java.util.Map;
+
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.testng.Assert;
+import org.testng.annotations.AfterGroups;
+import org.testng.annotations.BeforeGroups;
+import org.testng.annotations.Test;
+
+import org.exoplatform.selenium.platform.portal.PortalBase;
+
+public class DemoPortal extends PortalBase{
+	
+	String portalName   = "demoPortal"; 
+	String portalLocale = "English";
+	String portalSkin   = "Default"; 
+	String portalSession = "On Demand";
+    boolean publicMode = true;
+    Map<String, String> permissions = null; 
+    String editGroupId    = "Platform/Administrators"; 
+    String editMembership = "manager" ;
+    
+	@BeforeGroups(groups = {"platform"})
+	public void beforeTest() throws Exception {
+		driver = new FirefoxDriver();
+    	actions = new Actions(driver);
+    	baseUrl = "http://localhost:8080";
+    	driver.get(baseUrl + "/portal/intranet/");
+    	pause(3000);
+		
+	}
+
+	@AfterGroups(groups = {"platform"})
+	public void afterTest() throws Exception {
+		driver.quit();
+		String verificationErrorString = verificationErrors.toString();
+		if (!"".equals(verificationErrorString)) {
+			Assert.fail(verificationErrorString);
+		}
+	}
+	
+	@Test(groups = {"platform", "demo"})
+    public void demoPortal(){
+		signInAsRoot();
+		pause(3000);
+		goToPortalSite();
+		addNewPortal();
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+}

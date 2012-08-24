@@ -1,0 +1,8 @@
+package org.exoplatform.selenium.platform.portal.func.account;
+
+import org.exoplatform.selenium.platform.portal.func.account.AccountHelpers;
+
+public class Test_PLT_ACC_010 extends AccountHelpers{
+
+	
+}

@@ -523,4 +523,24 @@ public class TestBase {
 			e.printStackTrace();
 		}
 	}
+	//Set edit permissions for portal
+	public static void setEditPermissions(String groupId, String membership) {
+		String membershipToSelect = ELEMENT_SELECT_EDIT_MEMBERSHIP_ITEM.replace("${membership}", membership);
+		//String selectedGroup = ELEMENT_SELECTED_EDIT_PERM_GROUP.replace("${groupId}", groupId.replace(" ", "-").toLowerCase());
+		String selectedMembership = ELEMENT_SELECTED_EDIT_PERMISSION_MEMBERSHIP.replace("${membership}", membership);
+
+		info("--Setting edit permission to " + groupId + ", " + membership + "--");
+		String[] groups = groupId.split("/");
+		click(ELEMENT_SELECT_PERMISSION_BUTTON);
+		pause(500);
+		waitForTextPresent("Permission Selector");
+		for (String group : groups) {
+			String groupToSelect = ELEMENT_SELECT_EDIT_GROUP_ITEM.replace("${group}", group);
+			click(groupToSelect);
+		}
+		click(membershipToSelect);
+		waitForTextNotPresent("Permission Selector");
+		//waitForAndGetElement(selectedGroup);
+		waitForAndGetElement(selectedMembership);
+	}
 }

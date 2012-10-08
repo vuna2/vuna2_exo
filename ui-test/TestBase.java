@@ -176,6 +176,19 @@ public class TestBase {
           loopCount = 0;
       }
   }
+
+	//copy and paste node
+	  public void copyAndPasteNode(By source, By target){
+		  goToNode(source);
+		  rightClickOnElement(source);
+		  pause(500);
+		  click(By.xpath("//a[contains(text(),'Copy')]"));
+		  goToNode(target);
+		  rightClickOnElement(target);
+		  pause(500);
+		  click(By.xpath("//a[contains(text(),'Paste')]"));
+		  pause(1000);
+	  }
   
   public static boolean isTextNotPresent(String text) {
 	  return !isTextPresent(text);
